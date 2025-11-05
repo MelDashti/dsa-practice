@@ -1,0 +1,37 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install black flake8 mypy
+
+    - name: Check code formatting with Black
+      run: |
+        black --check problems/ tests/ || (echo "❌ Code formatting check failed. Run 'make format' to fix." && exit 1)
+
+    - name: Lint with flake8
+      run: |
+        flake8 problems/ tests/ --count --show-source --statistics
+
+    - name: Type check with mypy
+      run: |
+        mypy problems/ --ignore-missing-imports
+      continue-on-error: true

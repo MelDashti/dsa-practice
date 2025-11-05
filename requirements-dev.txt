@@ -1,0 +1,6 @@
+# Development dependencies (includes all requirements.txt)
+-r requirements.txt
+
+# Additional dev tools
+pre-commit>=3.3.0
+pytest-watch>=4.2.0

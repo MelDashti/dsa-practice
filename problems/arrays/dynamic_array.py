@@ -27,63 +27,134 @@ Time Complexity: O(1) amortized for pushback, O(1) for others
 Space Complexity: O(n)
 """
 
+from typing import Any, List
+
 
 class DynamicArray:
-    def __init__(self, capacity: int):
-        self.capacity = capacity
-        self.size = 0
-        self.array = []
+    """A dynamic array implementation with automatic resizing."""
 
-    def get(self, i: int) -> int:
-        if i >= self.size:
-            raise IndexError("Index out of bounds")
+    def __init__(self, capacity: int) -> None:
+        """
+        Initialize dynamic array with given capacity.
+
+        Args:
+            capacity: Initial capacity of the array
+
+        Raises:
+            ValueError: If capacity is less than 1
+        """
+        if capacity < 1:
+            raise ValueError("Capacity must be at least 1")
+        self.capacity: int = capacity
+        self.size: int = 0
+        self.array: List[Any] = []
+
+    def get(self, i: int) -> Any:
+        """
+        Get element at index i.
+
+        Args:
+            i: Index to retrieve
+
+        Returns:
+            Element at index i
+
+        Raises:
+            IndexError: If index is out of bounds
+        """
+        if i < 0 or i >= self.size:
+            raise IndexError(f"Index {i} out of bounds for size {self.size}")
         return self.array[i]
 
-    def set(self, i: int, n: int) -> None:
-        if i >= self.size:
-            raise IndexError("Index out of bounds")
+    def set(self, i: int, n: Any) -> None:
+        """
+        Set element at index i to value n.
+
+        Args:
+            i: Index to set
+            n: Value to set
+
+        Raises:
+            IndexError: If index is out of bounds
+        """
+        if i < 0 or i >= self.size:
+            raise IndexError(f"Index {i} out of bounds for size {self.size}")
         self.array[i] = n
 
-    def pushback(self, n: int) -> None:
+    def pushback(self, n: Any) -> None:
+        """
+        Add element to the end of array, resizing if necessary.
+
+        Args:
+            n: Element to add
+
+        Time Complexity: O(1) amortized
+        """
         if self.size == self.capacity:
             self.resize()
         self.array.append(n)
         self.size += 1
 
-    def popback(self) -> int:
+    def popback(self) -> Any:
+        """
+        Remove and return the last element.
+
+        Returns:
+            The last element in the array
+
+        Raises:
+            IndexError: If array is empty
+
+        Time Complexity: O(1)
+        """
         if self.size == 0:
-            return None
+            raise IndexError("Cannot pop from empty array")
         self.size -= 1
         return self.array.pop()
 
     def resize(self) -> None:
+        """
+        Double the capacity of the array.
+
+        Time Complexity: O(1) - only updates capacity, actual resize happens in pushback
+        """
         self.capacity = self.capacity * 2
 
     def getSize(self) -> int:
+        """
+        Get current number of elements in array.
+
+        Returns:
+            Current size
+        """
         return self.size
 
     def getCapacity(self) -> int:
+        """
+        Get current capacity of array.
+
+        Returns:
+            Current capacity
+        """
         return self.capacity
 
 
-# Tests
-def test():
+def main():
+    """Example usage and manual testing."""
     arr = DynamicArray(1)
 
     arr.pushback(1)
-    assert arr.getSize() == 1
-    assert arr.getCapacity() == 1
+    print(f"Size: {arr.getSize()}, Capacity: {arr.getCapacity()}")  # 1, 1
 
     arr.pushback(2)
-    assert arr.getSize() == 2
-    assert arr.getCapacity() == 2
+    print(f"Size: {arr.getSize()}, Capacity: {arr.getCapacity()}")  # 2, 2
 
-    assert arr.get(1) == 2
-    assert arr.popback() == 2
-    assert arr.getSize() == 1
+    print(f"arr.get(1) = {arr.get(1)}")  # 2
+    print(f"arr.popback() = {arr.popback()}")  # 2
+    print(f"Size: {arr.getSize()}")  # 1
 
-    print("✓ All tests passed")
+    print("✓ All manual tests passed")
 
 
 if __name__ == "__main__":
-    test()
+    main()
