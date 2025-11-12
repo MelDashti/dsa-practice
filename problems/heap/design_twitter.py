@@ -1,0 +1,142 @@
+"""
+PROBLEM: Design Twitter (LeetCode 355)
+Difficulty: Medium
+Pattern: Heap, Hash Table, Design
+Companies: Amazon, Twitter, Google, Facebook
+
+Design a simplified version of Twitter where users can post tweets, follow/unfollow
+another user, and is able to see the 10 most recent tweets in the user's news feed.
+
+Implement the Twitter class:
+- Twitter() Initializes your twitter object.
+- void postTweet(int userId, int tweetId) Composes a new tweet with ID tweetId by
+  the user userId. Each call to this function will be made with a unique tweetId.
+- List<Integer> getNewsFeed(int userId) Retrieves the 10 most recent tweet IDs in
+  the user's news feed. Each item in the news feed must be posted by users who the
+  user followed or by the user themself. Tweets must be ordered from most recent
+  to least recent.
+- void follow(int followerId, int followeeId) The user with ID followerId started
+  following the user with ID followeeId.
+- void unfollow(int followerId, int followeeId) The user with ID followerId started
+  unfollowing the user with ID followeeId.
+
+Example 1:
+    Input:
+    ["Twitter", "postTweet", "getNewsFeed", "follow", "postTweet", "getNewsFeed", "unfollow", "getNewsFeed"]
+    [[], [1, 5], [1], [1, 2], [2, 6], [1], [1, 2], [1]]
+    Output:
+    [null, null, [5], null, null, [6, 5], null, [5]]
+
+    Explanation:
+    Twitter twitter = new Twitter();
+    twitter.postTweet(1, 5); // User 1 posts a new tweet (id = 5).
+    twitter.getNewsFeed(1);  // User 1's news feed should return a list with 1 tweet id -> [5]. return [5]
+    twitter.follow(1, 2);    // User 1 follows user 2.
+    twitter.postTweet(2, 6); // User 2 posts a new tweet (id = 6).
+    twitter.getNewsFeed(1);  // User 1's news feed should return a list with 2 tweet ids -> [6, 5]. Tweet id 6 should precede tweet id 5 because it is posted after tweet id 5.
+    twitter.unfollow(1, 2);  // User 1 unfollows user 2.
+    twitter.getNewsFeed(1);  // User 1's news feed should return a list with 1 tweet id -> [5], since user 1 is no longer following user 2.
+
+Constraints:
+- 1 <= userId, followerId, followeeId <= 500
+- 0 <= tweetId <= 10^4
+- All the tweets have unique IDs.
+- At most 3 * 10^4 calls will be made to postTweet, getNewsFeed, follow, and unfollow.
+
+Approach:
+1. Store tweets for each user with timestamp
+2. Store followee set for each user
+3. For getNewsFeed, merge tweets from user and all followees
+4. Use max heap to get 10 most recent tweets
+5. Use global counter for timestamps
+
+Time:
+- postTweet: O(1)
+- follow/unfollow: O(1)
+- getNewsFeed: O(n log k) where n is total tweets, k is 10
+Space: O(users + tweets)
+"""
+
+import heapq
+from collections import defaultdict
+
+
+class Twitter:
+    def __init__(self):
+        self.time = 0
+        self.tweets = defaultdict(list)  # userId -> list of (time, tweetId)
+        self.following = defaultdict(set)  # userId -> set of followeeIds
+
+    def postTweet(self, userId: int, tweetId: int) -> None:
+        self.tweets[userId].append((self.time, tweetId))
+        self.time += 1
+
+    def getNewsFeed(self, userId: int) -> list[int]:
+        # Get tweets from user and all followees
+        min_heap = []
+
+        # Add user's own tweets
+        for time, tweetId in self.tweets[userId]:
+            heapq.heappush(min_heap, (time, tweetId))
+            if len(min_heap) > 10:
+                heapq.heappop(min_heap)
+
+        # Add followees' tweets
+        for followeeId in self.following[userId]:
+            for time, tweetId in self.tweets[followeeId]:
+                heapq.heappush(min_heap, (time, tweetId))
+                if len(min_heap) > 10:
+                    heapq.heappop(min_heap)
+
+        # Extract and reverse to get most recent first
+        result = []
+        while min_heap:
+            result.append(heapq.heappop(min_heap)[1])
+
+        return result[::-1]
+
+    def follow(self, followerId: int, followeeId: int) -> None:
+        if followerId != followeeId:
+            self.following[followerId].add(followeeId)
+
+    def unfollow(self, followerId: int, followeeId: int) -> None:
+        self.following[followerId].discard(followeeId)
+
+
+# Tests
+def test():
+    # Test 1
+    twitter = Twitter()
+    twitter.postTweet(1, 5)
+    assert twitter.getNewsFeed(1) == [5]
+    twitter.follow(1, 2)
+    twitter.postTweet(2, 6)
+    assert twitter.getNewsFeed(1) == [6, 5]
+    twitter.unfollow(1, 2)
+    assert twitter.getNewsFeed(1) == [5]
+
+    # Test 2
+    twitter2 = Twitter()
+    twitter2.postTweet(1, 1)
+    twitter2.postTweet(1, 2)
+    twitter2.postTweet(1, 3)
+    assert twitter2.getNewsFeed(1) == [3, 2, 1]
+
+    # Test 3
+    twitter3 = Twitter()
+    twitter3.postTweet(1, 5)
+    twitter3.follow(1, 1)  # User follows themselves
+    assert twitter3.getNewsFeed(1) == [5]
+
+    # Test 4
+    twitter4 = Twitter()
+    twitter4.postTweet(2, 5)
+    twitter4.follow(1, 2)
+    twitter4.follow(1, 2)  # Duplicate follow
+    assert twitter4.getNewsFeed(1) == [5]
+
+    print("✓ All tests passed")
+
+
+if __name__ == "__main__":
+    test()
