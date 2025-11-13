@@ -1,6 +1,17 @@
-# DSA Practice - NeetCode 150
+# Complete FAANG Interview Preparation
 
-A comprehensive collection of 150 curated coding interview problems from [NeetCode.io](https://neetcode.io/), organized by topic and difficulty level. Each problem includes detailed explanations, optimal solutions, and test cases.
+A comprehensive collection of **150 DSA problems** and **50+ System Design problems** for FAANG/MAANG interviews. Everything you need to ace coding and system design interviews at top tech companies.
+
+##  📦 What's Inside
+
+1. **[DSA Problems](#-dsa-problems-neetcode-150)** - 150 curated coding problems from NeetCode
+2. **[System Design](#-system-design)** - 50+ comprehensive system design documents
+
+---
+
+# 💻 DSA Problems - NeetCode 150
+
+A complete collection of 150 curated coding interview problems from [NeetCode.io](https://neetcode.io/), organized by topic and difficulty level. Each problem includes detailed explanations, optimal solutions, and test cases.
 
 ## 📊 Progress
 
@@ -41,30 +52,40 @@ Each category is organized into `easy/`, `medium/`, and `hard/` subdirectories w
 ```
 dsa-practice/
 ├── README.md
-└── problems/
-    ├── arrays_and_hashing/
-    │   ├── easy/
-    │   │   ├── problem_name.py
-    │   │   └── README.md
-    │   ├── medium/
-    │   └── hard/
-    ├── two_pointers/
-    ├── sliding_window/
-    ├── stack/
-    ├── binary_search/
-    ├── linked_list/
-    ├── trees/
-    ├── tries/
-    ├── heap/
-    ├── backtracking/
-    ├── graphs/
-    ├── advanced_graphs/
-    ├── 1d_dynamic_programming/
-    ├── 2d_dynamic_programming/
-    ├── greedy/
-    ├── intervals/
-    ├── math_geometry/
-    └── bit_manipulation/
+├── problems/                    # 150 DSA Problems
+│   ├── arrays_and_hashing/
+│   │   ├── easy/
+│   │   │   ├── problem_name.py
+│   │   │   └── README.md
+│   │   ├── medium/
+│   │   └── hard/
+│   ├── two_pointers/
+│   ├── sliding_window/
+│   ├── stack/
+│   ├── binary_search/
+│   ├── linked_list/
+│   ├── trees/
+│   ├── tries/
+│   ├── heap/
+│   ├── backtracking/
+│   ├── graphs/
+│   ├── advanced_graphs/
+│   ├── 1d_dynamic_programming/
+│   ├── 2d_dynamic_programming/
+│   ├── greedy/
+│   ├── intervals/
+│   ├── math_geometry/
+│   └── bit_manipulation/
+└── system_design/              # 50+ System Design Documents
+    ├── README.md
+    ├── fundamentals/
+    ├── core_components/
+    ├── social_media/
+    ├── messaging/
+    ├── location_based/
+    ├── ecommerce_payments/
+    ├── infrastructure/
+    └── storage_data/
 ```
 
 ## 📖 Problem Format
@@ -248,6 +269,125 @@ Optimize solutions using bitwise operations.
 - Focus on Advanced Graphs and 2-D DP
 - Optimize solutions and reduce complexity
 
+---
+
+# 🏗️ System Design
+
+A comprehensive collection of 50+ system design problems covering all major areas asked in FAANG interviews. From fundamentals to complex distributed systems.
+
+## 📊 Overview
+
+**Total Designs:** 50+ comprehensive system design documents
+**Categories:** 8 major topics
+**Focus:** FAANG interview preparation
+
+### By Difficulty
+- 🟢 **Easy:** 8 problems (Fundamentals and simple systems)
+- 🟡 **Medium:** 25+ problems (Production-scale systems)
+- 🔴 **Hard:** 17+ problems (Complex distributed systems)
+
+## 📚 System Design Categories
+
+| Category | Easy | Medium | Hard | Total | Focus Area |
+|----------|------|--------|------|-------|------------|
+| **Fundamentals** | 3 | 3 | 3 | 9 | Core concepts |
+| **Core Components** | 3 | 4 | 3 | 10 | Building blocks |
+| **Social Media** | 1 | 4 | 2 | 7 | User content platforms |
+| **Messaging** | 1 | 3 | 2 | 6 | Real-time communication |
+| **Location-Based** | 1 | 3 | 2 | 6 | Geospatial services |
+| **E-commerce & Payments** | 1 | 3 | 4 | 8 | Transactions |
+| **Infrastructure** | 1 | 4 | 4 | 9 | Distributed systems |
+| **Storage & Data** | 1 | 5 | 4 | 10 | Data management |
+
+## 🗂️ System Design Structure
+
+```
+system_design/
+├── README.md (comprehensive guide)
+├── fundamentals/         (Scaling, Caching, Load Balancing, CAP, Consensus)
+├── core_components/      (URL Shortener, Rate Limiter, Auth, ID Generator)
+├── social_media/         (Instagram, Twitter, Reddit, TikTok, News Feed)
+├── messaging/            (WhatsApp, Slack, Discord, Messenger)
+├── location_based/       (Uber, Google Maps, Yelp, Proximity Service)
+├── ecommerce_payments/   (Amazon, Payment System, UPI, Stock Exchange)
+├── infrastructure/       (Kafka, Web Crawler, Metrics, Distributed Cache)
+└── storage_data/         (Dropbox, YouTube, Netflix, S3, Zoom)
+```
+
+## 🎯 Top 15 Must-Know System Designs
+
+1. **URL Shortener** - Classic entry-level problem
+2. **Rate Limiter** - Appears in 80% of interviews
+3. **Design Instagram** - Social media fundamentals
+4. **Design Twitter** - Real-time feeds
+5. **Design YouTube** - Video streaming
+6. **Design WhatsApp** - Real-time messaging
+7. **Design Uber** - Location-based services
+8. **Design Amazon** - E-commerce at scale
+9. **News Feed Algorithm** - Ranking systems
+10. **Payment System** - Transaction consistency
+11. **Consistent Hashing** - Distributed systems
+12. **Design Kafka** - Message queues
+13. **Design Dropbox** - File sync
+14. **Web Crawler** - Data ingestion
+15. **Unique ID Generator** - Distributed coordination
+
+## 📖 Each Design Document Includes
+
+1. Problem Statement & Requirements
+2. Capacity Estimation (Traffic, Storage, Bandwidth)
+3. High-Level Architecture with diagrams
+4. API Design (REST/WebSocket)
+5. Database Schema & justification
+6. Detailed Component Design
+7. Scalability & Performance considerations
+8. Trade-offs & Alternatives
+9. Monitoring & Operations
+10. 15-30 Follow-up Questions
+
+## 🚀 Quick Start - System Design
+
+```bash
+# Navigate to system design
+cd system_design/
+
+# Read the main guide
+cat README.md
+
+# Start with fundamentals
+cd fundamentals/easy/
+ls  # See all easy topics
+
+# Study a specific design
+cat scaling_basics.md
+```
+
+## 📈 System Design Study Plans
+
+### 1-Week Crash Course
+- Days 1-2: All Fundamentals
+- Days 3-4: Top 5 must-know problems
+- Days 5-6: Company-specific domains
+- Day 7: Mock interviews
+
+### 1-Month Comprehensive
+- Week 1: Fundamentals + Core Components
+- Week 2: Social Media + Messaging
+- Week 3: Location + E-commerce
+- Week 4: Infrastructure + Storage + Practice
+
+### Interview-Ready Checklist
+- ✅ Understand CAP theorem
+- ✅ Know database scaling strategies
+- ✅ Master caching patterns
+- ✅ Can explain load balancing
+- ✅ Understand distributed systems concepts
+- ✅ Practiced top 15 designs
+- ✅ Can do capacity estimation
+- ✅ Know trade-offs for each design choice
+
+---
+
 ## 🎓 Additional Resources
 
 - [NeetCode.io](https://neetcode.io/) - Video explanations for all problems
@@ -276,4 +416,7 @@ This repository is for educational purposes. All problem statements are property
 ---
 
 **Last Updated:** November 12, 2025
-**Status:** ✅ All 150 problems complete with explanations
+**Status:**
+- ✅ All 150 DSA problems complete with explanations
+- ✅ All 50+ System Design documents complete
+- ✅ Ready for FAANG interviews!
