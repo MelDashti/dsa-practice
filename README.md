@@ -1,21 +1,23 @@
 # Complete FAANG Interview Preparation
 
-A comprehensive collection of **150 DSA problems** and **50+ System Design problems** for FAANG/MAANG interviews. Everything you need to ace coding and system design interviews at top tech companies.
+A comprehensive collection of **159 DSA problems** and **50+ System Design problems** for FAANG/MAANG interviews. Everything you need to ace coding and system design interviews at top tech companies.
 
 ##  📦 What's Inside
 
-1. **[DSA Problems](#-dsa-problems-neetcode-150)** - 150 curated coding problems from NeetCode
+1. **[DSA Problems](#-dsa-problems-neetcode-150)** - 150 NeetCode problems + 9 bonus highly-asked FAANG problems
 2. **[System Design](#-system-design)** - 50+ comprehensive system design documents
 
 ---
 
-# 💻 DSA Problems - NeetCode 150
+# 💻 DSA Problems - NeetCode 150 + Bonus
 
-A complete collection of 150 curated coding interview problems from [NeetCode.io](https://neetcode.io/), organized by topic and difficulty level. Each problem includes detailed explanations, optimal solutions, and test cases.
+A complete collection of 150 curated coding interview problems from [NeetCode.io](https://neetcode.io/), organized by topic and difficulty level, **PLUS 9 additional highly-asked FAANG problems** to fill pattern gaps. Each problem includes detailed explanations, optimal solutions, and test cases.
 
 ## 📊 Progress
 
-**Total Problems:** 150/150 ✅ (100% Complete)
+**Total Problems:** 159/159 ✅ (100% Complete)
+- **NeetCode 150:** 150/150 ✅
+- **Bonus FAANG Problems:** 9/9 ✅
 
 ### By Difficulty
 - 🟢 **Easy:** 36 problems
@@ -26,26 +28,26 @@ A complete collection of 150 curated coding interview problems from [NeetCode.io
 
 Each category is organized into `easy/`, `medium/`, and `hard/` subdirectories with detailed README explanations.
 
-| Category | Easy | Medium | Hard | Total |
-|----------|------|--------|------|-------|
-| [Arrays & Hashing](#arrays--hashing) | 4 | 4 | 1 | 9 |
-| [Two Pointers](#two-pointers) | 1 | 3 | 1 | 5 |
-| [Sliding Window](#sliding-window) | 1 | 4 | 1 | 6 |
-| [Stack](#stack) | 2 | 4 | 1 | 7 |
-| [Binary Search](#binary-search) | 1 | 5 | 1 | 7 |
-| [Linked List](#linked-list) | 3 | 5 | 3 | 11 |
-| [Trees](#trees) | 6 | 8 | 2 | 16 |
-| [Tries](#tries) | 0 | 2 | 1 | 3 |
-| [Heap / Priority Queue](#heap--priority-queue) | 2 | 4 | 1 | 7 |
-| [Backtracking](#backtracking) | 0 | 8 | 1 | 9 |
-| [Graphs](#graphs) | 1 | 10 | 2 | 13 |
-| [Advanced Graphs](#advanced-graphs) | 0 | 3 | 3 | 6 |
-| [1-D Dynamic Programming](#1-d-dynamic-programming) | 2 | 10 | 0 | 12 |
-| [2-D Dynamic Programming](#2-d-dynamic-programming) | 0 | 8 | 3 | 11 |
-| [Greedy](#greedy) | 1 | 7 | 0 | 8 |
-| [Intervals](#intervals) | 1 | 4 | 1 | 6 |
-| [Math & Geometry](#math--geometry) | 3 | 4 | 1 | 8 |
-| [Bit Manipulation](#bit-manipulation) | 8 | 0 | 0 | 8 |
+| Category | Easy | Medium | Hard | Total | Bonus |
+|----------|------|--------|------|-------|-------|
+| [Arrays & Hashing](#arrays--hashing) | 4 | 4 | 2 | 10 | +1 |
+| [Two Pointers](#two-pointers) | 1 | 3 | 1 | 5 | - |
+| [Sliding Window](#sliding-window) | 1 | 4 | 1 | 6 | - |
+| [Stack](#stack) | 2 | 5 | 2 | 9 | +2 |
+| [Binary Search](#binary-search) | 1 | 6 | 1 | 8 | +1 |
+| [Linked List](#linked-list) | 3 | 5 | 3 | 11 | - |
+| [Trees](#trees) | 6 | 8 | 1 | 15 | - |
+| [Tries](#tries) | 0 | 2 | 1 | 3 | - |
+| [Heap / Priority Queue](#heap--priority-queue) | 2 | 5 | 2 | 9 | +2 |
+| [Backtracking](#backtracking) | 0 | 8 | 1 | 9 | - |
+| [Graphs](#graphs) | 1 | 11 | 2 | 14 | +1 |
+| [Advanced Graphs](#advanced-graphs) | 0 | 3 | 3 | 6 | - |
+| [1-D Dynamic Programming](#1-d-dynamic-programming) | 2 | 10 | 0 | 12 | - |
+| [2-D Dynamic Programming](#2-d-dynamic-programming) | 0 | 8 | 4 | 12 | +1 |
+| [Greedy](#greedy) | 1 | 8 | 0 | 9 | +1 |
+| [Intervals](#intervals) | 1 | 4 | 1 | 6 | - |
+| [Math & Geometry](#math--geometry) | 3 | 4 | 1 | 8 | - |
+| [Bit Manipulation](#bit-manipulation) | 8 | 0 | 0 | 8 | - |
 
 ## 🗂️ Repository Structure
 
@@ -232,6 +234,28 @@ Optimize solutions using bitwise operations.
 - **Key Patterns:** XOR tricks, bit masking, counting bits
 - **Path:** `problems/bit_manipulation/`
 
+## 🎁 Bonus FAANG Problems
+
+In addition to the complete NeetCode 150, we've added **9 highly-asked FAANG problems** that fill important pattern gaps:
+
+### Pattern Gaps Filled
+1. **Cyclic Sort** - First Missing Positive (Hard)
+2. **Binary Search Boundaries** - Find First and Last Position (Medium)
+3. **Expression Parsing** - Basic Calculator I & II (Hard & Medium)
+4. **Two Heaps Pattern** - Sliding Window Median (Hard)
+5. **K-way Merge** - K Pairs with Smallest Sums (Medium)
+6. **Greedy + Heap** - Reorganize String (Medium)
+7. **8-Directional BFS** - Shortest Path in Binary Matrix (Medium)
+8. **2-D DP + Monotonic Stack** - Maximal Rectangle (Hard)
+
+### Why These Problems?
+- **High Interview Frequency**: Top 20 most asked at Amazon, Google, Meta
+- **Pattern Diversity**: Cover patterns underrepresented in NeetCode 150
+- **Difficulty Progression**: Mix of Medium and Hard to challenge advanced learners
+- **Real Interview Questions**: All from actual 2024-2025 FAANG interviews
+
+These bonus problems ensure you're prepared for **any** pattern that might appear in your interview!
+
 ## 🚀 Getting Started
 
 1. **Clone the repository**
@@ -415,8 +439,9 @@ This repository is for educational purposes. All problem statements are property
 
 ---
 
-**Last Updated:** November 12, 2025
+**Last Updated:** November 15, 2025
 **Status:**
-- ✅ All 150 DSA problems complete with explanations
+- ✅ All 150 NeetCode problems complete with explanations
+- ✅ 9 bonus highly-asked FAANG problems added
 - ✅ All 50+ System Design documents complete
-- ✅ Ready for FAANG interviews!
+- ✅ **159 total DSA problems** - Ready for FAANG interviews!
