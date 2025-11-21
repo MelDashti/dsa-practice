@@ -4,7 +4,7 @@ Difficulty: Medium
 Pattern: Graphs (Topological Sort, Cycle Detection)
 Companies: Amazon, Facebook, Google, Microsoft, Bloomberg
 
-There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1.
+There are a total of num_courses courses you have to take, labeled from 0 to num_courses - 1.
 You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you
 must take course bi first if you want to take course ai.
 
@@ -13,23 +13,23 @@ For example, the pair [0, 1], indicates that to take course 0 you have to first 
 Return true if you can finish all courses. Otherwise, return false.
 
 Example 1:
-    Input: numCourses = 2, prerequisites = [[1,0]]
+    Input: num_courses = 2, prerequisites = [[1,0]]
     Output: true
     Explanation: There are a total of 2 courses to take.
     To take course 1 you should have finished course 0. So it is possible.
 
 Example 2:
-    Input: numCourses = 2, prerequisites = [[1,0],[0,1]]
+    Input: num_courses = 2, prerequisites = [[1,0],[0,1]]
     Output: false
     Explanation: There are a total of 2 courses to take.
     To take course 1 you should have finished course 0, and to take course 0 you should
     also have finished course 1. So it is impossible.
 
 Constraints:
-- 1 <= numCourses <= 2000
+- 1 <= num_courses <= 2000
 - 0 <= prerequisites.length <= 5000
 - prerequisites[i].length == 2
-- 0 <= ai, bi < numCourses
+- 0 <= ai, bi < num_courses
 - All the pairs prerequisites[i] are unique
 
 Approach:
@@ -48,14 +48,14 @@ from collections import defaultdict
 
 
 class Solution:
-    def can_finish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+    def can_finish(self, num_courses: int, prerequisites: List[List[int]]) -> bool:
         # Build adjacency list
         graph = defaultdict(list)
         for course, prereq in prerequisites:
             graph[course].append(prereq)
 
         # 0 = unvisited, 1 = visiting, 2 = visited
-        visit_state = [0] * numCourses
+        visit_state = [0] * num_courses
 
         def has_cycle(course):
             if visit_state[course] == 1:  # Currently visiting - cycle detected
@@ -76,7 +76,7 @@ class Solution:
             return False
 
         # Check each course
-        for course in range(numCourses):
+        for course in range(num_courses):
             if has_cycle(course):
                 return False
 

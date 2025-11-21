@@ -33,7 +33,7 @@ Approach:
    - Left side has (m+n+1)//2 elements total
    - All elements on left <= all elements on right
 3. The partition is correct when:
-   - maxLeft1 <= minRight2 and maxLeft2 <= minRight1
+   - max_left1 <= min_right2 and max_left2 <= min_right1
 4. If total length is odd, median is max of left side
 5. If even, median is average of max(left) and min(right)
 
@@ -59,21 +59,21 @@ class Solution:
             partition2 = (m + n + 1) // 2 - partition1
 
             # Get max of left side and min of right side for both arrays
-            maxLeft1 = float('-inf') if partition1 == 0 else nums1[partition1 - 1]
-            minRight1 = float('inf') if partition1 == m else nums1[partition1]
+            max_left1 = float('-inf') if partition1 == 0 else nums1[partition1 - 1]
+            min_right1 = float('inf') if partition1 == m else nums1[partition1]
 
-            maxLeft2 = float('-inf') if partition2 == 0 else nums2[partition2 - 1]
-            minRight2 = float('inf') if partition2 == n else nums2[partition2]
+            max_left2 = float('-inf') if partition2 == 0 else nums2[partition2 - 1]
+            min_right2 = float('inf') if partition2 == n else nums2[partition2]
 
             # Check if we found the correct partition
-            if maxLeft1 <= minRight2 and maxLeft2 <= minRight1:
+            if max_left1 <= min_right2 and max_left2 <= min_right1:
                 # If total length is odd
                 if (m + n) % 2 == 1:
-                    return max(maxLeft1, maxLeft2)
+                    return max(max_left1, max_left2)
                 # If total length is even
                 else:
-                    return (max(maxLeft1, maxLeft2) + min(minRight1, minRight2)) / 2
-            elif maxLeft1 > minRight2:
+                    return (max(max_left1, max_left2) + min(min_right1, min_right2)) / 2
+            elif max_left1 > min_right2:
                 # Too far right in nums1, go left
                 right = partition1 - 1
             else:

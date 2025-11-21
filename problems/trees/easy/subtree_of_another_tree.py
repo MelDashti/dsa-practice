@@ -4,34 +4,34 @@ Difficulty: Easy
 Pattern: Trees
 Companies: Amazon, Microsoft, Facebook, Google
 
-Given the roots of two binary trees root and subRoot, return true if there is
-a subtree of root with the same structure and node values of subRoot and false
+Given the roots of two binary trees root and sub_root, return true if there is
+a subtree of root with the same structure and node values of sub_root and false
 otherwise.
 
 A subtree of a binary tree is a tree that consists of a node in tree and all of
 this node's descendants. The tree could also be considered as a subtree of itself.
 
 Example 1:
-    Input: root = [3,4,5,1,2], subRoot = [4,1,2]
+    Input: root = [3,4,5,1,2], sub_root = [4,1,2]
     Output: true
 
 Example 2:
-    Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
+    Input: root = [3,4,5,1,2,null,null,null,null,0], sub_root = [4,1,2]
     Output: false
 
 Constraints:
 - The number of nodes in the root tree is in the range [1, 2000]
-- The number of nodes in the subRoot tree is in the range [1, 1000]
+- The number of nodes in the sub_root tree is in the range [1, 1000]
 - -10^4 <= root.val <= 10^4
-- -10^4 <= subRoot.val <= 10^4
+- -10^4 <= sub_root.val <= 10^4
 
 Approach:
-1. For each node in root, check if subtree starting at that node is same as subRoot
+1. For each node in root, check if subtree starting at that node is same as sub_root
 2. Use helper function to check if two trees are identical
 3. Recursively check left and right subtrees
 4. Return true if we find a match
 
-Time: O(m * n) - where m is nodes in root, n is nodes in subRoot
+Time: O(m * n) - where m is nodes in root, n is nodes in sub_root
 Space: O(h) - recursion stack where h is height of tree
 """
 
@@ -46,16 +46,16 @@ class TreeNode:
 
 
 class Solution:
-    def is_subtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+    def is_subtree(self, root: Optional[TreeNode], sub_root: Optional[TreeNode]) -> bool:
         if not root:
             return False
 
-        # Check if current tree is same as subRoot
-        if self.is_same_tree(root, subRoot):
+        # Check if current tree is same as sub_root
+        if self.is_same_tree(root, sub_root):
             return True
 
         # Check left and right subtrees
-        return self.is_subtree(root.left, subRoot) or self.is_subtree(root.right, subRoot)
+        return self.is_subtree(root.left, sub_root) or self.is_subtree(root.right, sub_root)
 
     def is_same_tree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         if not p and not q:
@@ -78,11 +78,11 @@ def test():
     root.left.left = TreeNode(1)
     root.left.right = TreeNode(2)
 
-    subRoot = TreeNode(4)
-    subRoot.left = TreeNode(1)
-    subRoot.right = TreeNode(2)
+    sub_root = TreeNode(4)
+    sub_root.left = TreeNode(1)
+    sub_root.right = TreeNode(2)
 
-    assert sol.is_subtree(root, subRoot) == True
+    assert sol.is_subtree(root, sub_root) == True
 
     # Test 2: Not a valid subtree
     root2 = TreeNode(3)
@@ -92,16 +92,16 @@ def test():
     root2.left.right = TreeNode(2)
     root2.left.right.left = TreeNode(0)
 
-    subRoot2 = TreeNode(4)
-    subRoot2.left = TreeNode(1)
-    subRoot2.right = TreeNode(2)
+    sub_root2 = TreeNode(4)
+    sub_root2.left = TreeNode(1)
+    sub_root2.right = TreeNode(2)
 
-    assert sol.is_subtree(root2, subRoot2) == False
+    assert sol.is_subtree(root2, sub_root2) == False
 
     # Test 3: Single node
     root3 = TreeNode(1)
-    subRoot3 = TreeNode(1)
-    assert sol.is_subtree(root3, subRoot3) == True
+    sub_root3 = TreeNode(1)
+    assert sol.is_subtree(root3, sub_root3) == True
 
     print("✓ All tests passed")
 

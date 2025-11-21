@@ -10,25 +10,25 @@ Insert a new interval and merge overlapping intervals if necessary.
 
 Example 1:
     intervals = [[1,2],[3,5],[6,9]]
-    newInterval = [2,5]
+    new_interval = [2,5]
     Output: [[1,5],[6,9]]
 
 Example 2:
     intervals = [[1,5]]
-    newInterval = [2,3]
+    new_interval = [2,3]
     Output: [[1,5]]
 
 Example 3:
     intervals = [[1,5]]
-    newInterval = [6,8]
+    new_interval = [6,8]
     Output: [[1,5],[6,8]]
 
 Constraints:
 - 0 <= intervals.length <= 10^4
 - intervals[i].length == 2
 - 0 <= start_i <= end_i <= 10^5
-- newInterval.length == 2
-- 0 <= newInterval[0] <= newInterval[1] <= 10^5
+- new_interval.length == 2
+- 0 <= new_interval[0] <= new_interval[1] <= 10^5
 
 Approach:
 1. Add all intervals that end before new interval starts
@@ -43,9 +43,9 @@ from typing import List
 
 
 class Solution:
-    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+    def insert(self, intervals: List[List[int]], new_interval: List[int]) -> List[List[int]]:
         result = []
-        new_start, new_end = newInterval
+        new_start, new_end = new_interval
 
         for start, end in intervals:
             # If current interval ends before new interval starts, add it to result

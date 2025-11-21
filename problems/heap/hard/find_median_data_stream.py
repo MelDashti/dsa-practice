@@ -21,12 +21,12 @@ Example 1:
     [null, null, null, 1.5, null, 2.0]
 
     Explanation:
-    MedianFinder medianFinder = new MedianFinder();
-    medianFinder.add_num(1);    // arr = [1]
-    medianFinder.add_num(2);    // arr = [1, 2]
-    medianFinder.find_median(); // return 1.5 (i.e., (1 + 2) / 2)
-    medianFinder.add_num(3);    // arr = [1, 2, 3]
-    medianFinder.find_median(); // return 2.0
+    MedianFinder median_finder = new MedianFinder();
+    median_finder.add_num(1);    // arr = [1]
+    median_finder.add_num(2);    // arr = [1, 2]
+    median_finder.find_median(); // return 1.5 (i.e., (1 + 2) / 2)
+    median_finder.add_num(3);    // arr = [1, 2, 3]
+    median_finder.find_median(); // return 2.0
 
 Constraints:
 - -10^5 <= num <= 10^5
@@ -91,12 +91,12 @@ class MedianFinder:
 # Tests
 def test():
     # Test 1
-    medianFinder = MedianFinder()
-    medianFinder.add_num(1)
-    medianFinder.add_num(2)
-    assert medianFinder.find_median() == 1.5
-    medianFinder.add_num(3)
-    assert medianFinder.find_median() == 2.0
+    median_finder = MedianFinder()
+    median_finder.add_num(1)
+    median_finder.add_num(2)
+    assert median_finder.find_median() == 1.5
+    median_finder.add_num(3)
+    assert median_finder.find_median() == 2.0
 
     # Test 2
     mf2 = MedianFinder()

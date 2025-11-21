@@ -25,14 +25,14 @@ Example 1:
     [null,null,null,null,-3,null,0,-2]
 
     Explanation:
-    MinStack minStack = new MinStack();
-    minStack.push(-2);
-    minStack.push(0);
-    minStack.push(-3);
-    minStack.get_min(); // return -3
-    minStack.pop();
-    minStack.top();    // return 0
-    minStack.get_min(); // return -2
+    MinStack min_stack = new MinStack();
+    min_stack.push(-2);
+    min_stack.push(0);
+    min_stack.push(-3);
+    min_stack.get_min(); // return -3
+    min_stack.pop();
+    min_stack.top();    // return 0
+    min_stack.get_min(); // return -2
 
 Constraints:
 - -2^31 <= val <= 2^31 - 1
@@ -78,14 +78,14 @@ class MinStack:
 
 # Tests
 def test():
-    minStack = MinStack()
-    minStack.push(-2)
-    minStack.push(0)
-    minStack.push(-3)
-    assert minStack.get_min() == -3
-    minStack.pop()
-    assert minStack.top() == 0
-    assert minStack.get_min() == -2
+    min_stack = MinStack()
+    min_stack.push(-2)
+    min_stack.push(0)
+    min_stack.push(-3)
+    assert min_stack.get_min() == -3
+    min_stack.pop()
+    assert min_stack.top() == 0
+    assert min_stack.get_min() == -2
 
     # Test 2
     stack2 = MinStack()

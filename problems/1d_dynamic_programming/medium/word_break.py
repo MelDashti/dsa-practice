@@ -4,40 +4,40 @@ Difficulty: Medium
 Pattern: 1-D Dynamic Programming
 Companies: Amazon, Google, Facebook, Microsoft, Apple
 
-Given a string s and a dictionary of strings wordDict, return true if s can be
+Given a string s and a dictionary of strings word_dict, return true if s can be
 segmented into a space-separated sequence of one or more dictionary words.
 
 Note that the same word in the dictionary may be reused multiple times in the
 segmentation.
 
 Example 1:
-    Input: s = "leetcode", wordDict = ["leet","code"]
+    Input: s = "leetcode", word_dict = ["leet","code"]
     Output: true
     Explanation: Return true because "leetcode" can be segmented as "leet code".
 
 Example 2:
-    Input: s = "applepenapple", wordDict = ["apple","pen"]
+    Input: s = "applepenapple", word_dict = ["apple","pen"]
     Output: true
     Explanation: Return true because "applepenapple" can be segmented as "apple pen apple".
     Note that you are allowed to reuse a dictionary word.
 
 Example 3:
-    Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
+    Input: s = "catsandog", word_dict = ["cats","dog","sand","and","cat"]
     Output: false
 
 Constraints:
 - 1 <= s.length <= 300
-- 1 <= wordDict.length <= 1000
-- 1 <= wordDict[i].length <= 20
-- s and wordDict[i] consist of only lowercase English letters
-- All the strings of wordDict are unique
+- 1 <= word_dict.length <= 1000
+- 1 <= word_dict[i].length <= 20
+- s and word_dict[i] consist of only lowercase English letters
+- All the strings of word_dict are unique
 
 Approach:
 1. Use dynamic programming with boolean array
 2. dp[i] = true if s[0:i] can be segmented
 3. For each position i, check all previous positions j
-4. If dp[j] is true and s[j:i] is in wordDict, then dp[i] = true
-5. Convert wordDict to set for O(1) lookup
+4. If dp[j] is true and s[j:i] is in word_dict, then dp[i] = true
+5. Convert word_dict to set for O(1) lookup
 6. Base case: dp[0] = true (empty string)
 
 Time: O(n^2 * m) - n^2 substrings, m for substring check
@@ -48,9 +48,9 @@ from typing import List
 
 
 class Solution:
-    def word_break(self, s: str, wordDict: List[str]) -> bool:
+    def word_break(self, s: str, word_dict: List[str]) -> bool:
         # Convert to set for O(1) lookup
-        word_set = set(wordDict)
+        word_set = set(word_dict)
         n = len(s)
 
         # dp[i] represents if s[0:i] can be segmented
