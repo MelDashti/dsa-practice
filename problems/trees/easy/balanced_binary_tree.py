@@ -1,5 +1,6 @@
 """
 PROBLEM: Balanced Binary Tree (LeetCode 110)
+LeetCode: https://leetcode.com/problems/balanced-binary-tree/
 Difficulty: Easy
 Pattern: Trees
 Companies: Amazon, Microsoft, Facebook, Bloomberg

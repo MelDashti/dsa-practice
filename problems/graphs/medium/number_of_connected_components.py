@@ -1,5 +1,6 @@
 """
 PROBLEM: Number of Connected Components in an Undirected Graph (LeetCode 323)
+LeetCode: https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
 Difficulty: Medium
 Pattern: Graphs (Union Find, DFS)
 Companies: Google, Amazon, Facebook, Microsoft, LinkedIn

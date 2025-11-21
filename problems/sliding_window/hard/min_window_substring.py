@@ -1,5 +1,6 @@
 """
-PROBLEM: Minimum Window Substring
+PROBLEM: Minimum Window Substring (LeetCode 76)
+LeetCode: https://leetcode.com/problems/minimum-window-substring/
 Difficulty: Hard
 Pattern: Sliding Window + Hash Map
 Companies: Amazon, Facebook, Google, Microsoft

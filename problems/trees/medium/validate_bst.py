@@ -1,5 +1,6 @@
 """
 PROBLEM: Validate Binary Search Tree (LeetCode 98)
+LeetCode: https://leetcode.com/problems/validate-binary-search-tree/
 Difficulty: Medium
 Pattern: Trees
 Companies: Amazon, Facebook, Microsoft, Google, Bloomberg

@@ -1,5 +1,6 @@
 """
 PROBLEM: Distinct Subsequences (LeetCode 115)
+LeetCode: https://leetcode.com/problems/distinct-subsequences/
 Difficulty: Hard
 Pattern: 2-D Dynamic Programming
 Companies: Amazon, Google, Microsoft, Facebook, Apple

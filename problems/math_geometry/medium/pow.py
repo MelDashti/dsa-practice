@@ -1,5 +1,6 @@
 """
 PROBLEM: Pow(x, n) (LeetCode 50)
+LeetCode: https://leetcode.com/problems/pow-x-n/
 Difficulty: Medium
 Pattern: Math, Recursion, Binary Exponentiation
 Companies: Amazon, Apple, Bloomberg, Facebook, Google, Microsoft

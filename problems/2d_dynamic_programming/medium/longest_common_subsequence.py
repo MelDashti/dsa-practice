@@ -1,5 +1,6 @@
 """
 PROBLEM: Longest Common Subsequence (LeetCode 1143)
+LeetCode: https://leetcode.com/problems/longest-common-subsequence/
 Difficulty: Medium
 Pattern: 2-D Dynamic Programming
 Companies: Amazon, Google, Microsoft, Facebook, Apple

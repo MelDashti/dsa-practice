@@ -1,5 +1,6 @@
 """
 PROBLEM: Palindrome Partitioning (LeetCode 131)
+LeetCode: https://leetcode.com/problems/palindrome-partitioning/
 Difficulty: Medium
 Pattern: Backtracking
 Companies: Amazon, Microsoft, Apple, Facebook, Google

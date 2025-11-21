@@ -1,5 +1,6 @@
 """
 PROBLEM: Longest Consecutive Sequence (LeetCode 128)
+LeetCode: https://leetcode.com/problems/longest-consecutive-sequence/
 Difficulty: Medium
 Pattern: Arrays & Hashing
 Companies: Amazon, Facebook, Google, Microsoft, Apple

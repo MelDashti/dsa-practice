@@ -1,5 +1,6 @@
 """
 PROBLEM: Best Time to Buy and Sell Stock (LeetCode 121)
+LeetCode: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 Difficulty: Easy
 Pattern: Sliding Window, Dynamic Programming
 Companies: Amazon, Facebook, Google, Microsoft, Apple, Bloomberg

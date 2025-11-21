@@ -1,5 +1,6 @@
 """
 PROBLEM: Encode and Decode Strings (LeetCode 271)
+LeetCode: https://leetcode.com/problems/encode-and-decode-strings/
 Difficulty: Medium
 Pattern: Arrays & Hashing, String
 Companies: Google, Facebook, Amazon

@@ -1,5 +1,6 @@
 """
 PROBLEM: Permutations (LeetCode 46)
+LeetCode: https://leetcode.com/problems/permutations/
 Difficulty: Medium
 Pattern: Backtracking
 Companies: Amazon, Microsoft, Apple, Facebook, Google

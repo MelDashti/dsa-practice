@@ -1,5 +1,6 @@
 """
 PROBLEM: Valid Parenthesis String (LeetCode 678)
+LeetCode: https://leetcode.com/problems/valid-parenthesis-string/
 Difficulty: Medium
 Pattern: Greedy, Stack, Dynamic Programming
 Companies: Google, Meta, Amazon, Apple, Microsoft

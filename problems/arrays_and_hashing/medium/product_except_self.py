@@ -1,5 +1,6 @@
 """
 PROBLEM: Product of Array Except Self (LeetCode 238)
+LeetCode: https://leetcode.com/problems/product-of-array-except-self/
 Difficulty: Medium
 Pattern: Arrays & Hashing, Prefix Sum
 Companies: Amazon, Facebook, Google, Microsoft, Apple

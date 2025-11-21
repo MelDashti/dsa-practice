@@ -1,5 +1,6 @@
 """
 PROBLEM: Find the Duplicate Number (LeetCode 287)
+LeetCode: https://leetcode.com/problems/find-the-duplicate-number/
 Difficulty: Medium
 Pattern: Linked List (Floyd's Cycle Detection), Array, Two Pointers
 Companies: Amazon, Microsoft, Apple, Facebook, Google, Bloomberg

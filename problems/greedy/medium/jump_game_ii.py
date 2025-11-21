@@ -1,5 +1,6 @@
 """
 PROBLEM: Jump Game II (LeetCode 45)
+LeetCode: https://leetcode.com/problems/jump-game-ii/
 Difficulty: Medium
 Pattern: Greedy
 Companies: Google, Amazon, Apple, Microsoft, Meta

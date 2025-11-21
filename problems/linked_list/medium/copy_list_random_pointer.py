@@ -1,5 +1,6 @@
 """
 PROBLEM: Copy List with Random Pointer (LeetCode 138)
+LeetCode: https://leetcode.com/problems/copy-list-with-random-pointer/
 Difficulty: Medium
 Pattern: Linked List, Hash Table
 Companies: Amazon, Microsoft, Facebook, Google, Bloomberg

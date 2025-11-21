@@ -1,5 +1,6 @@
 """
 PROBLEM: Interleaving String (LeetCode 97)
+LeetCode: https://leetcode.com/problems/interleaving-string/
 Difficulty: Medium
 Pattern: 2-D Dynamic Programming
 Companies: Amazon, Google, Microsoft, Facebook, Apple

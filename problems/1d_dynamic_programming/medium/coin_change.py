@@ -1,5 +1,6 @@
 """
 PROBLEM: Coin Change (LeetCode 322)
+LeetCode: https://leetcode.com/problems/coin-change/
 Difficulty: Medium
 Pattern: 1-D Dynamic Programming
 Companies: Amazon, Google, Microsoft, Facebook, Apple

@@ -1,5 +1,6 @@
 """
 PROBLEM: Partition Equal Subset Sum (LeetCode 416)
+LeetCode: https://leetcode.com/problems/partition-equal-subset-sum/
 Difficulty: Medium
 Pattern: 1-D Dynamic Programming
 Companies: Amazon, Facebook, Google, Microsoft, Apple

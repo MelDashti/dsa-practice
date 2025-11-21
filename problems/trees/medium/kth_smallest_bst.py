@@ -1,5 +1,6 @@
 """
 PROBLEM: Kth Smallest Element in a BST (LeetCode 230)
+LeetCode: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 Difficulty: Medium
 Pattern: Trees
 Companies: Amazon, Microsoft, Facebook, Google, Bloomberg

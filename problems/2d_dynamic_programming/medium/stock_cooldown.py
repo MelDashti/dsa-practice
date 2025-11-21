@@ -1,5 +1,6 @@
 """
 PROBLEM: Best Time to Buy and Sell Stock with Cooldown (LeetCode 309)
+LeetCode: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 Difficulty: Medium
 Pattern: 2-D Dynamic Programming
 Companies: Amazon, Google, Microsoft, Facebook, Apple

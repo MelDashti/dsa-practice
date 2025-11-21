@@ -1,5 +1,6 @@
 """
 PROBLEM: Rotting Oranges (LeetCode 994)
+LeetCode: https://leetcode.com/problems/rotting-oranges/
 Difficulty: Medium
 Pattern: Graphs (BFS)
 Companies: Amazon, Microsoft, Bloomberg, Facebook, Google

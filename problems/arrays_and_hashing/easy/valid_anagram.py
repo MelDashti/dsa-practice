@@ -1,5 +1,6 @@
 """
 PROBLEM: Valid Anagram (LeetCode 242)
+LeetCode: https://leetcode.com/problems/valid-anagram/
 Difficulty: Easy
 Pattern: Arrays & Hashing
 

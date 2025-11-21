@@ -1,5 +1,6 @@
 """
 PROBLEM: Merge Triplets to Form Target Triplet (LeetCode 1899)
+LeetCode: https://leetcode.com/problems/merge-triplets-to-form-target-triplet/
 Difficulty: Medium
 Pattern: Greedy
 Companies: Google, Meta, Amazon

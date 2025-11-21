@@ -1,5 +1,6 @@
 """
 PROBLEM: Koko Eating Bananas (LeetCode 875)
+LeetCode: https://leetcode.com/problems/koko-eating-bananas/
 Difficulty: Medium
 Pattern: Binary Search
 Companies: Amazon, Google, Facebook, Bloomberg

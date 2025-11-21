@@ -1,5 +1,6 @@
 """
 PROBLEM: Hand of Straights (LeetCode 846)
+LeetCode: https://leetcode.com/problems/hand-of-straights/
 Difficulty: Medium
 Pattern: Greedy, Sorting
 Companies: Google, Meta, Amazon

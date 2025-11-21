@@ -1,5 +1,6 @@
 """
 PROBLEM: Maximum Depth of Binary Tree (LeetCode 104)
+LeetCode: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 Difficulty: Easy
 Pattern: Trees
 Companies: Amazon, Microsoft, Facebook, Google, Apple

@@ -1,5 +1,6 @@
 """
 PROBLEM: Word Search (LeetCode 79)
+LeetCode: https://leetcode.com/problems/word-search/
 Difficulty: Medium
 Pattern: Backtracking
 Companies: Amazon, Microsoft, Facebook, Apple, Google

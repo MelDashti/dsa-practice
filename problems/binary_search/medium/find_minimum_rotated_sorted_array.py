@@ -1,5 +1,6 @@
 """
 PROBLEM: Find Minimum in Rotated Sorted Array (LeetCode 153)
+LeetCode: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 Difficulty: Medium
 Pattern: Binary Search
 Companies: Amazon, Microsoft, Facebook, Google, Bloomberg

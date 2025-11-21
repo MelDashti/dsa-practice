@@ -1,5 +1,6 @@
 """
 PROBLEM: Single Number (LeetCode 136)
+LeetCode: https://leetcode.com/problems/single-number/
 Difficulty: Easy
 Pattern: Bit Manipulation
 Companies: Amazon, Apple, Google, Facebook, Microsoft

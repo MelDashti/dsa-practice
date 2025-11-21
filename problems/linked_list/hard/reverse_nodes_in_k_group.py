@@ -1,5 +1,6 @@
 """
 PROBLEM: Reverse Nodes in k-Group (LeetCode 25)
+LeetCode: https://leetcode.com/problems/reverse-nodes-in-k-group/
 Difficulty: Hard
 Pattern: Linked List
 Companies: Amazon, Microsoft, Apple, Facebook, Google, Bloomberg

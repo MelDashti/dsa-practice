@@ -1,5 +1,6 @@
 """
 PROBLEM: Kth Largest Element in a Stream (LeetCode 703)
+LeetCode: https://leetcode.com/problems/kth-largest-element-in-a-stream/
 Difficulty: Easy
 Pattern: Heap, Design
 Companies: Amazon, Facebook, Google, Microsoft

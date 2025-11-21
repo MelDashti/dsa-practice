@@ -1,5 +1,6 @@
 """
 PROBLEM: Find Median from Data Stream (LeetCode 295)
+LeetCode: https://leetcode.com/problems/find-median-from-data-stream/
 Difficulty: Hard
 Pattern: Heap, Design
 Companies: Amazon, Google, Facebook, Microsoft, Apple, Bloomberg

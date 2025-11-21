@@ -1,5 +1,6 @@
 """
 PROBLEM: Top K Frequent Elements (LeetCode 347)
+LeetCode: https://leetcode.com/problems/top-k-frequent-elements/
 Difficulty: Medium
 Pattern: Arrays & Hashing, Heap
 Companies: Amazon, Facebook, Google, Microsoft, Apple

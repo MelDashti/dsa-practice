@@ -1,5 +1,6 @@
 """
 PROBLEM: Detect Squares (LeetCode 2013)
+LeetCode: https://leetcode.com/problems/detect-squares/
 Difficulty: Medium
 Pattern: Hash Map, Geometry, Counting
 Companies: Amazon, Google, TikTok

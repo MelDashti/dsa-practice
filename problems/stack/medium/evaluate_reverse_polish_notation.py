@@ -1,5 +1,6 @@
 """
 PROBLEM: Evaluate Reverse Polish Notation (LeetCode 150)
+LeetCode: https://leetcode.com/problems/evaluate-reverse-polish-notation/
 Difficulty: Medium
 Pattern: Stack
 Companies: Amazon, Facebook, Bloomberg, LinkedIn, Google

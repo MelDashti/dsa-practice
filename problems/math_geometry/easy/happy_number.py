@@ -1,5 +1,6 @@
 """
 PROBLEM: Happy Number (LeetCode 202)
+LeetCode: https://leetcode.com/problems/happy-number/
 Difficulty: Easy
 Pattern: Hash Set, Cycle Detection, Math
 Companies: Amazon, Airbnb, LinkedIn, Uber

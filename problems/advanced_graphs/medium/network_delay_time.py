@@ -1,5 +1,6 @@
 """
 PROBLEM: Network Delay Time (LeetCode 743)
+LeetCode: https://leetcode.com/problems/network-delay-time/
 Difficulty: Medium
 Pattern: Advanced Graphs, Dijkstra's Algorithm, Shortest Path
 Companies: Amazon, Google, Microsoft, Facebook, Bloomberg

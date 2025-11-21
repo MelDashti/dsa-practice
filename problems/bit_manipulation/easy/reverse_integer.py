@@ -1,5 +1,6 @@
 """
 PROBLEM: Reverse Integer (LeetCode 7)
+LeetCode: https://leetcode.com/problems/reverse-integer/
 Difficulty: Medium
 Pattern: Math, Bit Manipulation
 Companies: Apple, Amazon, Google, Facebook, Microsoft, Bloomberg

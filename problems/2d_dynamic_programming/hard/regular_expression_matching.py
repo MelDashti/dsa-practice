@@ -1,5 +1,6 @@
 """
 PROBLEM: Regular Expression Matching (LeetCode 10)
+LeetCode: https://leetcode.com/problems/regular-expression-matching/
 Difficulty: Hard
 Pattern: 2-D Dynamic Programming
 Companies: Amazon, Google, Microsoft, Facebook, Apple

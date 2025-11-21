@@ -1,5 +1,6 @@
 """
 PROBLEM: Longest Substring Without Repeating Characters (LeetCode 3)
+LeetCode: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 Difficulty: Medium
 Pattern: Sliding Window, Hash Map
 Companies: Amazon, Facebook, Google, Microsoft, Apple, Bloomberg

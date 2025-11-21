@@ -1,5 +1,6 @@
 """
 PROBLEM: Longest Palindromic Substring (LeetCode 5)
+LeetCode: https://leetcode.com/problems/longest-palindromic-substring/
 Difficulty: Medium
 Pattern: 1-D Dynamic Programming
 Companies: Amazon, Microsoft, Apple, Facebook, Google

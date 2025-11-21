@@ -1,5 +1,6 @@
 """
 PROBLEM: Reverse Bits (LeetCode 190)
+LeetCode: https://leetcode.com/problems/reverse-bits/
 Difficulty: Easy
 Pattern: Bit Manipulation
 Companies: Adobe, Apple, Google

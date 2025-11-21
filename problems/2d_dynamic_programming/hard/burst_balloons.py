@@ -1,5 +1,6 @@
 """
 PROBLEM: Burst Balloons (LeetCode 312)
+LeetCode: https://leetcode.com/problems/burst-balloons/
 Difficulty: Hard
 Pattern: 2-D Dynamic Programming
 Companies: Amazon, Google, Microsoft, Facebook, Apple

@@ -1,5 +1,6 @@
 """
 PROBLEM: Group Anagrams (LeetCode 49)
+LeetCode: https://leetcode.com/problems/group-anagrams/
 Difficulty: Medium
 Pattern: Arrays & Hashing
 Companies: Amazon, Facebook, Google, Microsoft, Uber

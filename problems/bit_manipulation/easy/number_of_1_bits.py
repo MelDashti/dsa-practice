@@ -1,5 +1,6 @@
 """
 PROBLEM: Number of 1 Bits (LeetCode 191)
+LeetCode: https://leetcode.com/problems/number-of-1-bits/
 Difficulty: Easy
 Pattern: Bit Manipulation
 Companies: Apple, Amazon, Adobe

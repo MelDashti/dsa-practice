@@ -1,5 +1,6 @@
 """
 PROBLEM: Longest Repeating Character Replacement (LeetCode 424)
+LeetCode: https://leetcode.com/problems/longest-repeating-character-replacement/
 Difficulty: Medium
 Pattern: Sliding Window
 Companies: Amazon, Google, Microsoft, Facebook

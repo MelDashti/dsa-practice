@@ -1,5 +1,6 @@
 """
 PROBLEM: Diameter of Binary Tree (LeetCode 543)
+LeetCode: https://leetcode.com/problems/diameter-of-binary-tree/
 Difficulty: Easy
 Pattern: Trees
 Companies: Facebook, Amazon, Microsoft, Google, Apple

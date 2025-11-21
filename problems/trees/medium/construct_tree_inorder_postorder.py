@@ -1,5 +1,6 @@
 """
 PROBLEM: Construct Binary Tree from Inorder and Postorder Traversal (LeetCode 106)
+LeetCode: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 Difficulty: Medium
 Pattern: Trees
 Companies: Amazon, Microsoft, Facebook, Google

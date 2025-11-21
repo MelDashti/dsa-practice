@@ -1,5 +1,6 @@
 """
 PROBLEM: K Closest Points to Origin (LeetCode 973)
+LeetCode: https://leetcode.com/problems/k-closest-points-to-origin/
 Difficulty: Medium
 Pattern: Heap, Divide and Conquer
 Companies: Amazon, Facebook, Google, Microsoft, Apple, Bloomberg

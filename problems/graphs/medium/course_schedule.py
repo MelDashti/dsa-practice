@@ -1,5 +1,6 @@
 """
 PROBLEM: Course Schedule (LeetCode 207)
+LeetCode: https://leetcode.com/problems/course-schedule/
 Difficulty: Medium
 Pattern: Graphs (Topological Sort, Cycle Detection)
 Companies: Amazon, Facebook, Google, Microsoft, Bloomberg

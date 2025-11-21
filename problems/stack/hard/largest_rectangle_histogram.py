@@ -1,5 +1,6 @@
 """
 PROBLEM: Largest Rectangle in Histogram (LeetCode 84)
+LeetCode: https://leetcode.com/problems/largest-rectangle-in-histogram/
 Difficulty: Hard
 Pattern: Stack, Monotonic Stack
 Companies: Amazon, Google, Facebook, Microsoft, Bloomberg

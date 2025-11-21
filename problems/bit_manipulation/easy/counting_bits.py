@@ -1,5 +1,6 @@
 """
 PROBLEM: Counting Bits (LeetCode 338)
+LeetCode: https://leetcode.com/problems/counting-bits/
 Difficulty: Easy
 Pattern: Bit Manipulation, Dynamic Programming
 Companies: Adobe, Google, Facebook, Apple

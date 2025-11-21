@@ -1,5 +1,6 @@
 """
 PROBLEM: Permutation in String (LeetCode 567)
+LeetCode: https://leetcode.com/problems/permutation-in-string/
 Difficulty: Medium
 Pattern: Sliding Window, Hash Map
 Companies: Amazon, Facebook, Google, Microsoft

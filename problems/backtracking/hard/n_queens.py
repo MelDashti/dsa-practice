@@ -1,5 +1,6 @@
 """
 PROBLEM: N-Queens (LeetCode 51)
+LeetCode: https://leetcode.com/problems/n-queens/
 Difficulty: Hard
 Pattern: Backtracking
 Companies: Amazon, Microsoft, Facebook, Apple, Google

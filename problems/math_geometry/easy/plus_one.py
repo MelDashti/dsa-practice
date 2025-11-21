@@ -1,5 +1,6 @@
 """
 PROBLEM: Plus One (LeetCode 66)
+LeetCode: https://leetcode.com/problems/plus-one/
 Difficulty: Easy
 Pattern: Array, Math, Simulation
 Companies: Amazon, Apple, Facebook, Google, Microsoft

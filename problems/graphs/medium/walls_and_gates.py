@@ -1,5 +1,6 @@
 """
 PROBLEM: Walls and Gates (LeetCode 286)
+LeetCode: https://leetcode.com/problems/walls-and-gates/
 Difficulty: Medium
 Pattern: Graphs (BFS)
 Companies: Google, Facebook, Amazon, Microsoft

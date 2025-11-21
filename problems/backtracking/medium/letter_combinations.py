@@ -1,5 +1,6 @@
 """
 PROBLEM: Letter Combinations of a Phone Number (LeetCode 17)
+LeetCode: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 Difficulty: Medium
 Pattern: Backtracking
 Companies: Amazon, Facebook, Microsoft, Apple, Google

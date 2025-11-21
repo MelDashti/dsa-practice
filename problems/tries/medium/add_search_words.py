@@ -1,5 +1,6 @@
 """
 PROBLEM: Design Add and Search Words Data Structure (211)
+LeetCode: https://leetcode.com/problems/design-add-and-search-words-data-structure/
 Difficulty: Medium
 Pattern: Tries/Prefix Trees
 

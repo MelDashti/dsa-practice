@@ -1,5 +1,6 @@
 """
 PROBLEM: Target Sum (LeetCode 494)
+LeetCode: https://leetcode.com/problems/target-sum/
 Difficulty: Medium
 Pattern: 2-D Dynamic Programming
 Companies: Amazon, Google, Microsoft, Facebook, Apple

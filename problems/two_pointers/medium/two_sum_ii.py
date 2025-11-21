@@ -1,5 +1,6 @@
 """
 PROBLEM: Two Sum II - Input Array Is Sorted (LeetCode 167)
+LeetCode: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 Difficulty: Medium
 Pattern: Two Pointers
 Companies: Amazon, Facebook, Google, Microsoft, Apple

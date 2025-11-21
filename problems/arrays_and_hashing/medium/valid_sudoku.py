@@ -1,5 +1,6 @@
 """
 PROBLEM: Valid Sudoku (LeetCode 36)
+LeetCode: https://leetcode.com/problems/valid-sudoku/
 Difficulty: Medium
 Pattern: Arrays & Hashing
 Companies: Amazon, Apple, Google, Microsoft, Uber

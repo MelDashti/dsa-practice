@@ -1,5 +1,6 @@
 """
 PROBLEM: Graph Valid Tree (LeetCode 261)
+LeetCode: https://leetcode.com/problems/graph-valid-tree/
 Difficulty: Medium
 Pattern: Graphs (Union Find, DFS)
 Companies: Google, Facebook, Amazon, Microsoft, LinkedIn

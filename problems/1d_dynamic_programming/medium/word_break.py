@@ -1,5 +1,6 @@
 """
 PROBLEM: Word Break (LeetCode 139)
+LeetCode: https://leetcode.com/problems/word-break/
 Difficulty: Medium
 Pattern: 1-D Dynamic Programming
 Companies: Amazon, Google, Facebook, Microsoft, Apple

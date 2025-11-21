@@ -1,5 +1,6 @@
 """
 PROBLEM: Linked List Cycle (LeetCode 141)
+LeetCode: https://leetcode.com/problems/linked-list-cycle/
 Difficulty: Easy
 Pattern: Linked List, Two Pointers
 Companies: Amazon, Microsoft, Apple, Facebook, Google, Bloomberg

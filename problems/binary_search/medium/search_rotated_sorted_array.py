@@ -1,5 +1,6 @@
 """
 PROBLEM: Search in Rotated Sorted Array (LeetCode 33)
+LeetCode: https://leetcode.com/problems/search-in-rotated-sorted-array/
 Difficulty: Medium
 Pattern: Binary Search
 Companies: Amazon, Microsoft, Facebook, Google, Apple

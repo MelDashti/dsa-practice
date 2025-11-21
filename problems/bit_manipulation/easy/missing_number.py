@@ -1,5 +1,6 @@
 """
 PROBLEM: Missing Number (LeetCode 268)
+LeetCode: https://leetcode.com/problems/missing-number/
 Difficulty: Easy
 Pattern: Bit Manipulation, Array, Math
 Companies: Amazon, Apple, Google, Facebook, LinkedIn

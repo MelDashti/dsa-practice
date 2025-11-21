@@ -1,5 +1,6 @@
 """
 PROBLEM: Redundant Connection (LeetCode 684)
+LeetCode: https://leetcode.com/problems/redundant-connection/
 Difficulty: Medium
 Pattern: Graphs (Union Find)
 Companies: Amazon, Google, Microsoft, Facebook

@@ -1,5 +1,6 @@
 """
 PROBLEM: Gas Station (LeetCode 134)
+LeetCode: https://leetcode.com/problems/gas-station/
 Difficulty: Medium
 Pattern: Greedy
 Companies: Google, Meta, Amazon, Uber

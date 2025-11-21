@@ -1,5 +1,6 @@
 """
 PROBLEM: Longest Increasing Path in a Matrix (LeetCode 329)
+LeetCode: https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
 Difficulty: Hard
 Pattern: 2-D Dynamic Programming
 Companies: Amazon, Google, Microsoft, Facebook, Apple

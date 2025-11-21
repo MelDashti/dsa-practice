@@ -1,5 +1,6 @@
 """
 PROBLEM: Min Stack (LeetCode 155)
+LeetCode: https://leetcode.com/problems/min-stack/
 Difficulty: Medium
 Pattern: Stack, Design
 Companies: Amazon, Google, Bloomberg, Microsoft, Apple

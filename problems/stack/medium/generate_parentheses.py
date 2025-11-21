@@ -1,5 +1,6 @@
 """
 PROBLEM: Generate Parentheses (LeetCode 22)
+LeetCode: https://leetcode.com/problems/generate-parentheses/
 Difficulty: Medium
 Pattern: Stack, Backtracking
 Companies: Amazon, Facebook, Google, Microsoft, Bloomberg

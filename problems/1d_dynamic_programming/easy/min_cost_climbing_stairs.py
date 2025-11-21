@@ -1,5 +1,6 @@
 """
 PROBLEM: Min Cost Climbing Stairs (LeetCode 746)
+LeetCode: https://leetcode.com/problems/min-cost-climbing-stairs/
 Difficulty: Easy
 Pattern: 1-D Dynamic Programming
 Companies: Amazon, Google, Apple, Microsoft, Facebook

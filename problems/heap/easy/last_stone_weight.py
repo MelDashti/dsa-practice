@@ -1,5 +1,6 @@
 """
 PROBLEM: Last Stone Weight (LeetCode 1046)
+LeetCode: https://leetcode.com/problems/last-stone-weight/
 Difficulty: Easy
 Pattern: Heap
 Companies: Amazon, Microsoft, Apple

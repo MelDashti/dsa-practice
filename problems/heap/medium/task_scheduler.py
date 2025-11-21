@@ -1,5 +1,6 @@
 """
 PROBLEM: Task Scheduler (LeetCode 621)
+LeetCode: https://leetcode.com/problems/task-scheduler/
 Difficulty: Medium
 Pattern: Heap, Greedy, Queue
 Companies: Amazon, Facebook, Google, Microsoft, Bloomberg

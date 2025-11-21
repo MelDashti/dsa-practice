@@ -1,5 +1,6 @@
 """
 PROBLEM: Jump Game (LeetCode 55)
+LeetCode: https://leetcode.com/problems/jump-game/
 Difficulty: Medium
 Pattern: Greedy, Dynamic Programming
 Companies: Google, Amazon, Microsoft, Apple, Meta

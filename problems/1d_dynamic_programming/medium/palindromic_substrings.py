@@ -1,5 +1,6 @@
 """
 PROBLEM: Palindromic Substrings (LeetCode 647)
+LeetCode: https://leetcode.com/problems/palindromic-substrings/
 Difficulty: Medium
 Pattern: 1-D Dynamic Programming
 Companies: Amazon, Facebook, Google, Microsoft, Apple

@@ -1,5 +1,6 @@
 """
 PROBLEM: 3Sum (LeetCode 15)
+LeetCode: https://leetcode.com/problems/3sum/
 Difficulty: Medium
 Pattern: Two Pointers
 Companies: Amazon, Facebook, Google, Microsoft, Apple, Bloomberg

@@ -1,5 +1,6 @@
 """
 PROBLEM: Maximum Product Subarray (LeetCode 152)
+LeetCode: https://leetcode.com/problems/maximum-product-subarray/
 Difficulty: Medium
 Pattern: 1-D Dynamic Programming
 Companies: Amazon, Microsoft, Apple, Facebook, Google

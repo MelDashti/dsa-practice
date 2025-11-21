@@ -1,5 +1,6 @@
 """
 PROBLEM: House Robber (LeetCode 198)
+LeetCode: https://leetcode.com/problems/house-robber/
 Difficulty: Medium
 Pattern: 1-D Dynamic Programming
 Companies: Amazon, Google, Apple, Microsoft, Facebook

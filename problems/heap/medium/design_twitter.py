@@ -1,5 +1,6 @@
 """
 PROBLEM: Design Twitter (LeetCode 355)
+LeetCode: https://leetcode.com/problems/design-twitter/
 Difficulty: Medium
 Pattern: Heap, Hash Table, Design
 Companies: Amazon, Twitter, Google, Facebook

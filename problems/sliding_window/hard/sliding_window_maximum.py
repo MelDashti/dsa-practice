@@ -1,5 +1,6 @@
 """
 PROBLEM: Sliding Window Maximum (LeetCode 239)
+LeetCode: https://leetcode.com/problems/sliding-window-maximum/
 Difficulty: Hard
 Pattern: Sliding Window, Deque, Monotonic Queue
 Companies: Amazon, Google, Facebook, Microsoft, Apple

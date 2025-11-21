@@ -1,5 +1,6 @@
 """
 PROBLEM: Number of Islands (LeetCode 200)
+LeetCode: https://leetcode.com/problems/number-of-islands/
 Difficulty: Medium
 Pattern: Graphs (DFS/BFS)
 Companies: Amazon, Facebook, Google, Microsoft, Bloomberg

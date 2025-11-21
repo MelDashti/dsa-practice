@@ -1,5 +1,6 @@
 """
 PROBLEM: Maximum Subarray (LeetCode 53)
+LeetCode: https://leetcode.com/problems/maximum-subarray/
 Difficulty: Medium
 Pattern: Greedy, Dynamic Programming
 Companies: Amazon, Microsoft, Apple, Adobe, Google

@@ -1,5 +1,6 @@
 """
 PROBLEM: Contains Duplicate (LeetCode 217)
+LeetCode: https://leetcode.com/problems/contains-duplicate/
 Difficulty: Easy
 Pattern: Arrays & Hashing
 

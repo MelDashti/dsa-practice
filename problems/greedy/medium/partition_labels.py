@@ -1,5 +1,6 @@
 """
 PROBLEM: Partition Labels (LeetCode 763)
+LeetCode: https://leetcode.com/problems/partition-labels/
 Difficulty: Medium
 Pattern: Greedy, String
 Companies: Amazon, Google, Meta, Apple, Microsoft

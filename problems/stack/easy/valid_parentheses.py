@@ -1,5 +1,6 @@
 """
 PROBLEM: Valid Parentheses (LeetCode 20)
+LeetCode: https://leetcode.com/problems/valid-parentheses/
 Difficulty: Easy
 Pattern: Stack
 Companies: Amazon, Facebook, Microsoft, Google, Bloomberg

@@ -1,5 +1,6 @@
 """
 PROBLEM: Count Good Nodes in Binary Tree (LeetCode 1448)
+LeetCode: https://leetcode.com/problems/count-good-nodes-in-binary-tree/
 Difficulty: Medium
 Pattern: Trees
 Companies: Amazon, Microsoft, Facebook

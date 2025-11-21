@@ -1,5 +1,6 @@
 """
 PROBLEM: Multiply Strings (LeetCode 43)
+LeetCode: https://leetcode.com/problems/multiply-strings/
 Difficulty: Medium
 Pattern: String, Math, Simulation
 Companies: Amazon, Apple, Bloomberg, Facebook, Google, Microsoft, Snapchat

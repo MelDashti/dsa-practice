@@ -1,5 +1,6 @@
 """
 PROBLEM: Cheapest Flights Within K Stops (LeetCode 787)
+LeetCode: https://leetcode.com/problems/cheapest-flights-within-k-stops/
 Difficulty: Medium
 Pattern: Advanced Graphs, BFS, Modified Dijkstra, Bellman-Ford
 Companies: Amazon, Google, Facebook, Microsoft, Uber

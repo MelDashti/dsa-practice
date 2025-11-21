@@ -1,5 +1,6 @@
 """
 PROBLEM: Binary Search (LeetCode 704)
+LeetCode: https://leetcode.com/problems/binary-search/
 Difficulty: Easy
 Pattern: Binary Search
 Companies: Amazon, Microsoft, Google, Facebook, Apple

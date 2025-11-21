@@ -1,5 +1,6 @@
 """
 PROBLEM: Swim in Rising Water (LeetCode 778)
+LeetCode: https://leetcode.com/problems/swim-in-rising-water/
 Difficulty: Hard
 Pattern: Advanced Graphs, Binary Search, BFS/DFS, Modified Dijkstra
 Companies: Google, Amazon, Facebook, Microsoft

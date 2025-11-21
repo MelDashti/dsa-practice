@@ -1,5 +1,6 @@
 """
 PROBLEM: Trapping Rain Water (LeetCode 42)
+LeetCode: https://leetcode.com/problems/trapping-rain-water/
 Difficulty: Hard
 Pattern: Two Pointers, Dynamic Programming
 Companies: Amazon, Facebook, Google, Microsoft, Apple, Bloomberg

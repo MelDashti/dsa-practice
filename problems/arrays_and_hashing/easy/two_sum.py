@@ -1,5 +1,6 @@
 """
 PROBLEM: Two Sum (LeetCode 1)
+LeetCode: https://leetcode.com/problems/two-sum/
 Difficulty: Easy
 Pattern: Arrays & Hashing
 Companies: Amazon, Apple, Google, Facebook, Microsoft

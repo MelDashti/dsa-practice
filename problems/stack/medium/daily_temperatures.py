@@ -1,5 +1,6 @@
 """
 PROBLEM: Daily Temperatures (LeetCode 739)
+LeetCode: https://leetcode.com/problems/daily-temperatures/
 Difficulty: Medium
 Pattern: Stack, Monotonic Stack
 Companies: Amazon, Google, Facebook, Bloomberg, Microsoft

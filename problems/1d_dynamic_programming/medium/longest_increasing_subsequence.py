@@ -1,5 +1,6 @@
 """
 PROBLEM: Longest Increasing Subsequence (LeetCode 300)
+LeetCode: https://leetcode.com/problems/longest-increasing-subsequence/
 Difficulty: Medium
 Pattern: 1-D Dynamic Programming
 Companies: Amazon, Microsoft, Google, Facebook, Apple
