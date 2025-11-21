@@ -50,7 +50,7 @@ from typing import List
 
 
 class Solution:
-    def findDuplicate(self, nums: List[int]) -> int:
+    def find_duplicate(self, nums: List[int]) -> int:
         # Phase 1: Find intersection point in the cycle
         slow = nums[0]
         fast = nums[0]
@@ -74,10 +74,10 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.findDuplicate([1,3,4,2,2]) == 2
-    assert sol.findDuplicate([3,1,3,4,2]) == 3
-    assert sol.findDuplicate([3,3,3,3,3]) == 3
-    assert sol.findDuplicate([2,5,9,6,9,3,8,9,7,1,4]) == 9
+    assert sol.find_duplicate([1,3,4,2,2]) == 2
+    assert sol.find_duplicate([3,1,3,4,2]) == 3
+    assert sol.find_duplicate([3,3,3,3,3]) == 3
+    assert sol.find_duplicate([2,5,9,6,9,3,8,9,7,1,4]) == 9
 
     print("✓ All tests passed")
 

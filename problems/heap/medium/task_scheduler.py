@@ -64,7 +64,7 @@ from collections import Counter, deque
 
 
 class Solution:
-    def leastInterval(self, tasks: list[str], n: int) -> int:
+    def least_interval(self, tasks: list[str], n: int) -> int:
         # Count frequency of each task
         count = Counter(tasks)
 
@@ -96,19 +96,19 @@ def test():
     sol = Solution()
 
     # Test 1
-    assert sol.leastInterval(["A", "A", "A", "B", "B", "B"], 2) == 8
+    assert sol.least_interval(["A", "A", "A", "B", "B", "B"], 2) == 8
 
     # Test 2
-    assert sol.leastInterval(["A", "A", "A", "B", "B", "B"], 0) == 6
+    assert sol.least_interval(["A", "A", "A", "B", "B", "B"], 0) == 6
 
     # Test 3
-    assert sol.leastInterval(["A", "A", "A", "A", "A", "A", "B", "C", "D", "E", "F", "G"], 2) == 16
+    assert sol.least_interval(["A", "A", "A", "A", "A", "A", "B", "C", "D", "E", "F", "G"], 2) == 16
 
     # Test 4
-    assert sol.leastInterval(["A", "A", "A", "B", "B", "B"], 3) == 10
+    assert sol.least_interval(["A", "A", "A", "B", "B", "B"], 3) == 10
 
     # Test 5
-    assert sol.leastInterval(["A", "B", "C", "D", "E", "F"], 2) == 6
+    assert sol.least_interval(["A", "B", "C", "D", "E", "F"], 2) == 6
 
     print("✓ All tests passed")
 

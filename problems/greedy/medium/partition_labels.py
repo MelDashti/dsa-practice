@@ -40,7 +40,7 @@ from typing import List
 
 
 class Solution:
-    def partitionLabels(self, s: str) -> List[int]:
+    def partition_labels(self, s: str) -> List[int]:
         """
         Partition string so each character appears in at most one part.
 
@@ -74,12 +74,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.partitionLabels("ababcbacaddefegdehijhklij") == [9, 8, 8]
-    assert sol.partitionLabels("eccbbcb") == [1, 6]
-    assert sol.partitionLabels("a") == [1]
-    assert sol.partitionLabels("abba") == [4]
-    assert sol.partitionLabels("abc") == [1, 1, 1]
-    assert sol.partitionLabels("aaabbbccc") == [3, 3, 3]
+    assert sol.partition_labels("ababcbacaddefegdehijhklij") == [9, 8, 8]
+    assert sol.partition_labels("eccbbcb") == [1, 6]
+    assert sol.partition_labels("a") == [1]
+    assert sol.partition_labels("abba") == [4]
+    assert sol.partition_labels("abc") == [1, 1, 1]
+    assert sol.partition_labels("aaabbbccc") == [3, 3, 3]
 
     print("✓ All tests passed")
 

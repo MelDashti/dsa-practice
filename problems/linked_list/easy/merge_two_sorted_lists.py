@@ -51,7 +51,7 @@ class ListNode:
 
 
 class Solution:
-    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+    def merge_two_lists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode(0)
         current = dummy
 
@@ -100,19 +100,19 @@ def test():
     # Test 1
     list1 = create_list([1,2,4])
     list2 = create_list([1,3,4])
-    result1 = sol.mergeTwoLists(list1, list2)
+    result1 = sol.merge_two_lists(list1, list2)
     assert list_to_array(result1) == [1,1,2,3,4,4]
 
     # Test 2
     list3 = create_list([])
     list4 = create_list([])
-    result2 = sol.mergeTwoLists(list3, list4)
+    result2 = sol.merge_two_lists(list3, list4)
     assert list_to_array(result2) == []
 
     # Test 3
     list5 = create_list([])
     list6 = create_list([0])
-    result3 = sol.mergeTwoLists(list5, list6)
+    result3 = sol.merge_two_lists(list5, list6)
     assert list_to_array(result3) == [0]
 
     print("✓ All tests passed")

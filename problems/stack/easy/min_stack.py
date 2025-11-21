@@ -12,7 +12,7 @@ Implement the MinStack class:
 - void push(int val) pushes the element val onto the stack.
 - void pop() removes the element on the top of the stack.
 - int top() gets the top element of the stack.
-- int getMin() retrieves the minimum element in the stack.
+- int get_min() retrieves the minimum element in the stack.
 
 You must implement a solution with O(1) time complexity for each function.
 
@@ -29,10 +29,10 @@ Example 1:
     minStack.push(-2);
     minStack.push(0);
     minStack.push(-3);
-    minStack.getMin(); // return -3
+    minStack.get_min(); // return -3
     minStack.pop();
     minStack.top();    // return 0
-    minStack.getMin(); // return -2
+    minStack.get_min(); // return -2
 
 Constraints:
 - -2^31 <= val <= 2^31 - 1
@@ -72,7 +72,7 @@ class MinStack:
     def top(self) -> int:
         return self.stack[-1]
 
-    def getMin(self) -> int:
+    def get_min(self) -> int:
         return self.min_stack[-1]
 
 
@@ -82,22 +82,22 @@ def test():
     minStack.push(-2)
     minStack.push(0)
     minStack.push(-3)
-    assert minStack.getMin() == -3
+    assert minStack.get_min() == -3
     minStack.pop()
     assert minStack.top() == 0
-    assert minStack.getMin() == -2
+    assert minStack.get_min() == -2
 
     # Test 2
     stack2 = MinStack()
     stack2.push(5)
     stack2.push(1)
     stack2.push(3)
-    assert stack2.getMin() == 1
+    assert stack2.get_min() == 1
     assert stack2.top() == 3
     stack2.pop()
-    assert stack2.getMin() == 1
+    assert stack2.get_min() == 1
     stack2.pop()
-    assert stack2.getMin() == 5
+    assert stack2.get_min() == 5
 
     print("✓ All tests passed")
 

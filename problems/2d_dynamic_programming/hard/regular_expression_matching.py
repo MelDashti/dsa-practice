@@ -54,7 +54,7 @@ Space: O(m * n) - DP table
 
 
 class Solution:
-    def isMatch(self, s: str, p: str) -> bool:
+    def is_match(self, s: str, p: str) -> bool:
         m, n = len(s), len(p)
 
         # dp[i][j] = whether s[0:i] matches p[0:j]
@@ -90,14 +90,14 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.isMatch("aa", "a") == False
-    assert sol.isMatch("aa", "a*") == True
-    assert sol.isMatch("ab", ".*") == True
-    assert sol.isMatch("aab", "c*a*b") == True
-    assert sol.isMatch("mississippi", "mis*is*p*.") == False
-    assert sol.isMatch("", "") == True
-    assert sol.isMatch("", "a*") == True
-    assert sol.isMatch("a", "ab*") == True
+    assert sol.is_match("aa", "a") == False
+    assert sol.is_match("aa", "a*") == True
+    assert sol.is_match("ab", ".*") == True
+    assert sol.is_match("aab", "c*a*b") == True
+    assert sol.is_match("mississippi", "mis*is*p*.") == False
+    assert sol.is_match("", "") == True
+    assert sol.is_match("", "a*") == True
+    assert sol.is_match("a", "ab*") == True
 
     print("✓ All tests passed")
 

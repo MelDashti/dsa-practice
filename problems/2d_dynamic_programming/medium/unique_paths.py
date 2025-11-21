@@ -43,7 +43,7 @@ Space: O(n) - only store one row
 
 
 class Solution:
-    def uniquePaths(self, m: int, n: int) -> int:
+    def unique_paths(self, m: int, n: int) -> int:
         # Use single row for space optimization
         dp = [1] * n
 
@@ -60,11 +60,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.uniquePaths(3, 7) == 28
-    assert sol.uniquePaths(3, 2) == 3
-    assert sol.uniquePaths(1, 1) == 1
-    assert sol.uniquePaths(3, 3) == 6
-    assert sol.uniquePaths(10, 10) == 48620
+    assert sol.unique_paths(3, 7) == 28
+    assert sol.unique_paths(3, 2) == 3
+    assert sol.unique_paths(1, 1) == 1
+    assert sol.unique_paths(3, 3) == 6
+    assert sol.unique_paths(10, 10) == 48620
 
     print("✓ All tests passed")
 

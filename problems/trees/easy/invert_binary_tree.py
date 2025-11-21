@@ -43,7 +43,7 @@ class TreeNode:
 
 
 class Solution:
-    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+    def invert_tree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if not root:
             return None
 
@@ -51,8 +51,8 @@ class Solution:
         root.left, root.right = root.right, root.left
 
         # Recursively invert subtrees
-        self.invertTree(root.left)
-        self.invertTree(root.right)
+        self.invert_tree(root.left)
+        self.invert_tree(root.right)
 
         return root
 
@@ -70,7 +70,7 @@ def test():
     root.right.left = TreeNode(6)
     root.right.right = TreeNode(9)
 
-    result = sol.invertTree(root)
+    result = sol.invert_tree(root)
     assert result.val == 4
     assert result.left.val == 7
     assert result.right.val == 2
@@ -81,13 +81,13 @@ def test():
 
     # Test 2: Single node
     root2 = TreeNode(1)
-    result2 = sol.invertTree(root2)
+    result2 = sol.invert_tree(root2)
     assert result2.val == 1
     assert result2.left is None
     assert result2.right is None
 
     # Test 3: Empty tree
-    result3 = sol.invertTree(None)
+    result3 = sol.invert_tree(None)
     assert result3 is None
 
     print("✓ All tests passed")

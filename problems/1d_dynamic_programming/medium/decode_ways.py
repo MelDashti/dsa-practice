@@ -50,7 +50,7 @@ Space: O(1) - only store two variables
 
 
 class Solution:
-    def numDecodings(self, s: str) -> int:
+    def num_decodings(self, s: str) -> int:
         if not s or s[0] == '0':
             return 0
 
@@ -81,14 +81,14 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.numDecodings("12") == 2
-    assert sol.numDecodings("226") == 3
-    assert sol.numDecodings("06") == 0
-    assert sol.numDecodings("0") == 0
-    assert sol.numDecodings("10") == 1
-    assert sol.numDecodings("27") == 1
-    assert sol.numDecodings("2101") == 1
-    assert sol.numDecodings("111111") == 13
+    assert sol.num_decodings("12") == 2
+    assert sol.num_decodings("226") == 3
+    assert sol.num_decodings("06") == 0
+    assert sol.num_decodings("0") == 0
+    assert sol.num_decodings("10") == 1
+    assert sol.num_decodings("27") == 1
+    assert sol.num_decodings("2101") == 1
+    assert sol.num_decodings("111111") == 13
 
     print("✓ All tests passed")
 

@@ -54,7 +54,7 @@ from collections import defaultdict
 
 
 class Solution:
-    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+    def find_order(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         # Build adjacency list
         graph = defaultdict(list)
         for course, prereq in prerequisites:
@@ -96,11 +96,11 @@ def test():
     sol = Solution()
 
     # Test 1: Simple case
-    result1 = sol.findOrder(2, [[1,0]])
+    result1 = sol.find_order(2, [[1,0]])
     assert result1 == [0,1]
 
     # Test 2: Multiple valid orders
-    result2 = sol.findOrder(4, [[1,0],[2,0],[3,1],[3,2]])
+    result2 = sol.find_order(4, [[1,0],[2,0],[3,1],[3,2]])
     # Check that the order is valid (0 before 1 and 2, 1 and 2 before 3)
     assert len(result2) == 4
     idx0 = result2.index(0)
@@ -111,15 +111,15 @@ def test():
     assert idx1 < idx3 and idx2 < idx3
 
     # Test 3: No prerequisites
-    result3 = sol.findOrder(1, [])
+    result3 = sol.find_order(1, [])
     assert result3 == [0]
 
     # Test 4: Cycle exists
-    result4 = sol.findOrder(2, [[1,0],[0,1]])
+    result4 = sol.find_order(2, [[1,0],[0,1]])
     assert result4 == []
 
     # Test 5: Linear chain
-    result5 = sol.findOrder(3, [[1,0],[2,1]])
+    result5 = sol.find_order(3, [[1,0],[2,1]])
     assert result5 == [0,1,2]
 
     print("✓ All tests passed")

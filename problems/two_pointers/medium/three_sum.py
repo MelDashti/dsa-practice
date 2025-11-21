@@ -43,7 +43,7 @@ from typing import List
 
 
 class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
+    def three_sum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         result = []
 
@@ -84,12 +84,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    result1 = sol.threeSum([-1,0,1,2,-1,-4])
+    result1 = sol.three_sum([-1,0,1,2,-1,-4])
     expected1 = [[-1,-1,2],[-1,0,1]]
     assert sorted(result1) == sorted(expected1)
 
-    assert sol.threeSum([0,1,1]) == []
-    assert sol.threeSum([0,0,0]) == [[0,0,0]]
+    assert sol.three_sum([0,1,1]) == []
+    assert sol.three_sum([0,0,0]) == [[0,0,0]]
 
     print("✓ All tests passed")
 

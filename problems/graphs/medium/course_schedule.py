@@ -48,7 +48,7 @@ from collections import defaultdict
 
 
 class Solution:
-    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+    def can_finish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         # Build adjacency list
         graph = defaultdict(list)
         for course, prereq in prerequisites:
@@ -88,22 +88,22 @@ def test():
     sol = Solution()
 
     # Test 1: Possible to finish
-    assert sol.canFinish(2, [[1,0]]) == True
+    assert sol.can_finish(2, [[1,0]]) == True
 
     # Test 2: Cycle exists
-    assert sol.canFinish(2, [[1,0],[0,1]]) == False
+    assert sol.can_finish(2, [[1,0],[0,1]]) == False
 
     # Test 3: Multiple prerequisites
-    assert sol.canFinish(4, [[1,0],[2,0],[3,1],[3,2]]) == True
+    assert sol.can_finish(4, [[1,0],[2,0],[3,1],[3,2]]) == True
 
     # Test 4: No prerequisites
-    assert sol.canFinish(3, []) == True
+    assert sol.can_finish(3, []) == True
 
     # Test 5: Complex cycle
-    assert sol.canFinish(3, [[0,1],[1,2],[2,0]]) == False
+    assert sol.can_finish(3, [[0,1],[1,2],[2,0]]) == False
 
     # Test 6: Linear dependencies
-    assert sol.canFinish(5, [[1,0],[2,1],[3,2],[4,3]]) == True
+    assert sol.can_finish(5, [[1,0],[2,1],[3,2],[4,3]]) == True
 
     print("✓ All tests passed")
 

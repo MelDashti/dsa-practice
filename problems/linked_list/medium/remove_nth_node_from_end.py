@@ -48,7 +48,7 @@ class ListNode:
 
 
 class Solution:
-    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+    def remove_nth_from_end(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         dummy = ListNode(0, head)
         slow = dummy
         fast = dummy
@@ -94,17 +94,17 @@ def test():
 
     # Test 1
     head1 = create_list([1,2,3,4,5])
-    result1 = sol.removeNthFromEnd(head1, 2)
+    result1 = sol.remove_nth_from_end(head1, 2)
     assert list_to_array(result1) == [1,2,3,5]
 
     # Test 2
     head2 = create_list([1])
-    result2 = sol.removeNthFromEnd(head2, 1)
+    result2 = sol.remove_nth_from_end(head2, 1)
     assert list_to_array(result2) == []
 
     # Test 3
     head3 = create_list([1,2])
-    result3 = sol.removeNthFromEnd(head3, 1)
+    result3 = sol.remove_nth_from_end(head3, 1)
     assert list_to_array(result3) == [1]
 
     print("✓ All tests passed")

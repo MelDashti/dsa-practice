@@ -52,7 +52,7 @@ class TreeNode:
 
 
 class Solution:
-    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+    def lowest_common_ancestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
         curr = root
 
         while curr:
@@ -84,17 +84,17 @@ def test():
     root.left.right.left = TreeNode(3)
     root.left.right.right = TreeNode(5)
 
-    result = sol.lowestCommonAncestor(root, root.left, root.right)
+    result = sol.lowest_common_ancestor(root, root.left, root.right)
     assert result.val == 6
 
     # Test 2: LCA is one of the nodes
-    result2 = sol.lowestCommonAncestor(root, root.left, root.left.right)
+    result2 = sol.lowest_common_ancestor(root, root.left, root.left.right)
     assert result2.val == 2
 
     # Test 3: Simple tree
     root2 = TreeNode(2)
     root2.left = TreeNode(1)
-    result3 = sol.lowestCommonAncestor(root2, root2, root2.left)
+    result3 = sol.lowest_common_ancestor(root2, root2, root2.left)
     assert result3.val == 2
 
     print("✓ All tests passed")

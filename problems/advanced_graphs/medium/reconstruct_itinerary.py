@@ -51,7 +51,7 @@ from collections import defaultdict
 
 
 class Solution:
-    def findItinerary(self, tickets: List[List[str]]) -> List[str]:
+    def find_itinerary(self, tickets: List[List[str]]) -> List[str]:
         # Build graph with sorted destinations
         graph = defaultdict(list)
         for src, dst in sorted(tickets, reverse=True):
@@ -75,23 +75,23 @@ def test():
 
     # Test 1: Basic itinerary
     tickets1 = [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]
-    assert sol.findItinerary(tickets1) == ["JFK", "MUC", "LHR", "SFO", "SJC"]
+    assert sol.find_itinerary(tickets1) == ["JFK", "MUC", "LHR", "SFO", "SJC"]
 
     # Test 2: Multiple valid paths, return lexically smallest
     tickets2 = [["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"]]
-    assert sol.findItinerary(tickets2) == ["JFK", "ATL", "JFK", "SFO", "ATL", "SFO"]
+    assert sol.find_itinerary(tickets2) == ["JFK", "ATL", "JFK", "SFO", "ATL", "SFO"]
 
     # Test 3: Simple round trip
     tickets3 = [["JFK", "KUL"], ["KUL", "JFK"]]
-    assert sol.findItinerary(tickets3) == ["JFK", "KUL", "JFK"]
+    assert sol.find_itinerary(tickets3) == ["JFK", "KUL", "JFK"]
 
     # Test 4: Single ticket
     tickets4 = [["JFK", "SFO"]]
-    assert sol.findItinerary(tickets4) == ["JFK", "SFO"]
+    assert sol.find_itinerary(tickets4) == ["JFK", "SFO"]
 
     # Test 5: Complex cycle
     tickets5 = [["JFK", "ATL"], ["ATL", "JFK"], ["JFK", "ATL"], ["ATL", "AAA"]]
-    assert sol.findItinerary(tickets5) == ["JFK", "ATL", "JFK", "ATL", "AAA"]
+    assert sol.find_itinerary(tickets5) == ["JFK", "ATL", "JFK", "ATL", "AAA"]
 
     print("✓ All tests passed")
 

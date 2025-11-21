@@ -39,7 +39,7 @@ from typing import List
 
 
 class Solution:
-    def canJump(self, nums: List[int]) -> bool:
+    def can_jump(self, nums: List[int]) -> bool:
         """
         Determine if we can reach the last index.
 
@@ -69,12 +69,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.canJump([2, 3, 1, 1, 4]) == True
-    assert sol.canJump([3, 2, 1, 0, 4]) == False
-    assert sol.canJump([0]) == True
-    assert sol.canJump([2, 0, 0]) == True
-    assert sol.canJump([0, 2, 3]) == False
-    assert sol.canJump([2, 5, 0, 0]) == True
+    assert sol.can_jump([2, 3, 1, 1, 4]) == True
+    assert sol.can_jump([3, 2, 1, 0, 4]) == False
+    assert sol.can_jump([0]) == True
+    assert sol.can_jump([2, 0, 0]) == True
+    assert sol.can_jump([0, 2, 3]) == False
+    assert sol.can_jump([2, 5, 0, 0]) == True
 
     print("✓ All tests passed")
 

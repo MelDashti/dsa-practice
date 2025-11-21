@@ -48,7 +48,7 @@ from typing import List
 
 
 class Solution:
-    def numIslands(self, grid: List[List[str]]) -> int:
+    def num_islands(self, grid: List[List[str]]) -> int:
         if not grid or not grid[0]:
             return 0
 
@@ -91,7 +91,7 @@ def test():
         ["1","1","0","0","0"],
         ["0","0","0","0","0"]
     ]
-    assert sol.numIslands(grid1) == 1
+    assert sol.num_islands(grid1) == 1
 
     # Test 2: Multiple islands
     grid2 = [
@@ -100,21 +100,21 @@ def test():
         ["0","0","1","0","0"],
         ["0","0","0","1","1"]
     ]
-    assert sol.numIslands(grid2) == 3
+    assert sol.num_islands(grid2) == 3
 
     # Test 3: No islands
     grid3 = [
         ["0","0","0"],
         ["0","0","0"]
     ]
-    assert sol.numIslands(grid3) == 0
+    assert sol.num_islands(grid3) == 0
 
     # Test 4: All land
     grid4 = [
         ["1","1"],
         ["1","1"]
     ]
-    assert sol.numIslands(grid4) == 1
+    assert sol.num_islands(grid4) == 1
 
     print("✓ All tests passed")
 

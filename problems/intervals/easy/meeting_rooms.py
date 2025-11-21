@@ -42,7 +42,7 @@ from typing import List
 
 
 class Solution:
-    def canAttendMeetings(self, intervals: List[List[int]]) -> bool:
+    def can_attend_meetings(self, intervals: List[List[int]]) -> bool:
         # Sort intervals by start time
         intervals.sort()
 
@@ -59,11 +59,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.canAttendMeetings([[0,30],[5,10],[15,20]]) == False
-    assert sol.canAttendMeetings([[7,10],[2,4]]) == True
-    assert sol.canAttendMeetings([]) == True
-    assert sol.canAttendMeetings([[1,2],[1,2]]) == False
-    assert sol.canAttendMeetings([[1,5],[15,20],[5,10]]) == True
+    assert sol.can_attend_meetings([[0,30],[5,10],[15,20]]) == False
+    assert sol.can_attend_meetings([[7,10],[2,4]]) == True
+    assert sol.can_attend_meetings([]) == True
+    assert sol.can_attend_meetings([[1,2],[1,2]]) == False
+    assert sol.can_attend_meetings([[1,5],[15,20],[5,10]]) == True
 
     print("✓ All tests passed")
 

@@ -36,7 +36,7 @@ from collections import Counter
 
 
 class Solution:
-    def checkInclusion(self, s1: str, s2: str) -> bool:
+    def check_inclusion(self, s1: str, s2: str) -> bool:
         if len(s1) > len(s2):
             return False
 
@@ -69,10 +69,10 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.checkInclusion("ab", "eidbaooo") == True
-    assert sol.checkInclusion("ab", "eidboaoo") == False
-    assert sol.checkInclusion("abc", "bbbca") == True
-    assert sol.checkInclusion("hello", "ooolleoooleh") == False
+    assert sol.check_inclusion("ab", "eidbaooo") == True
+    assert sol.check_inclusion("ab", "eidboaoo") == False
+    assert sol.check_inclusion("abc", "bbbca") == True
+    assert sol.check_inclusion("hello", "ooolleoooleh") == False
 
     print("✓ All tests passed")
 

@@ -45,7 +45,7 @@ from typing import List
 
 
 class Solution:
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+    def find_median_sorted_arrays(self, nums1: List[int], nums2: List[int]) -> float:
         # Ensure nums1 is the smaller array for optimization
         if len(nums1) > len(nums2):
             nums1, nums2 = nums2, nums1
@@ -87,13 +87,13 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.findMedianSortedArrays([1,3], [2]) == 2.0
-    assert sol.findMedianSortedArrays([1,2], [3,4]) == 2.5
-    assert sol.findMedianSortedArrays([0,0], [0,0]) == 0.0
-    assert sol.findMedianSortedArrays([], [1]) == 1.0
-    assert sol.findMedianSortedArrays([2], []) == 2.0
-    assert sol.findMedianSortedArrays([1,3], [2,7]) == 2.5
-    assert sol.findMedianSortedArrays([1,2,3,4,5], [6,7,8,9,10]) == 5.5
+    assert sol.find_median_sorted_arrays([1,3], [2]) == 2.0
+    assert sol.find_median_sorted_arrays([1,2], [3,4]) == 2.5
+    assert sol.find_median_sorted_arrays([0,0], [0,0]) == 0.0
+    assert sol.find_median_sorted_arrays([], [1]) == 1.0
+    assert sol.find_median_sorted_arrays([2], []) == 2.0
+    assert sol.find_median_sorted_arrays([1,3], [2,7]) == 2.5
+    assert sol.find_median_sorted_arrays([1,2,3,4,5], [6,7,8,9,10]) == 5.5
 
     print("✓ All tests passed")
 

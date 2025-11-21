@@ -37,7 +37,7 @@ from typing import List
 
 
 class Solution:
-    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+    def subsets_with_dup(self, nums: List[int]) -> List[List[int]]:
         result = []
         current = []
         nums.sort()  # Sort to handle duplicates
@@ -65,17 +65,17 @@ def test():
     sol = Solution()
 
     # Test case 1
-    result1 = sol.subsetsWithDup([1,2,2])
+    result1 = sol.subsets_with_dup([1,2,2])
     expected1 = [[],[1],[1,2],[1,2,2],[2],[2,2]]
     assert sorted([sorted(x) for x in result1]) == sorted([sorted(x) for x in expected1])
 
     # Test case 2
-    result2 = sol.subsetsWithDup([0])
+    result2 = sol.subsets_with_dup([0])
     expected2 = [[],[0]]
     assert sorted([sorted(x) for x in result2]) == sorted([sorted(x) for x in expected2])
 
     # Test case 3
-    result3 = sol.subsetsWithDup([4,4,4,1,4])
+    result3 = sol.subsets_with_dup([4,4,4,1,4])
     # Should not have duplicate subsets
     result_set = set(tuple(sorted(x)) for x in result3)
     assert len(result_set) == len(result3)

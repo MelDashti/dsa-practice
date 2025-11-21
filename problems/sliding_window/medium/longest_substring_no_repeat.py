@@ -37,7 +37,7 @@ Space: O(min(n, m)) where m is charset size
 
 
 class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
+    def length_of_longest_substring(self, s: str) -> int:
         char_set = set()
         left = 0
         max_length = 0
@@ -61,11 +61,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.lengthOfLongestSubstring("abcabcbb") == 3
-    assert sol.lengthOfLongestSubstring("bbbbb") == 1
-    assert sol.lengthOfLongestSubstring("pwwkew") == 3
-    assert sol.lengthOfLongestSubstring("") == 0
-    assert sol.lengthOfLongestSubstring("au") == 2
+    assert sol.length_of_longest_substring("abcabcbb") == 3
+    assert sol.length_of_longest_substring("bbbbb") == 1
+    assert sol.length_of_longest_substring("pwwkew") == 3
+    assert sol.length_of_longest_substring("") == 0
+    assert sol.length_of_longest_substring("au") == 2
 
     print("✓ All tests passed")
 

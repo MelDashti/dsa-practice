@@ -36,7 +36,7 @@ Space: O(1) - not counting output array
 
 
 class Solution:
-    def spiralOrder(self, matrix: list[list[int]]) -> list[int]:
+    def spiral_order(self, matrix: list[list[int]]) -> list[int]:
         if not matrix or not matrix[0]:
             return []
 
@@ -76,19 +76,19 @@ def test():
 
     # Test 1
     matrix1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    assert sol.spiralOrder(matrix1) == [1, 2, 3, 6, 9, 8, 7, 4, 5]
+    assert sol.spiral_order(matrix1) == [1, 2, 3, 6, 9, 8, 7, 4, 5]
 
     # Test 2
     matrix2 = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
-    assert sol.spiralOrder(matrix2) == [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
+    assert sol.spiral_order(matrix2) == [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
 
     # Test 3
     matrix3 = [[1]]
-    assert sol.spiralOrder(matrix3) == [1]
+    assert sol.spiral_order(matrix3) == [1]
 
     # Test 4
     matrix4 = [[1, 2, 3]]
-    assert sol.spiralOrder(matrix4) == [1, 2, 3]
+    assert sol.spiral_order(matrix4) == [1, 2, 3]
 
     print("✓ All tests passed")
 

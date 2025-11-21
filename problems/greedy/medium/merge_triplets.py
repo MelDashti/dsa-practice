@@ -46,7 +46,7 @@ from typing import List
 
 
 class Solution:
-    def mergeTriplets(self, triplets: List[List[int]], target: List[int]) -> bool:
+    def merge_triplets(self, triplets: List[List[int]], target: List[int]) -> bool:
         """
         Check if we can form target triplet by merging given triplets.
 
@@ -76,12 +76,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.mergeTriplets([[2, 5, 3], [1, 8, 4], [1, 7, 5]], [2, 7, 5]) == True
-    assert sol.mergeTriplets([[1, 3, 2], [2, 5, 6]], [5, 5, 5]) == False
-    assert sol.mergeTriplets([[1, 1, 1]], [1, 1, 1]) == True
-    assert sol.mergeTriplets([[2, 2, 2], [1, 1, 1]], [2, 2, 2]) == True
-    assert sol.mergeTriplets([[3, 2, 2]], [2, 2, 2]) == False
-    assert sol.mergeTriplets([[2, 0, 0], [0, 2, 0], [0, 0, 2]], [2, 2, 2]) == True
+    assert sol.merge_triplets([[2, 5, 3], [1, 8, 4], [1, 7, 5]], [2, 7, 5]) == True
+    assert sol.merge_triplets([[1, 3, 2], [2, 5, 6]], [5, 5, 5]) == False
+    assert sol.merge_triplets([[1, 1, 1]], [1, 1, 1]) == True
+    assert sol.merge_triplets([[2, 2, 2], [1, 1, 1]], [2, 2, 2]) == True
+    assert sol.merge_triplets([[3, 2, 2]], [2, 2, 2]) == False
+    assert sol.merge_triplets([[2, 0, 0], [0, 2, 0], [0, 0, 2]], [2, 2, 2]) == True
 
     print("✓ All tests passed")
 

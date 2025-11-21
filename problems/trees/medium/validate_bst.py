@@ -46,7 +46,7 @@ class TreeNode:
 
 
 class Solution:
-    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+    def is_valid_bst(self, root: Optional[TreeNode]) -> bool:
         def validate(node, min_val, max_val):
             if not node:
                 return True
@@ -70,7 +70,7 @@ def test():
     root = TreeNode(2)
     root.left = TreeNode(1)
     root.right = TreeNode(3)
-    assert sol.isValidBST(root) == True
+    assert sol.is_valid_bst(root) == True
 
     # Test 2: Invalid BST
     root2 = TreeNode(5)
@@ -78,16 +78,16 @@ def test():
     root2.right = TreeNode(4)
     root2.right.left = TreeNode(3)
     root2.right.right = TreeNode(6)
-    assert sol.isValidBST(root2) == False
+    assert sol.is_valid_bst(root2) == False
 
     # Test 3: Single node
     root3 = TreeNode(1)
-    assert sol.isValidBST(root3) == True
+    assert sol.is_valid_bst(root3) == True
 
     # Test 4: Edge case with equal values
     root4 = TreeNode(1)
     root4.left = TreeNode(1)
-    assert sol.isValidBST(root4) == False
+    assert sol.is_valid_bst(root4) == False
 
     # Test 5: Valid larger BST
     root5 = TreeNode(5)
@@ -97,7 +97,7 @@ def test():
     root5.left.right = TreeNode(4)
     root5.right.left = TreeNode(6)
     root5.right.right = TreeNode(8)
-    assert sol.isValidBST(root5) == True
+    assert sol.is_valid_bst(root5) == True
 
     print("✓ All tests passed")
 

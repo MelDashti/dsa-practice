@@ -50,7 +50,7 @@ class ListNode:
 
 
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def add_two_numbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode(0)
         current = dummy
         carry = 0
@@ -99,19 +99,19 @@ def test():
     # Test 1
     l1 = create_list([2,4,3])
     l2 = create_list([5,6,4])
-    result1 = sol.addTwoNumbers(l1, l2)
+    result1 = sol.add_two_numbers(l1, l2)
     assert list_to_array(result1) == [7,0,8]
 
     # Test 2
     l3 = create_list([0])
     l4 = create_list([0])
-    result2 = sol.addTwoNumbers(l3, l4)
+    result2 = sol.add_two_numbers(l3, l4)
     assert list_to_array(result2) == [0]
 
     # Test 3
     l5 = create_list([9,9,9,9,9,9,9])
     l6 = create_list([9,9,9,9])
-    result3 = sol.addTwoNumbers(l5, l6)
+    result3 = sol.add_two_numbers(l5, l6)
     assert list_to_array(result3) == [8,9,9,9,0,0,0,1]
 
     print("✓ All tests passed")

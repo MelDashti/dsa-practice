@@ -55,7 +55,7 @@ class ListNode:
 
 
 class Solution:
-    def hasCycle(self, head: Optional[ListNode]) -> bool:
+    def has_cycle(self, head: Optional[ListNode]) -> bool:
         if not head or not head.next:
             return False
 
@@ -85,27 +85,27 @@ def test():
     node2.next = node3
     node3.next = node4
     node4.next = node2  # Creates cycle
-    assert sol.hasCycle(head1) == True
+    assert sol.has_cycle(head1) == True
 
     # Test 2: Cycle at position 0
     head2 = ListNode(1)
     node2_2 = ListNode(2)
     head2.next = node2_2
     node2_2.next = head2  # Creates cycle
-    assert sol.hasCycle(head2) == True
+    assert sol.has_cycle(head2) == True
 
     # Test 3: No cycle
     head3 = ListNode(1)
-    assert sol.hasCycle(head3) == False
+    assert sol.has_cycle(head3) == False
 
     # Test 4: Empty list
-    assert sol.hasCycle(None) == False
+    assert sol.has_cycle(None) == False
 
     # Test 5: List with no cycle
     head5 = ListNode(1)
     head5.next = ListNode(2)
     head5.next.next = ListNode(3)
-    assert sol.hasCycle(head5) == False
+    assert sol.has_cycle(head5) == False
 
     print("✓ All tests passed")
 

@@ -12,14 +12,14 @@ Requirements:
 - Trie(): Initialize an empty trie
 - insert(word): Insert a word into the trie
 - search(word): Return True if word exists in trie
-- startsWith(prefix): Return True if any word starts with prefix
+- starts_with(prefix): Return True if any word starts with prefix
 
 Example:
     trie = Trie()
     trie.insert("apple")
     trie.search("apple")      # returns True
     trie.search("app")        # returns False
-    trie.startsWith("app")    # returns True
+    trie.starts_with("app")    # returns True
     trie.insert("app")
     trie.search("app")        # returns True
 
@@ -77,7 +77,7 @@ class Trie:
             node = node.children[char]
         return node.is_end_of_word
 
-    def startsWith(self, prefix: str) -> bool:
+    def starts_with(self, prefix: str) -> bool:
         """
         Check if any word in the trie starts with the given prefix.
 
@@ -103,7 +103,7 @@ def test():
     trie.insert("apple")
     assert trie.search("apple") == True
     assert trie.search("app") == False
-    assert trie.startsWith("app") == True
+    assert trie.starts_with("app") == True
 
     # Test after inserting prefix
     trie.insert("app")
@@ -112,17 +112,17 @@ def test():
     # Test multiple words
     trie.insert("application")
     assert trie.search("application") == True
-    assert trie.startsWith("appl") == True
+    assert trie.starts_with("appl") == True
     assert trie.search("appl") == False
 
     # Test non-existent word
     assert trie.search("orange") == False
-    assert trie.startsWith("orange") == False
+    assert trie.starts_with("orange") == False
 
     # Test single character
     trie.insert("a")
     assert trie.search("a") == True
-    assert trie.startsWith("a") == True
+    assert trie.starts_with("a") == True
 
     # Test case sensitivity
     assert trie.search("Apple") == False

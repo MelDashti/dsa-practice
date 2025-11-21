@@ -44,7 +44,7 @@ from typing import List
 
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def two_sum(self, nums: List[int], target: int) -> List[int]:
         seen = {}  # value -> index
 
         for i, num in enumerate(nums):
@@ -62,9 +62,9 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.twoSum([2,7,11,15], 9) == [0,1]
-    assert sol.twoSum([3,2,4], 6) == [1,2]
-    assert sol.twoSum([3,3], 6) == [0,1]
+    assert sol.two_sum([2,7,11,15], 9) == [0,1]
+    assert sol.two_sum([3,2,4], 6) == [1,2]
+    assert sol.two_sum([3,3], 6) == [0,1]
 
     print("✓ All tests passed")
 

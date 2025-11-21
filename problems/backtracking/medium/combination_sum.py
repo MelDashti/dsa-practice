@@ -49,7 +49,7 @@ from typing import List
 
 
 class Solution:
-    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+    def combination_sum(self, candidates: List[int], target: int) -> List[List[int]]:
         result = []
         current = []
 
@@ -79,17 +79,17 @@ def test():
     sol = Solution()
 
     # Test case 1
-    result1 = sol.combinationSum([2,3,6,7], 7)
+    result1 = sol.combination_sum([2,3,6,7], 7)
     expected1 = [[2,2,3],[7]]
     assert sorted([sorted(x) for x in result1]) == sorted([sorted(x) for x in expected1])
 
     # Test case 2
-    result2 = sol.combinationSum([2,3,5], 8)
+    result2 = sol.combination_sum([2,3,5], 8)
     expected2 = [[2,2,2,2],[2,3,3],[3,5]]
     assert sorted([sorted(x) for x in result2]) == sorted([sorted(x) for x in expected2])
 
     # Test case 3
-    result3 = sol.combinationSum([2], 1)
+    result3 = sol.combination_sum([2], 1)
     assert result3 == []
 
     print("✓ All tests passed")

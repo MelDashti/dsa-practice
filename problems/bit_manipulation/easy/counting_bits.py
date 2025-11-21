@@ -51,7 +51,7 @@ from typing import List
 
 
 class Solution:
-    def countBits(self, n: int) -> List[int]:
+    def count_bits(self, n: int) -> List[int]:
         """
         Count bits using dynamic programming with right shift.
 
@@ -97,11 +97,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.countBits(5) == [0, 1, 1, 2, 1, 2]
-    assert sol.countBits(2) == [0, 1, 1]
-    assert sol.countBits(0) == [0]
-    assert sol.countBits(1) == [0, 1]
-    assert sol.countBits(3) == [0, 1, 1, 2]
+    assert sol.count_bits(5) == [0, 1, 1, 2, 1, 2]
+    assert sol.count_bits(2) == [0, 1, 1]
+    assert sol.count_bits(0) == [0]
+    assert sol.count_bits(1) == [0, 1]
+    assert sol.count_bits(3) == [0, 1, 1, 2]
 
     # Test alternative implementations
     assert sol.countBits_kernighan(5) == [0, 1, 1, 2, 1, 2]

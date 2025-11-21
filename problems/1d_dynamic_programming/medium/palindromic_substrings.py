@@ -37,7 +37,7 @@ Space: O(1) - only counter variable
 
 
 class Solution:
-    def countSubstrings(self, s: str) -> int:
+    def count_substrings(self, s: str) -> int:
         count = 0
 
         def expand_around_center(left, right):
@@ -60,12 +60,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.countSubstrings("abc") == 3
-    assert sol.countSubstrings("aaa") == 6
-    assert sol.countSubstrings("a") == 1
-    assert sol.countSubstrings("ab") == 2
-    assert sol.countSubstrings("aba") == 4
-    assert sol.countSubstrings("racecar") == 10
+    assert sol.count_substrings("abc") == 3
+    assert sol.count_substrings("aaa") == 6
+    assert sol.count_substrings("a") == 1
+    assert sol.count_substrings("ab") == 2
+    assert sol.count_substrings("aba") == 4
+    assert sol.count_substrings("racecar") == 10
 
     print("✓ All tests passed")
 

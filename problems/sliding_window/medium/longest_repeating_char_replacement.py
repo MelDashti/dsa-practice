@@ -43,7 +43,7 @@ from collections import defaultdict
 
 
 class Solution:
-    def characterReplacement(self, s: str, k: int) -> int:
+    def character_replacement(self, s: str, k: int) -> int:
         count = defaultdict(int)
         max_length = 0
         max_freq = 0
@@ -68,10 +68,10 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.characterReplacement("ABAB", 2) == 4
-    assert sol.characterReplacement("AABABBA", 1) == 4
-    assert sol.characterReplacement("AAAA", 0) == 4
-    assert sol.characterReplacement("ABCDE", 1) == 2
+    assert sol.character_replacement("ABAB", 2) == 4
+    assert sol.character_replacement("AABABBA", 1) == 4
+    assert sol.character_replacement("AAAA", 0) == 4
+    assert sol.character_replacement("ABCDE", 1) == 2
 
     print("✓ All tests passed")
 

@@ -53,8 +53,8 @@ import math
 
 
 class Solution:
-    def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        def canFinish(speed: int) -> bool:
+    def min_eating_speed(self, piles: List[int], h: int) -> int:
+        def can_finish(speed: int) -> bool:
             """Check if Koko can finish all bananas at given speed within h hours"""
             hours = 0
             for pile in piles:
@@ -67,7 +67,7 @@ class Solution:
         while left <= right:
             mid = left + (right - left) // 2
 
-            if canFinish(mid):
+            if can_finish(mid):
                 result = mid  # This speed works, try to find smaller
                 right = mid - 1
             else:
@@ -80,12 +80,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.minEatingSpeed([3,6,7,11], 8) == 4
-    assert sol.minEatingSpeed([30,11,23,4,20], 5) == 30
-    assert sol.minEatingSpeed([30,11,23,4,20], 6) == 23
-    assert sol.minEatingSpeed([3,6,7,11], 4) == 11
-    assert sol.minEatingSpeed([1], 1) == 1
-    assert sol.minEatingSpeed([1000000000], 2) == 500000000
+    assert sol.min_eating_speed([3,6,7,11], 8) == 4
+    assert sol.min_eating_speed([30,11,23,4,20], 5) == 30
+    assert sol.min_eating_speed([30,11,23,4,20], 6) == 23
+    assert sol.min_eating_speed([3,6,7,11], 4) == 11
+    assert sol.min_eating_speed([1], 1) == 1
+    assert sol.min_eating_speed([1000000000], 2) == 500000000
 
     print("✓ All tests passed")
 

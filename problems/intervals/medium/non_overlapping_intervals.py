@@ -45,7 +45,7 @@ from typing import List
 
 
 class Solution:
-    def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
+    def erase_overlap_intervals(self, intervals: List[List[int]]) -> int:
         # Sort by end time (greedy approach)
         intervals.sort(key=lambda x: x[1])
 
@@ -68,11 +68,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.eraseOverlapIntervals([[1,2],[2,3],[3,4],[1,3]]) == 1
-    assert sol.eraseOverlapIntervals([[1,2],[1,2],[1,2]]) == 2
-    assert sol.eraseOverlapIntervals([[1,2],[2,3]]) == 0
-    assert sol.eraseOverlapIntervals([[0,2],[1,3],[2,4]]) == 1
-    assert sol.eraseOverlapIntervals([[1,2],[1,2]]) == 1
+    assert sol.erase_overlap_intervals([[1,2],[2,3],[3,4],[1,3]]) == 1
+    assert sol.erase_overlap_intervals([[1,2],[1,2],[1,2]]) == 2
+    assert sol.erase_overlap_intervals([[1,2],[2,3]]) == 0
+    assert sol.erase_overlap_intervals([[0,2],[1,3],[2,4]]) == 1
+    assert sol.erase_overlap_intervals([[1,2],[1,2]]) == 1
 
     print("✓ All tests passed")
 

@@ -43,7 +43,7 @@ from typing import List
 
 
 class Solution:
-    def solveNQueens(self, n: int) -> List[List[str]]:
+    def solve_n_queens(self, n: int) -> List[List[str]]:
         result = []
         board = [['.'] * n for _ in range(n)]
 
@@ -88,21 +88,21 @@ def test():
     sol = Solution()
 
     # Test case 1
-    result1 = sol.solveNQueens(4)
+    result1 = sol.solve_n_queens(4)
     expected1 = [[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
     assert sorted(result1) == sorted(expected1)
 
     # Test case 2
-    result2 = sol.solveNQueens(1)
+    result2 = sol.solve_n_queens(1)
     expected2 = [["Q"]]
     assert result2 == expected2
 
     # Test case 3 - n=2 and n=3 have no solutions
-    result3 = sol.solveNQueens(2)
+    result3 = sol.solve_n_queens(2)
     assert result3 == []
 
     # Test case 4
-    result4 = sol.solveNQueens(8)
+    result4 = sol.solve_n_queens(8)
     assert len(result4) == 92  # There are 92 solutions for 8-queens
 
     print("✓ All tests passed")

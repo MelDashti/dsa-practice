@@ -45,7 +45,7 @@ from typing import List
 
 
 class Solution:
-    def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+    def can_complete_circuit(self, gas: List[int], cost: List[int]) -> int:
         """
         Find starting gas station index to complete circuit.
 
@@ -78,12 +78,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.canCompleteCircuit([1, 2, 3, 4, 5], [3, 4, 5, 1, 2]) == 3
-    assert sol.canCompleteCircuit([2, 3, 4], [3, 4, 3]) == -1
-    assert sol.canCompleteCircuit([5, 1, 2, 3, 4], [4, 4, 1, 5, 1]) == 4
-    assert sol.canCompleteCircuit([3, 3], [3, 4]) == -1
-    assert sol.canCompleteCircuit([4], [5]) == -1
-    assert sol.canCompleteCircuit([5], [5]) == 0
+    assert sol.can_complete_circuit([1, 2, 3, 4, 5], [3, 4, 5, 1, 2]) == 3
+    assert sol.can_complete_circuit([2, 3, 4], [3, 4, 3]) == -1
+    assert sol.can_complete_circuit([5, 1, 2, 3, 4], [4, 4, 1, 5, 1]) == 4
+    assert sol.can_complete_circuit([3, 3], [3, 4]) == -1
+    assert sol.can_complete_circuit([4], [5]) == -1
+    assert sol.can_complete_circuit([5], [5]) == 0
 
     print("✓ All tests passed")
 

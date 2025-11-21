@@ -48,7 +48,7 @@ class TreeNode:
 
 
 class Solution:
-    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+    def is_same_tree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         # Both are None
         if not p and not q:
             return True
@@ -62,7 +62,7 @@ class Solution:
             return False
 
         # Check both subtrees
-        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+        return self.is_same_tree(p.left, q.left) and self.is_same_tree(p.right, q.right)
 
 
 # Tests
@@ -78,7 +78,7 @@ def test():
     q1.left = TreeNode(2)
     q1.right = TreeNode(3)
 
-    assert sol.isSameTree(p1, q1) == True
+    assert sol.is_same_tree(p1, q1) == True
 
     # Test 2: Different structure
     p2 = TreeNode(1)
@@ -87,7 +87,7 @@ def test():
     q2 = TreeNode(1)
     q2.right = TreeNode(2)
 
-    assert sol.isSameTree(p2, q2) == False
+    assert sol.is_same_tree(p2, q2) == False
 
     # Test 3: Different values
     p3 = TreeNode(1)
@@ -98,10 +98,10 @@ def test():
     q3.left = TreeNode(1)
     q3.right = TreeNode(2)
 
-    assert sol.isSameTree(p3, q3) == False
+    assert sol.is_same_tree(p3, q3) == False
 
     # Test 4: Both empty
-    assert sol.isSameTree(None, None) == True
+    assert sol.is_same_tree(None, None) == True
 
     print("✓ All tests passed")
 

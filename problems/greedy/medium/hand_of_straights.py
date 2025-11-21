@@ -47,7 +47,7 @@ from collections import Counter
 
 
 class Solution:
-    def isNStraightHand(self, hand: List[int], groupSize: int) -> bool:
+    def is_n_straight_hand(self, hand: List[int], groupSize: int) -> bool:
         """
         Determine if cards can be divided into groups of consecutive cards.
 
@@ -89,12 +89,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.isNStraightHand([1, 2, 3, 6, 2, 3, 4, 7, 8], 3) == True
-    assert sol.isNStraightHand([1, 2, 3, 4, 5], 4) == False
-    assert sol.isNStraightHand([1, 1, 2, 2, 3, 3, 4, 4], 4) == True
-    assert sol.isNStraightHand([1, 2, 3], 2) == False
-    assert sol.isNStraightHand([1], 1) == True
-    assert sol.isNStraightHand([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5) == True
+    assert sol.is_n_straight_hand([1, 2, 3, 6, 2, 3, 4, 7, 8], 3) == True
+    assert sol.is_n_straight_hand([1, 2, 3, 4, 5], 4) == False
+    assert sol.is_n_straight_hand([1, 1, 2, 2, 3, 3, 4, 4], 4) == True
+    assert sol.is_n_straight_hand([1, 2, 3], 2) == False
+    assert sol.is_n_straight_hand([1], 1) == True
+    assert sol.is_n_straight_hand([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5) == True
 
     print("✓ All tests passed")
 

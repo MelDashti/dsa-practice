@@ -46,25 +46,25 @@ class TreeNode:
 
 
 class Solution:
-    def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+    def is_subtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
         if not root:
             return False
 
         # Check if current tree is same as subRoot
-        if self.isSameTree(root, subRoot):
+        if self.is_same_tree(root, subRoot):
             return True
 
         # Check left and right subtrees
-        return self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
+        return self.is_subtree(root.left, subRoot) or self.is_subtree(root.right, subRoot)
 
-    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+    def is_same_tree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         if not p and not q:
             return True
         if not p or not q:
             return False
         if p.val != q.val:
             return False
-        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+        return self.is_same_tree(p.left, q.left) and self.is_same_tree(p.right, q.right)
 
 
 # Tests
@@ -82,7 +82,7 @@ def test():
     subRoot.left = TreeNode(1)
     subRoot.right = TreeNode(2)
 
-    assert sol.isSubtree(root, subRoot) == True
+    assert sol.is_subtree(root, subRoot) == True
 
     # Test 2: Not a valid subtree
     root2 = TreeNode(3)
@@ -96,12 +96,12 @@ def test():
     subRoot2.left = TreeNode(1)
     subRoot2.right = TreeNode(2)
 
-    assert sol.isSubtree(root2, subRoot2) == False
+    assert sol.is_subtree(root2, subRoot2) == False
 
     # Test 3: Single node
     root3 = TreeNode(1)
     subRoot3 = TreeNode(1)
-    assert sol.isSubtree(root3, subRoot3) == True
+    assert sol.is_subtree(root3, subRoot3) == True
 
     print("✓ All tests passed")
 

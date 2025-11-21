@@ -53,7 +53,7 @@ from collections import defaultdict
 
 
 class Solution:
-    def isValidSudoku(self, board: List[List[str]]) -> bool:
+    def is_valid_sudoku(self, board: List[List[str]]) -> bool:
         rows = defaultdict(set)
         cols = defaultdict(set)
         boxes = defaultdict(set)
@@ -94,7 +94,7 @@ def test():
         [".",".",".","4","1","9",".",".","5"],
         [".",".",".",".","8",".",".","7","9"]
     ]
-    assert sol.isValidSudoku(board1) == True
+    assert sol.is_valid_sudoku(board1) == True
 
     board2 = [
         ["8","3",".",".","7",".",".",".","."],
@@ -107,7 +107,7 @@ def test():
         [".",".",".","4","1","9",".",".","5"],
         [".",".",".",".","8",".",".","7","9"]
     ]
-    assert sol.isValidSudoku(board2) == False
+    assert sol.is_valid_sudoku(board2) == False
 
     print("✓ All tests passed")
 

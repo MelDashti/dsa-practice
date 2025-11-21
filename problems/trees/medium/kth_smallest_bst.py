@@ -44,7 +44,7 @@ class TreeNode:
 
 
 class Solution:
-    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+    def kth_smallest(self, root: Optional[TreeNode], k: int) -> int:
         self.count = 0
         self.result = 0
 
@@ -77,7 +77,7 @@ def test():
     root.left = TreeNode(1)
     root.right = TreeNode(4)
     root.left.right = TreeNode(2)
-    assert sol.kthSmallest(root, 1) == 1
+    assert sol.kth_smallest(root, 1) == 1
 
     # Test 2: Example 2
     root2 = TreeNode(5)
@@ -86,17 +86,17 @@ def test():
     root2.left.left = TreeNode(2)
     root2.left.right = TreeNode(4)
     root2.left.left.left = TreeNode(1)
-    assert sol.kthSmallest(root2, 3) == 3
+    assert sol.kth_smallest(root2, 3) == 3
 
     # Test 3: Single node
     root3 = TreeNode(1)
-    assert sol.kthSmallest(root3, 1) == 1
+    assert sol.kth_smallest(root3, 1) == 1
 
     # Test 4: Find largest
     root4 = TreeNode(2)
     root4.left = TreeNode(1)
     root4.right = TreeNode(3)
-    assert sol.kthSmallest(root4, 3) == 3
+    assert sol.kth_smallest(root4, 3) == 3
 
     print("✓ All tests passed")
 

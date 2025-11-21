@@ -54,7 +54,7 @@ from typing import List
 
 
 class Solution:
-    def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
+    def pacific_atlantic(self, heights: List[List[int]]) -> List[List[int]]:
         if not heights or not heights[0]:
             return []
 
@@ -107,13 +107,13 @@ def test():
         [6,7,1,4,5],
         [5,1,1,2,4]
     ]
-    result1 = sol.pacificAtlantic(heights1)
+    result1 = sol.pacific_atlantic(heights1)
     expected1 = [[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]
     assert sorted(result1) == sorted(expected1)
 
     # Test 2: Single cell
     heights2 = [[1]]
-    assert sol.pacificAtlantic(heights2) == [[0,0]]
+    assert sol.pacific_atlantic(heights2) == [[0,0]]
 
     # Test 3: All same height
     heights3 = [
@@ -121,7 +121,7 @@ def test():
         [1,1,1],
         [1,1,1]
     ]
-    result3 = sol.pacificAtlantic(heights3)
+    result3 = sol.pacific_atlantic(heights3)
     assert len(result3) == 9  # All cells can reach both oceans
 
     print("✓ All tests passed")

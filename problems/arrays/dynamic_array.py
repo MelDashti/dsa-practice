@@ -13,8 +13,8 @@ Requirements:
 - pushback(n): Add element to end (resize if needed)
 - popback(): Remove and return last element
 - resize(): Double the capacity
-- getSize(): Return current size
-- getCapacity(): Return current capacity
+- get_size(): Return current size
+- get_capacity(): Return current capacity
 
 Example:
     arr = DynamicArray(1)
@@ -59,10 +59,10 @@ class DynamicArray:
     def resize(self) -> None:
         self.capacity = self.capacity * 2
 
-    def getSize(self) -> int:
+    def get_size(self) -> int:
         return self.size
 
-    def getCapacity(self) -> int:
+    def get_capacity(self) -> int:
         return self.capacity
 
 
@@ -71,16 +71,16 @@ def test():
     arr = DynamicArray(1)
 
     arr.pushback(1)
-    assert arr.getSize() == 1
-    assert arr.getCapacity() == 1
+    assert arr.get_size() == 1
+    assert arr.get_capacity() == 1
 
     arr.pushback(2)
-    assert arr.getSize() == 2
-    assert arr.getCapacity() == 2
+    assert arr.get_size() == 2
+    assert arr.get_capacity() == 2
 
     assert arr.get(1) == 2
     assert arr.popback() == 2
-    assert arr.getSize() == 1
+    assert arr.get_size() == 1
 
     print("✓ All tests passed")
 

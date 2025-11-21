@@ -66,7 +66,7 @@ class Node:
 
 
 class Solution:
-    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
+    def clone_graph(self, node: Optional['Node']) -> Optional['Node']:
         if not node:
             return None
 
@@ -104,7 +104,7 @@ def test():
     node3.neighbors = [node2, node4]
     node4.neighbors = [node1, node3]
 
-    cloned = sol.cloneGraph(node1)
+    cloned = sol.clone_graph(node1)
     assert cloned.val == 1
     assert len(cloned.neighbors) == 2
     assert cloned.neighbors[0].val == 2
@@ -115,13 +115,13 @@ def test():
 
     # Test 2: Single node
     single = Node(1)
-    cloned_single = sol.cloneGraph(single)
+    cloned_single = sol.clone_graph(single)
     assert cloned_single.val == 1
     assert len(cloned_single.neighbors) == 0
     assert cloned_single is not single
 
     # Test 3: Empty graph
-    assert sol.cloneGraph(None) is None
+    assert sol.clone_graph(None) is None
 
     print("✓ All tests passed")
 

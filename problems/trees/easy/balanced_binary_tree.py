@@ -46,7 +46,7 @@ class TreeNode:
 
 
 class Solution:
-    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+    def is_balanced(self, root: Optional[TreeNode]) -> bool:
         def height(node):
             # Returns height if balanced, -1 if not balanced
             if not node:
@@ -79,7 +79,7 @@ def test():
     root.right = TreeNode(20)
     root.right.left = TreeNode(15)
     root.right.right = TreeNode(7)
-    assert sol.isBalanced(root) == True
+    assert sol.is_balanced(root) == True
 
     # Test 2: Not balanced
     root2 = TreeNode(1)
@@ -89,14 +89,14 @@ def test():
     root2.left.right = TreeNode(3)
     root2.left.left.left = TreeNode(4)
     root2.left.left.right = TreeNode(4)
-    assert sol.isBalanced(root2) == False
+    assert sol.is_balanced(root2) == False
 
     # Test 3: Empty tree
-    assert sol.isBalanced(None) == True
+    assert sol.is_balanced(None) == True
 
     # Test 4: Single node
     root3 = TreeNode(1)
-    assert sol.isBalanced(root3) == True
+    assert sol.is_balanced(root3) == True
 
     print("✓ All tests passed")
 

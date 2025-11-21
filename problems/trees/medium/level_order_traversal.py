@@ -46,7 +46,7 @@ class TreeNode:
 
 
 class Solution:
-    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+    def level_order(self, root: Optional[TreeNode]) -> List[List[int]]:
         if not root:
             return []
 
@@ -81,20 +81,20 @@ def test():
     root.right = TreeNode(20)
     root.right.left = TreeNode(15)
     root.right.right = TreeNode(7)
-    assert sol.levelOrder(root) == [[3], [9, 20], [15, 7]]
+    assert sol.level_order(root) == [[3], [9, 20], [15, 7]]
 
     # Test 2: Single node
     root2 = TreeNode(1)
-    assert sol.levelOrder(root2) == [[1]]
+    assert sol.level_order(root2) == [[1]]
 
     # Test 3: Empty tree
-    assert sol.levelOrder(None) == []
+    assert sol.level_order(None) == []
 
     # Test 4: Unbalanced tree
     root3 = TreeNode(1)
     root3.left = TreeNode(2)
     root3.left.left = TreeNode(3)
-    assert sol.levelOrder(root3) == [[1], [2], [3]]
+    assert sol.level_order(root3) == [[1], [2], [3]]
 
     print("✓ All tests passed")
 

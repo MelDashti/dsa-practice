@@ -47,7 +47,7 @@ from typing import List
 
 
 class Solution:
-    def maxArea(self, height: List[int]) -> int:
+    def max_area(self, height: List[int]) -> int:
         left, right = 0, len(height) - 1
         max_area = 0
 
@@ -71,10 +71,10 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.maxArea([1,8,6,2,5,4,8,3,7]) == 49
-    assert sol.maxArea([1,1]) == 1
-    assert sol.maxArea([4,3,2,1,4]) == 16
-    assert sol.maxArea([1,2,1]) == 2
+    assert sol.max_area([1,8,6,2,5,4,8,3,7]) == 49
+    assert sol.max_area([1,1]) == 1
+    assert sol.max_area([4,3,2,1,4]) == 16
+    assert sol.max_area([1,2,1]) == 2
 
     print("✓ All tests passed")
 

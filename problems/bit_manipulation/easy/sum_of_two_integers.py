@@ -51,7 +51,7 @@ Space: O(1) - constant space
 
 
 class Solution:
-    def getSum(self, a: int, b: int) -> int:
+    def get_sum(self, a: int, b: int) -> int:
         """
         Calculate sum using bit manipulation.
 
@@ -100,15 +100,15 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.getSum(1, 2) == 3
-    assert sol.getSum(2, 3) == 5
-    assert sol.getSum(-1, 1) == 0
-    assert sol.getSum(-2, 3) == 1
-    assert sol.getSum(0, 0) == 0
-    assert sol.getSum(1, 1) == 2
-    assert sol.getSum(-1, -1) == -2
-    assert sol.getSum(5, 7) == 12
-    assert sol.getSum(-5, 10) == 5
+    assert sol.get_sum(1, 2) == 3
+    assert sol.get_sum(2, 3) == 5
+    assert sol.get_sum(-1, 1) == 0
+    assert sol.get_sum(-2, 3) == 1
+    assert sol.get_sum(0, 0) == 0
+    assert sol.get_sum(1, 1) == 2
+    assert sol.get_sum(-1, -1) == -2
+    assert sol.get_sum(5, 7) == 12
+    assert sol.get_sum(-5, 10) == 5
 
     print("✓ All tests passed")
 

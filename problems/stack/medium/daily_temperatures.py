@@ -49,7 +49,7 @@ from typing import List
 
 
 class Solution:
-    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+    def daily_temperatures(self, temperatures: List[int]) -> List[int]:
         n = len(temperatures)
         result = [0] * n
         stack = []  # stores indices
@@ -69,10 +69,10 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.dailyTemperatures([73,74,75,71,69,72,76,73]) == [1,1,4,2,1,1,0,0]
-    assert sol.dailyTemperatures([30,40,50,60]) == [1,1,1,0]
-    assert sol.dailyTemperatures([30,60,90]) == [1,1,0]
-    assert sol.dailyTemperatures([89,62,70,58,47,47,46,76,100,70]) == [8,1,5,4,3,2,1,1,0,0]
+    assert sol.daily_temperatures([73,74,75,71,69,72,76,73]) == [1,1,4,2,1,1,0,0]
+    assert sol.daily_temperatures([30,40,50,60]) == [1,1,1,0]
+    assert sol.daily_temperatures([30,60,90]) == [1,1,0]
+    assert sol.daily_temperatures([89,62,70,58,47,47,46,76,100,70]) == [8,1,5,4,3,2,1,1,0,0]
 
     print("✓ All tests passed")
 

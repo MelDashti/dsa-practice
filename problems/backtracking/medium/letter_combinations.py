@@ -52,7 +52,7 @@ from typing import List
 
 
 class Solution:
-    def letterCombinations(self, digits: str) -> List[str]:
+    def letter_combinations(self, digits: str) -> List[str]:
         if not digits:
             return []
 
@@ -95,21 +95,21 @@ def test():
     sol = Solution()
 
     # Test case 1
-    result1 = sol.letterCombinations("23")
+    result1 = sol.letter_combinations("23")
     expected1 = ["ad","ae","af","bd","be","bf","cd","ce","cf"]
     assert sorted(result1) == sorted(expected1)
 
     # Test case 2
-    result2 = sol.letterCombinations("")
+    result2 = sol.letter_combinations("")
     assert result2 == []
 
     # Test case 3
-    result3 = sol.letterCombinations("2")
+    result3 = sol.letter_combinations("2")
     expected3 = ["a","b","c"]
     assert sorted(result3) == sorted(expected3)
 
     # Test case 4
-    result4 = sol.letterCombinations("7")
+    result4 = sol.letter_combinations("7")
     expected4 = ["p","q","r","s"]
     assert sorted(result4) == sorted(expected4)
 

@@ -46,7 +46,7 @@ class TreeNode:
 
 
 class Solution:
-    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+    def diameter_of_binary_tree(self, root: Optional[TreeNode]) -> int:
         self.diameter = 0
 
         def height(node):
@@ -75,16 +75,16 @@ def test():
     root.right = TreeNode(3)
     root.left.left = TreeNode(4)
     root.left.right = TreeNode(5)
-    assert sol.diameterOfBinaryTree(root) == 3
+    assert sol.diameter_of_binary_tree(root) == 3
 
     # Test 2: Simple tree
     root2 = TreeNode(1)
     root2.left = TreeNode(2)
-    assert sol.diameterOfBinaryTree(root2) == 1
+    assert sol.diameter_of_binary_tree(root2) == 1
 
     # Test 3: Single node
     root3 = TreeNode(1)
-    assert sol.diameterOfBinaryTree(root3) == 0
+    assert sol.diameter_of_binary_tree(root3) == 0
 
     # Test 4: Diameter doesn't pass through root
     root4 = TreeNode(1)
@@ -92,7 +92,7 @@ def test():
     root4.left.left = TreeNode(3)
     root4.left.left.left = TreeNode(4)
     root4.left.left.left.left = TreeNode(5)
-    assert sol.diameterOfBinaryTree(root4) == 4
+    assert sol.diameter_of_binary_tree(root4) == 4
 
     print("✓ All tests passed")
 

@@ -37,7 +37,7 @@ from typing import List
 
 
 class Solution:
-    def longestConsecutive(self, nums: List[int]) -> int:
+    def longest_consecutive(self, nums: List[int]) -> int:
         if not nums:
             return 0
 
@@ -64,11 +64,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.longestConsecutive([100,4,200,1,3,2]) == 4
-    assert sol.longestConsecutive([0,3,7,2,5,8,4,6,0,1]) == 9
-    assert sol.longestConsecutive([]) == 0
-    assert sol.longestConsecutive([1]) == 1
-    assert sol.longestConsecutive([1,2,0,1]) == 3
+    assert sol.longest_consecutive([100,4,200,1,3,2]) == 4
+    assert sol.longest_consecutive([0,3,7,2,5,8,4,6,0,1]) == 9
+    assert sol.longest_consecutive([]) == 0
+    assert sol.longest_consecutive([1]) == 1
+    assert sol.longest_consecutive([1,2,0,1]) == 3
 
     print("✓ All tests passed")
 

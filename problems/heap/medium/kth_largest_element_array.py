@@ -39,7 +39,7 @@ import heapq
 
 
 class Solution:
-    def findKthLargest(self, nums: list[int], k: int) -> int:
+    def find_kth_largest(self, nums: list[int], k: int) -> int:
         # Use min heap of size k
         min_heap = []
 
@@ -56,22 +56,22 @@ def test():
     sol = Solution()
 
     # Test 1
-    assert sol.findKthLargest([3, 2, 1, 5, 6, 4], 2) == 5
+    assert sol.find_kth_largest([3, 2, 1, 5, 6, 4], 2) == 5
 
     # Test 2
-    assert sol.findKthLargest([3, 2, 3, 1, 2, 4, 5, 5, 6], 4) == 4
+    assert sol.find_kth_largest([3, 2, 3, 1, 2, 4, 5, 5, 6], 4) == 4
 
     # Test 3
-    assert sol.findKthLargest([1], 1) == 1
+    assert sol.find_kth_largest([1], 1) == 1
 
     # Test 4
-    assert sol.findKthLargest([1, 2], 1) == 2
+    assert sol.find_kth_largest([1, 2], 1) == 2
 
     # Test 5
-    assert sol.findKthLargest([7, 6, 5, 4, 3, 2, 1], 2) == 6
+    assert sol.find_kth_largest([7, 6, 5, 4, 3, 2, 1], 2) == 6
 
     # Test 6
-    assert sol.findKthLargest([-1, -1], 2) == -1
+    assert sol.find_kth_largest([-1, -1], 2) == -1
 
     print("✓ All tests passed")
 

@@ -40,7 +40,7 @@ from typing import List
 
 
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
+    def product_except_self(self, nums: List[int]) -> List[int]:
         n = len(nums)
         result = [1] * n
 
@@ -63,9 +63,9 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.productExceptSelf([1,2,3,4]) == [24,12,8,6]
-    assert sol.productExceptSelf([-1,1,0,-3,3]) == [0,0,9,0,0]
-    assert sol.productExceptSelf([2,3,4,5]) == [60,40,30,24]
+    assert sol.product_except_self([1,2,3,4]) == [24,12,8,6]
+    assert sol.product_except_self([-1,1,0,-3,3]) == [0,0,9,0,0]
+    assert sol.product_except_self([2,3,4,5]) == [60,40,30,24]
 
     print("✓ All tests passed")
 

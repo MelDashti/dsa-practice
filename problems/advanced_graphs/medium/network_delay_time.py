@@ -52,7 +52,7 @@ from collections import defaultdict
 
 
 class Solution:
-    def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
+    def network_delay_time(self, times: List[List[int]], n: int, k: int) -> int:
         # Build adjacency list
         graph = defaultdict(list)
         for u, v, w in times:
@@ -88,31 +88,31 @@ def test():
 
     # Test 1: Basic network
     times1 = [[2, 1, 1], [2, 3, 1], [3, 4, 1]]
-    assert sol.networkDelayTime(times1, 4, 2) == 2
+    assert sol.network_delay_time(times1, 4, 2) == 2
 
     # Test 2: Simple two-node network
     times2 = [[1, 2, 1]]
-    assert sol.networkDelayTime(times2, 2, 1) == 1
+    assert sol.network_delay_time(times2, 2, 1) == 1
 
     # Test 3: Unreachable nodes
     times3 = [[1, 2, 1]]
-    assert sol.networkDelayTime(times3, 2, 2) == -1
+    assert sol.network_delay_time(times3, 2, 2) == -1
 
     # Test 4: Single node
     times4 = []
-    assert sol.networkDelayTime(times4, 1, 1) == 0
+    assert sol.network_delay_time(times4, 1, 1) == 0
 
     # Test 5: All nodes directly connected from source
     times5 = [[1, 2, 1], [1, 3, 2], [1, 4, 3]]
-    assert sol.networkDelayTime(times5, 4, 1) == 3
+    assert sol.network_delay_time(times5, 4, 1) == 3
 
     # Test 6: Multiple paths to same node
     times6 = [[1, 2, 1], [2, 3, 2], [1, 3, 4]]
-    assert sol.networkDelayTime(times6, 3, 1) == 3
+    assert sol.network_delay_time(times6, 3, 1) == 3
 
     # Test 7: Complex network - shortest path wins
     times7 = [[1, 2, 1], [2, 3, 2], [1, 3, 1]]
-    assert sol.networkDelayTime(times7, 3, 1) == 1
+    assert sol.network_delay_time(times7, 3, 1) == 1
 
     print("✓ All tests passed")
 

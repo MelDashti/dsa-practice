@@ -49,7 +49,7 @@ from typing import List
 
 
 class Solution:
-    def minCostClimbingStairs(self, cost: List[int]) -> int:
+    def min_cost_climbing_stairs(self, cost: List[int]) -> int:
         n = len(cost)
 
         # Start with first two steps
@@ -70,10 +70,10 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.minCostClimbingStairs([10,15,20]) == 15
-    assert sol.minCostClimbingStairs([1,100,1,1,1,100,1,1,1,1]) == 5
-    assert sol.minCostClimbingStairs([0,0,0,1]) == 0
-    assert sol.minCostClimbingStairs([1,2,3]) == 2
+    assert sol.min_cost_climbing_stairs([10,15,20]) == 15
+    assert sol.min_cost_climbing_stairs([1,100,1,1,1,100,1,1,1,1]) == 5
+    assert sol.min_cost_climbing_stairs([0,0,0,1]) == 0
+    assert sol.min_cost_climbing_stairs([1,2,3]) == 2
 
     print("✓ All tests passed")
 

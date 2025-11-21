@@ -34,7 +34,7 @@ Space: O(m + n) - for storing row and column indices
 
 
 class Solution:
-    def setZeroes(self, matrix: list[list[int]]) -> None:
+    def set_zeroes(self, matrix: list[list[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.
         """
@@ -65,22 +65,22 @@ def test():
 
     # Test 1
     matrix1 = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
-    sol.setZeroes(matrix1)
+    sol.set_zeroes(matrix1)
     assert matrix1 == [[1, 0, 1], [0, 0, 0], [1, 0, 1]]
 
     # Test 2
     matrix2 = [[0, 1, 2, 0], [3, 4, 5, 2], [1, 3, 1, 5]]
-    sol.setZeroes(matrix2)
+    sol.set_zeroes(matrix2)
     assert matrix2 == [[0, 0, 0, 0], [0, 4, 5, 0], [0, 3, 1, 0]]
 
     # Test 3
     matrix3 = [[1, 1], [1, 1]]
-    sol.setZeroes(matrix3)
+    sol.set_zeroes(matrix3)
     assert matrix3 == [[1, 1], [1, 1]]
 
     # Test 4
     matrix4 = [[0]]
-    sol.setZeroes(matrix4)
+    sol.set_zeroes(matrix4)
     assert matrix4 == [[0]]
 
     print("✓ All tests passed")

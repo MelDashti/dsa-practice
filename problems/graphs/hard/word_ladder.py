@@ -49,7 +49,7 @@ from collections import deque
 
 
 class Solution:
-    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+    def ladder_length(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         if endWord not in wordList:
             return 0
 
@@ -83,22 +83,22 @@ def test():
     sol = Solution()
 
     # Test 1: Valid transformation
-    assert sol.ladderLength("hit", "cog", ["hot","dot","dog","lot","log","cog"]) == 5
+    assert sol.ladder_length("hit", "cog", ["hot","dot","dog","lot","log","cog"]) == 5
 
     # Test 2: EndWord not in wordList
-    assert sol.ladderLength("hit", "cog", ["hot","dot","dog","lot","log"]) == 0
+    assert sol.ladder_length("hit", "cog", ["hot","dot","dog","lot","log"]) == 0
 
     # Test 3: Direct transformation
-    assert sol.ladderLength("hot", "dot", ["hot","dot","dog"]) == 2
+    assert sol.ladder_length("hot", "dot", ["hot","dot","dog"]) == 2
 
     # Test 4: No path exists
-    assert sol.ladderLength("a", "c", ["a","b","c"]) == 2
+    assert sol.ladder_length("a", "c", ["a","b","c"]) == 2
 
     # Test 5: Longer chain
-    assert sol.ladderLength("hit", "cog", ["hot","dot","dog","lot","log","cog"]) == 5
+    assert sol.ladder_length("hit", "cog", ["hot","dot","dog","lot","log","cog"]) == 5
 
     # Test 6: Single character change
-    assert sol.ladderLength("cat", "hat", ["cat","hat"]) == 2
+    assert sol.ladder_length("cat", "hat", ["cat","hat"]) == 2
 
     print("✓ All tests passed")
 

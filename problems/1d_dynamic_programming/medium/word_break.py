@@ -48,7 +48,7 @@ from typing import List
 
 
 class Solution:
-    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+    def word_break(self, s: str, wordDict: List[str]) -> bool:
         # Convert to set for O(1) lookup
         word_set = set(wordDict)
         n = len(s)
@@ -73,12 +73,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.wordBreak("leetcode", ["leet","code"]) == True
-    assert sol.wordBreak("applepenapple", ["apple","pen"]) == True
-    assert sol.wordBreak("catsandog", ["cats","dog","sand","and","cat"]) == False
-    assert sol.wordBreak("a", ["a"]) == True
-    assert sol.wordBreak("ab", ["a","b"]) == True
-    assert sol.wordBreak("cars", ["car","ca","rs"]) == True
+    assert sol.word_break("leetcode", ["leet","code"]) == True
+    assert sol.word_break("applepenapple", ["apple","pen"]) == True
+    assert sol.word_break("catsandog", ["cats","dog","sand","and","cat"]) == False
+    assert sol.word_break("a", ["a"]) == True
+    assert sol.word_break("ab", ["a","b"]) == True
+    assert sol.word_break("cars", ["car","ca","rs"]) == True
 
     print("✓ All tests passed")
 

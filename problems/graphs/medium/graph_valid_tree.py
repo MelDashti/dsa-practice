@@ -46,7 +46,7 @@ from typing import List
 
 
 class Solution:
-    def validTree(self, n: int, edges: List[List[int]]) -> bool:
+    def valid_tree(self, n: int, edges: List[List[int]]) -> bool:
         # A tree with n nodes must have exactly n-1 edges
         if len(edges) != n - 1:
             return False
@@ -90,25 +90,25 @@ def test():
     sol = Solution()
 
     # Test 1: Valid tree
-    assert sol.validTree(5, [[0,1],[0,2],[0,3],[1,4]]) == True
+    assert sol.valid_tree(5, [[0,1],[0,2],[0,3],[1,4]]) == True
 
     # Test 2: Has cycle
-    assert sol.validTree(5, [[0,1],[1,2],[2,3],[1,3],[1,4]]) == False
+    assert sol.valid_tree(5, [[0,1],[1,2],[2,3],[1,3],[1,4]]) == False
 
     # Test 3: Disconnected graph
-    assert sol.validTree(4, [[0,1],[2,3]]) == False
+    assert sol.valid_tree(4, [[0,1],[2,3]]) == False
 
     # Test 4: Too many edges
-    assert sol.validTree(4, [[0,1],[0,2],[0,3],[1,2],[1,3]]) == False
+    assert sol.valid_tree(4, [[0,1],[0,2],[0,3],[1,2],[1,3]]) == False
 
     # Test 5: Single node
-    assert sol.validTree(1, []) == True
+    assert sol.valid_tree(1, []) == True
 
     # Test 6: Two nodes connected
-    assert sol.validTree(2, [[0,1]]) == True
+    assert sol.valid_tree(2, [[0,1]]) == True
 
     # Test 7: Two nodes disconnected
-    assert sol.validTree(2, []) == False
+    assert sol.valid_tree(2, []) == False
 
     print("✓ All tests passed")
 

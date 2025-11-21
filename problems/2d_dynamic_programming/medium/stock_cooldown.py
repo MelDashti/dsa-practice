@@ -46,7 +46,7 @@ from typing import List
 
 
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+    def max_profit(self, prices: List[int]) -> int:
         if not prices or len(prices) < 2:
             return 0
 
@@ -80,12 +80,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.maxProfit([1,2,3,0,2]) == 3
-    assert sol.maxProfit([1]) == 0
-    assert sol.maxProfit([1,2]) == 1
-    assert sol.maxProfit([2,1]) == 0
-    assert sol.maxProfit([1,2,3,4,5]) == 4
-    assert sol.maxProfit([5,4,3,2,1]) == 0
+    assert sol.max_profit([1,2,3,0,2]) == 3
+    assert sol.max_profit([1]) == 0
+    assert sol.max_profit([1,2]) == 1
+    assert sol.max_profit([2,1]) == 0
+    assert sol.max_profit([1,2,3,4,5]) == 4
+    assert sol.max_profit([5,4,3,2,1]) == 0
 
     print("✓ All tests passed")
 

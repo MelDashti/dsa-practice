@@ -62,7 +62,7 @@ from collections import defaultdict, deque
 
 
 class Solution:
-    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
+    def find_cheapest_price(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
         # Build adjacency list
         graph = defaultdict(list)
         for from_city, to_city, price in flights:
@@ -100,31 +100,31 @@ def test():
 
     # Test 1: Example with 1 stop
     flights1 = [[0, 1, 100], [1, 2, 100], [2, 0, 100], [1, 3, 600], [2, 3, 200]]
-    assert sol.findCheapestPrice(4, flights1, 0, 3, 1) == 700
+    assert sol.find_cheapest_price(4, flights1, 0, 3, 1) == 700
 
     # Test 2: Multiple paths
     flights2 = [[0, 1, 100], [1, 2, 100], [0, 2, 500]]
-    assert sol.findCheapestPrice(3, flights2, 0, 2, 1) == 200
+    assert sol.find_cheapest_price(3, flights2, 0, 2, 1) == 200
 
     # Test 3: Direct flight only
     flights3 = [[0, 1, 100], [1, 2, 100], [0, 2, 500]]
-    assert sol.findCheapestPrice(3, flights3, 0, 2, 0) == 500
+    assert sol.find_cheapest_price(3, flights3, 0, 2, 0) == 500
 
     # Test 4: No valid path
     flights4 = [[0, 1, 100], [1, 2, 100]]
-    assert sol.findCheapestPrice(3, flights4, 0, 2, 0) == -1
+    assert sol.find_cheapest_price(3, flights4, 0, 2, 0) == -1
 
     # Test 5: Direct flight is cheapest
     flights5 = [[0, 1, 100], [1, 2, 100], [0, 2, 150]]
-    assert sol.findCheapestPrice(3, flights5, 0, 2, 0) == 150
+    assert sol.find_cheapest_price(3, flights5, 0, 2, 0) == 150
 
     # Test 6: Multiple stops allowed
     flights6 = [[0, 1, 100], [1, 2, 100], [2, 3, 100]]
-    assert sol.findCheapestPrice(4, flights6, 0, 3, 2) == 300
+    assert sol.find_cheapest_price(4, flights6, 0, 3, 2) == 300
 
     # Test 7: Complex graph
     flights7 = [[0, 1, 100], [0, 2, 500], [1, 2, 100], [2, 3, 100]]
-    assert sol.findCheapestPrice(4, flights7, 0, 3, 2) == 300
+    assert sol.find_cheapest_price(4, flights7, 0, 3, 2) == 300
 
     print("✓ All tests passed")
 

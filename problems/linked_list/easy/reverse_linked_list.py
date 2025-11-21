@@ -43,7 +43,7 @@ class ListNode:
 
 
 class Solution:
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def reverse_list(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev = None
         current = head
 
@@ -82,17 +82,17 @@ def test():
 
     # Test 1
     head1 = create_list([1,2,3,4,5])
-    result1 = sol.reverseList(head1)
+    result1 = sol.reverse_list(head1)
     assert list_to_array(result1) == [5,4,3,2,1]
 
     # Test 2
     head2 = create_list([1,2])
-    result2 = sol.reverseList(head2)
+    result2 = sol.reverse_list(head2)
     assert list_to_array(result2) == [2,1]
 
     # Test 3
     head3 = create_list([])
-    result3 = sol.reverseList(head3)
+    result3 = sol.reverse_list(head3)
     assert list_to_array(result3) == []
 
     print("✓ All tests passed")

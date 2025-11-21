@@ -53,7 +53,7 @@ from collections import defaultdict, deque
 
 
 class Solution:
-    def alienOrder(self, words: List[str]) -> str:
+    def alien_order(self, words: List[str]) -> str:
         # Build adjacency list and in-degree count
         graph = defaultdict(set)
         in_degree = {char: 0 for word in words for char in word}
@@ -101,34 +101,34 @@ def test():
 
     # Test 1: Standard alien dictionary
     words1 = ["wrt", "wrf", "er", "ett", "rftt"]
-    result1 = sol.alienOrder(words1)
+    result1 = sol.alien_order(words1)
     assert result1 == "wertf"
 
     # Test 2: Simple ordering
     words2 = ["z", "x"]
-    result2 = sol.alienOrder(words2)
+    result2 = sol.alien_order(words2)
     assert result2 == "zx"
 
     # Test 3: Invalid ordering (cycle)
     words3 = ["z", "x", "z"]
-    assert sol.alienOrder(words3) == ""
+    assert sol.alien_order(words3) == ""
 
     # Test 4: Single word
     words4 = ["abc"]
-    result4 = sol.alienOrder(words4)
+    result4 = sol.alien_order(words4)
     assert len(result4) == 3 and set(result4) == {'a', 'b', 'c'}
 
     # Test 5: Invalid - longer word is prefix
     words5 = ["abc", "ab"]
-    assert sol.alienOrder(words5) == ""
+    assert sol.alien_order(words5) == ""
 
     # Test 6: All same character
     words6 = ["a", "a"]
-    assert sol.alienOrder(words6) == "a"
+    assert sol.alien_order(words6) == "a"
 
     # Test 7: Multiple characters
     words7 = ["baa", "abcd", "abca", "cab", "cad"]
-    result7 = sol.alienOrder(words7)
+    result7 = sol.alien_order(words7)
     # Valid result should have 'b' before 'a', 'd' before 'c', etc.
     assert len(result7) == 4 and set(result7) == {'a', 'b', 'c', 'd'}
 

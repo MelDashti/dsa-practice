@@ -37,7 +37,7 @@ Space: O(log n) - recursion stack depth
 
 
 class Solution:
-    def myPow(self, x: float, n: int) -> float:
+    def my_pow(self, x: float, n: int) -> float:
         if n == 0:
             return 1.0
 
@@ -69,23 +69,23 @@ def test():
     sol = Solution()
 
     # Test 1
-    result1 = sol.myPow(2.0, 10)
+    result1 = sol.my_pow(2.0, 10)
     assert abs(result1 - 1024.0) < 1e-6
 
     # Test 2
-    result2 = sol.myPow(2.1, 3)
+    result2 = sol.my_pow(2.1, 3)
     assert abs(result2 - 9.261) < 1e-6
 
     # Test 3
-    result3 = sol.myPow(2.0, -2)
+    result3 = sol.my_pow(2.0, -2)
     assert abs(result3 - 0.25) < 1e-6
 
     # Test 4
-    result4 = sol.myPow(1.0, 2147483647)
+    result4 = sol.my_pow(1.0, 2147483647)
     assert abs(result4 - 1.0) < 1e-6
 
     # Test 5
-    result5 = sol.myPow(2.0, 0)
+    result5 = sol.my_pow(2.0, 0)
     assert abs(result5 - 1.0) < 1e-6
 
     print("✓ All tests passed")

@@ -41,7 +41,7 @@ Space: O(1) - only store two variables
 
 
 class Solution:
-    def climbStairs(self, n: int) -> int:
+    def climb_stairs(self, n: int) -> int:
         if n <= 2:
             return n
 
@@ -62,11 +62,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.climbStairs(2) == 2
-    assert sol.climbStairs(3) == 3
-    assert sol.climbStairs(4) == 5
-    assert sol.climbStairs(5) == 8
-    assert sol.climbStairs(1) == 1
+    assert sol.climb_stairs(2) == 2
+    assert sol.climb_stairs(3) == 3
+    assert sol.climb_stairs(4) == 5
+    assert sol.climb_stairs(5) == 8
+    assert sol.climb_stairs(1) == 1
 
     print("✓ All tests passed")
 
