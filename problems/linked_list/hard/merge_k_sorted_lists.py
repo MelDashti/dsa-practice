@@ -64,7 +64,7 @@ class ListNode:
 
 
 class Solution:
-    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+    def merge_k_lists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
         if not lists:
             return None
 
@@ -117,22 +117,22 @@ def test():
 
     # Test 1
     lists1 = [create_list([1,4,5]), create_list([1,3,4]), create_list([2,6])]
-    result1 = sol.mergeKLists(lists1)
+    result1 = sol.merge_k_lists(lists1)
     assert list_to_array(result1) == [1,1,2,3,4,4,5,6]
 
     # Test 2
     lists2 = []
-    result2 = sol.mergeKLists(lists2)
+    result2 = sol.merge_k_lists(lists2)
     assert list_to_array(result2) == []
 
     # Test 3
     lists3 = [create_list([])]
-    result3 = sol.mergeKLists(lists3)
+    result3 = sol.merge_k_lists(lists3)
     assert list_to_array(result3) == []
 
     # Test 4
     lists4 = [create_list([1,2,3]), create_list([4,5,6])]
-    result4 = sol.mergeKLists(lists4)
+    result4 = sol.merge_k_lists(lists4)
     assert list_to_array(result4) == [1,2,3,4,5,6]
 
     print("✓ All tests passed")

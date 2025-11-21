@@ -48,7 +48,7 @@ class TreeNode:
 
 
 class Solution:
-    def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+    def build_tree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
         # Create hashmap for O(1) lookup of inorder indices
         inorder_map = {val: i for i, val in enumerate(inorder)}
 
@@ -104,19 +104,19 @@ def test():
     # Test 1: Normal tree
     preorder = [3, 9, 20, 15, 7]
     inorder = [9, 3, 15, 20, 7]
-    root = sol.buildTree(preorder, inorder)
+    root = sol.build_tree(preorder, inorder)
     assert tree_to_list(root) == [3, 9, 20, None, None, 15, 7]
 
     # Test 2: Single node
     preorder2 = [-1]
     inorder2 = [-1]
-    root2 = sol.buildTree(preorder2, inorder2)
+    root2 = sol.build_tree(preorder2, inorder2)
     assert tree_to_list(root2) == [-1]
 
     # Test 3: Left-skewed tree
     preorder3 = [1, 2, 3]
     inorder3 = [3, 2, 1]
-    root3 = sol.buildTree(preorder3, inorder3)
+    root3 = sol.build_tree(preorder3, inorder3)
     assert root3.val == 1
     assert root3.left.val == 2
     assert root3.left.left.val == 3

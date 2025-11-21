@@ -38,7 +38,7 @@ Space: O(log n) - for storing seen numbers
 
 
 class Solution:
-    def isHappy(self, n: int) -> bool:
+    def is_happy(self, n: int) -> bool:
         def get_next(num):
             total_sum = 0
             while num > 0:
@@ -60,19 +60,19 @@ def test():
     sol = Solution()
 
     # Test 1: Happy number
-    assert sol.isHappy(7) == True
+    assert sol.is_happy(7) == True
 
     # Test 2: Unhappy number
-    assert sol.isHappy(2) == False
+    assert sol.is_happy(2) == False
 
     # Test 3: Single digit happy
-    assert sol.isHappy(1) == True
+    assert sol.is_happy(1) == True
 
     # Test 4: Another happy number
-    assert sol.isHappy(19) == True
+    assert sol.is_happy(19) == True
 
     # Test 5: Another unhappy number
-    assert sol.isHappy(3) == False
+    assert sol.is_happy(3) == False
 
     print("✓ All tests passed")
 

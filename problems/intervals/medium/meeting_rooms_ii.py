@@ -45,7 +45,7 @@ from typing import List
 
 
 class Solution:
-    def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+    def min_meeting_rooms(self, intervals: List[List[int]]) -> int:
         if not intervals:
             return 0
 
@@ -74,7 +74,7 @@ class Solution:
 class SolutionHeap:
     """Alternative solution using min heap"""
 
-    def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+    def min_meeting_rooms(self, intervals: List[List[int]]) -> int:
         if not intervals:
             return 0
 
@@ -99,20 +99,20 @@ class SolutionHeap:
 def test():
     sol = Solution()
 
-    assert sol.minMeetingRooms([[0,30],[5,10],[15,20]]) == 2
-    assert sol.minMeetingRooms([[7,10],[2,4]]) == 1
-    assert sol.minMeetingRooms([[13,15],[1,13]]) == 1
-    assert sol.minMeetingRooms([]) == 0
-    assert sol.minMeetingRooms([[1,5],[1,5],[1,5]]) == 3
+    assert sol.min_meeting_rooms([[0,30],[5,10],[15,20]]) == 2
+    assert sol.min_meeting_rooms([[7,10],[2,4]]) == 1
+    assert sol.min_meeting_rooms([[13,15],[1,13]]) == 1
+    assert sol.min_meeting_rooms([]) == 0
+    assert sol.min_meeting_rooms([[1,5],[1,5],[1,5]]) == 3
 
     print("✓ All tests passed for Solution")
 
     sol_heap = SolutionHeap()
-    assert sol_heap.minMeetingRooms([[0,30],[5,10],[15,20]]) == 2
-    assert sol_heap.minMeetingRooms([[7,10],[2,4]]) == 1
-    assert sol_heap.minMeetingRooms([[13,15],[1,13]]) == 1
-    assert sol_heap.minMeetingRooms([]) == 0
-    assert sol_heap.minMeetingRooms([[1,5],[1,5],[1,5]]) == 3
+    assert sol_heap.min_meeting_rooms([[0,30],[5,10],[15,20]]) == 2
+    assert sol_heap.min_meeting_rooms([[7,10],[2,4]]) == 1
+    assert sol_heap.min_meeting_rooms([[13,15],[1,13]]) == 1
+    assert sol_heap.min_meeting_rooms([]) == 0
+    assert sol_heap.min_meeting_rooms([[1,5],[1,5],[1,5]]) == 3
 
     print("✓ All tests passed for SolutionHeap")
 

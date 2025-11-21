@@ -49,13 +49,13 @@ class ListNode:
 
 
 class Solution:
-    def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+    def reverse_k_group(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         dummy = ListNode(0, head)
         group_prev = dummy
 
         while True:
             # Check if there are k nodes remaining
-            kth = self.getKth(group_prev, k)
+            kth = self.get_kth(group_prev, k)
             if not kth:
                 break
 
@@ -76,7 +76,7 @@ class Solution:
 
         return dummy.next
 
-    def getKth(self, curr, k):
+    def get_kth(self, curr, k):
         """Get the kth node from curr"""
         while curr and k > 0:
             curr = curr.next
@@ -110,22 +110,22 @@ def test():
 
     # Test 1
     head1 = create_list([1,2,3,4,5])
-    result1 = sol.reverseKGroup(head1, 2)
+    result1 = sol.reverse_k_group(head1, 2)
     assert list_to_array(result1) == [2,1,4,3,5]
 
     # Test 2
     head2 = create_list([1,2,3,4,5])
-    result2 = sol.reverseKGroup(head2, 3)
+    result2 = sol.reverse_k_group(head2, 3)
     assert list_to_array(result2) == [3,2,1,4,5]
 
     # Test 3
     head3 = create_list([1,2,3,4,5])
-    result3 = sol.reverseKGroup(head3, 1)
+    result3 = sol.reverse_k_group(head3, 1)
     assert list_to_array(result3) == [1,2,3,4,5]
 
     # Test 4
     head4 = create_list([1])
-    result4 = sol.reverseKGroup(head4, 1)
+    result4 = sol.reverse_k_group(head4, 1)
     assert list_to_array(result4) == [1]
 
     print("✓ All tests passed")

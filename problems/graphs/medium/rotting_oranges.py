@@ -52,7 +52,7 @@ from collections import deque
 
 
 class Solution:
-    def orangesRotting(self, grid: List[List[int]]) -> int:
+    def oranges_rotting(self, grid: List[List[int]]) -> int:
         if not grid or not grid[0]:
             return -1
 
@@ -100,23 +100,23 @@ def test():
 
     # Test 1: All oranges rot
     grid1 = [[2,1,1],[1,1,0],[0,1,1]]
-    assert sol.orangesRotting(grid1) == 4
+    assert sol.oranges_rotting(grid1) == 4
 
     # Test 2: Impossible to rot all
     grid2 = [[2,1,1],[0,1,1],[1,0,1]]
-    assert sol.orangesRotting(grid2) == -1
+    assert sol.oranges_rotting(grid2) == -1
 
     # Test 3: No fresh oranges
     grid3 = [[0,2]]
-    assert sol.orangesRotting(grid3) == 0
+    assert sol.oranges_rotting(grid3) == 0
 
     # Test 4: All fresh, no rotten
     grid4 = [[1,1,1],[1,1,1]]
-    assert sol.orangesRotting(grid4) == -1
+    assert sol.oranges_rotting(grid4) == -1
 
     # Test 5: Single rotten orange
     grid5 = [[2]]
-    assert sol.orangesRotting(grid5) == 0
+    assert sol.oranges_rotting(grid5) == 0
 
     print("✓ All tests passed")
 

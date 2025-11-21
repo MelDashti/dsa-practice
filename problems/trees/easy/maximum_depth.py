@@ -46,12 +46,12 @@ class TreeNode:
 
 
 class Solution:
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
+    def max_depth(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
 
-        left_depth = self.maxDepth(root.left)
-        right_depth = self.maxDepth(root.right)
+        left_depth = self.max_depth(root.left)
+        right_depth = self.max_depth(root.right)
 
         return 1 + max(left_depth, right_depth)
 
@@ -66,19 +66,19 @@ def test():
     root.right = TreeNode(20)
     root.right.left = TreeNode(15)
     root.right.right = TreeNode(7)
-    assert sol.maxDepth(root) == 3
+    assert sol.max_depth(root) == 3
 
     # Test 2: Single path
     root2 = TreeNode(1)
     root2.right = TreeNode(2)
-    assert sol.maxDepth(root2) == 2
+    assert sol.max_depth(root2) == 2
 
     # Test 3: Empty tree
-    assert sol.maxDepth(None) == 0
+    assert sol.max_depth(None) == 0
 
     # Test 4: Single node
     root3 = TreeNode(1)
-    assert sol.maxDepth(root3) == 1
+    assert sol.max_depth(root3) == 1
 
     print("✓ All tests passed")
 

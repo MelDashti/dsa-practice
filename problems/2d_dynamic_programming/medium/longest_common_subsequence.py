@@ -46,7 +46,7 @@ Space: O(n) - only store one row
 
 
 class Solution:
-    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+    def longest_common_subsequence(self, text1: str, text2: str) -> int:
         m, n = len(text1), len(text2)
 
         # Create DP table
@@ -69,12 +69,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.longestCommonSubsequence("abcde", "ace") == 3
-    assert sol.longestCommonSubsequence("abc", "abc") == 3
-    assert sol.longestCommonSubsequence("abc", "def") == 0
-    assert sol.longestCommonSubsequence("", "") == 0
-    assert sol.longestCommonSubsequence("a", "a") == 1
-    assert sol.longestCommonSubsequence("abcdef", "fedcba") == 1
+    assert sol.longest_common_subsequence("abcde", "ace") == 3
+    assert sol.longest_common_subsequence("abc", "abc") == 3
+    assert sol.longest_common_subsequence("abc", "def") == 0
+    assert sol.longest_common_subsequence("", "") == 0
+    assert sol.longest_common_subsequence("a", "a") == 1
+    assert sol.longest_common_subsequence("abcdef", "fedcba") == 1
 
     print("✓ All tests passed")
 

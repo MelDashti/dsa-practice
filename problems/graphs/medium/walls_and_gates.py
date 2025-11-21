@@ -53,7 +53,7 @@ from collections import deque
 
 
 class Solution:
-    def wallsAndGates(self, rooms: List[List[int]]) -> None:
+    def walls_and_gates(self, rooms: List[List[int]]) -> None:
         """
         Do not return anything, modify rooms in-place instead.
         """
@@ -98,7 +98,7 @@ def test():
         [INF,-1,INF,-1],
         [0,-1,INF,INF]
     ]
-    sol.wallsAndGates(rooms1)
+    sol.walls_and_gates(rooms1)
     expected1 = [
         [3,-1,0,1],
         [2,2,1,-1],
@@ -109,12 +109,12 @@ def test():
 
     # Test 2: Only walls
     rooms2 = [[-1]]
-    sol.wallsAndGates(rooms2)
+    sol.walls_and_gates(rooms2)
     assert rooms2 == [[-1]]
 
     # Test 3: Only gates
     rooms3 = [[0,0],[0,0]]
-    sol.wallsAndGates(rooms3)
+    sol.walls_and_gates(rooms3)
     assert rooms3 == [[0,0],[0,0]]
 
     # Test 4: Unreachable rooms
@@ -123,7 +123,7 @@ def test():
         [-1,-1,-1],
         [-1,-1,0]
     ]
-    sol.wallsAndGates(rooms4)
+    sol.walls_and_gates(rooms4)
     expected4 = [
         [INF,-1,-1],
         [-1,-1,-1],

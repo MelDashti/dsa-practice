@@ -45,7 +45,7 @@ Space: O(1) excluding output array
 
 
 class Solution:
-    def plusOne(self, digits: list[int]) -> list[int]:
+    def plus_one(self, digits: list[int]) -> list[int]:
         # Start from the rightmost digit
         for i in range(len(digits) - 1, -1, -1):
             digits[i] += 1
@@ -66,19 +66,19 @@ def test():
     sol = Solution()
 
     # Test 1
-    assert sol.plusOne([1, 2, 3]) == [1, 2, 4]
+    assert sol.plus_one([1, 2, 3]) == [1, 2, 4]
 
     # Test 2
-    assert sol.plusOne([4, 3, 2, 1]) == [4, 3, 2, 2]
+    assert sol.plus_one([4, 3, 2, 1]) == [4, 3, 2, 2]
 
     # Test 3
-    assert sol.plusOne([9]) == [1, 0]
+    assert sol.plus_one([9]) == [1, 0]
 
     # Test 4
-    assert sol.plusOne([9, 9, 9]) == [1, 0, 0, 0]
+    assert sol.plus_one([9, 9, 9]) == [1, 0, 0, 0]
 
     # Test 5
-    assert sol.plusOne([8, 9, 9]) == [9, 0, 0]
+    assert sol.plus_one([8, 9, 9]) == [9, 0, 0]
 
     print("✓ All tests passed")
 

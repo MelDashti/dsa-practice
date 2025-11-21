@@ -51,7 +51,7 @@ from typing import List
 
 
 class Solution:
-    def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
+    def max_area_of_island(self, grid: List[List[int]]) -> int:
         if not grid or not grid[0]:
             return 0
 
@@ -100,19 +100,19 @@ def test():
         [0,0,0,0,0,0,0,1,1,1,0,0,0],
         [0,0,0,0,0,0,0,1,1,0,0,0,0]
     ]
-    assert sol.maxAreaOfIsland(grid1) == 6
+    assert sol.max_area_of_island(grid1) == 6
 
     # Test 2: No islands
     grid2 = [[0,0,0,0,0,0,0,0]]
-    assert sol.maxAreaOfIsland(grid2) == 0
+    assert sol.max_area_of_island(grid2) == 0
 
     # Test 3: All land
     grid3 = [[1,1],[1,1]]
-    assert sol.maxAreaOfIsland(grid3) == 4
+    assert sol.max_area_of_island(grid3) == 4
 
     # Test 4: Single cell island
     grid4 = [[0,0,0],[0,1,0],[0,0,0]]
-    assert sol.maxAreaOfIsland(grid4) == 1
+    assert sol.max_area_of_island(grid4) == 1
 
     print("✓ All tests passed")
 

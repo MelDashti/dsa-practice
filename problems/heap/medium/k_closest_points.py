@@ -47,7 +47,7 @@ import heapq
 
 
 class Solution:
-    def kClosest(self, points: list[list[int]], k: int) -> list[list[int]]:
+    def k_closest(self, points: list[list[int]], k: int) -> list[list[int]]:
         # Max heap to store k closest points
         # Store (-distance, point) for max heap behavior
         max_heap = []
@@ -69,23 +69,23 @@ def test():
     sol = Solution()
 
     # Test 1
-    result1 = sol.kClosest([[1, 3], [-2, 2]], 1)
+    result1 = sol.k_closest([[1, 3], [-2, 2]], 1)
     assert result1 == [[-2, 2]]
 
     # Test 2
-    result2 = sol.kClosest([[3, 3], [5, -1], [-2, 4]], 2)
+    result2 = sol.k_closest([[3, 3], [5, -1], [-2, 4]], 2)
     assert sorted(result2) == sorted([[3, 3], [-2, 4]])
 
     # Test 3
-    result3 = sol.kClosest([[1, 3], [-2, 2], [2, -2]], 2)
+    result3 = sol.k_closest([[1, 3], [-2, 2], [2, -2]], 2)
     assert sorted(result3) == sorted([[-2, 2], [2, -2]])
 
     # Test 4
-    result4 = sol.kClosest([[0, 1], [1, 0]], 2)
+    result4 = sol.k_closest([[0, 1], [1, 0]], 2)
     assert sorted(result4) == sorted([[0, 1], [1, 0]])
 
     # Test 5
-    result5 = sol.kClosest([[1, 1], [1, 1], [1, 1]], 2)
+    result5 = sol.k_closest([[1, 1], [1, 1], [1, 1]], 2)
     assert len(result5) == 2
 
     print("✓ All tests passed")

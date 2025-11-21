@@ -44,7 +44,7 @@ class WordSearchII:
         self.root = TrieNode()
         self.directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]  # right, down, left, up
 
-    def findWords(self, board: list[list[str]], words: list[str]) -> list[str]:
+    def find_words(self, board: list[list[str]], words: list[str]) -> list[str]:
         """
         Find all words from the word list that exist on the board.
 
@@ -143,42 +143,42 @@ def test():
     board1 = [["c", "a", "t"]]
     words1 = ["cat", "car", "card"]
     searcher1 = WordSearchII()
-    result1 = searcher1.findWords(board1, words1)
+    result1 = searcher1.find_words(board1, words1)
     assert set(result1) == {"cat"}
 
     # Test case 2: Vertical word
     board2 = [["c"], ["a"], ["t"]]
     words2 = ["cat", "car"]
     searcher2 = WordSearchII()
-    result2 = searcher2.findWords(board2, words2)
+    result2 = searcher2.find_words(board2, words2)
     assert set(result2) == {"cat"}
 
     # Test case 3: No words found
     board3 = [["a", "b"], ["c", "d"]]
     words3 = ["abcd", "dcba"]
     searcher3 = WordSearchII()
-    result3 = searcher3.findWords(board3, words3)
+    result3 = searcher3.find_words(board3, words3)
     assert result3 == []
 
     # Test case 4: Multiple words with shared prefix
     board4 = [["a", "b"], ["a", "a"]]
     words4 = ["aa", "aaa", "aab"]
     searcher4 = WordSearchII()
-    result4 = searcher4.findWords(board4, words4)
+    result4 = searcher4.find_words(board4, words4)
     assert set(result4) == {"aa", "aaa", "aab"}
 
     # Test case 5: Single cell board
     board5 = [["a"]]
     words5 = ["a", "b"]
     searcher5 = WordSearchII()
-    result5 = searcher5.findWords(board5, words5)
+    result5 = searcher5.find_words(board5, words5)
     assert set(result5) == {"a"}
 
     # Test case 6: Non-adjacent words not found
     board6 = [["a", "b"], ["c", "d"]]
     words6 = ["ad", "bc"]
     searcher6 = WordSearchII()
-    result6 = searcher6.findWords(board6, words6)
+    result6 = searcher6.find_words(board6, words6)
     # ad: a[0,0] not adjacent to d[1,1] (diagonal)
     # bc: b[0,1] not adjacent to c[1,0] (diagonal)
     assert result6 == []
@@ -187,7 +187,7 @@ def test():
     board7 = [["d", "o", "a"], ["r", "l", "e"], ["w", "l", "d"]]
     words7 = ["dole", "led", "door"]
     searcher7 = WordSearchII()
-    result7 = searcher7.findWords(board7, words7)
+    result7 = searcher7.find_words(board7, words7)
     # dole: d[0,0]->o[0,1]->l[1,1]->e[1,2] ✓
     # led: l[1,1]->e[1,2]->d[2,2] ✓
     # door: d->o->o->r (need two o's adjacent, we only have one)
@@ -197,7 +197,7 @@ def test():
     board8 = [["a", "b"], ["a", "a"]]
     words8 = ["aaa", "aba", "baa"]
     searcher8 = WordSearchII()
-    result8 = searcher8.findWords(board8, words8)
+    result8 = searcher8.find_words(board8, words8)
     # aaa: a[0,0]->a[1,0]->a[1,1] (valid)
     # aba: a[0,0]->b[0,1]->a[1,1] (valid)
     # baa: b[0,1]->a[0,0]->a[1,0] or b[0,1]->a[1,1]->a[1,0] (valid)

@@ -43,7 +43,7 @@ from typing import List
 
 
 class Solution:
-    def maxProduct(self, nums: List[int]) -> int:
+    def max_product(self, nums: List[int]) -> int:
         if not nums:
             return 0
 
@@ -74,12 +74,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.maxProduct([2,3,-2,4]) == 6
-    assert sol.maxProduct([-2,0,-1]) == 0
-    assert sol.maxProduct([-2]) == -2
-    assert sol.maxProduct([0,2]) == 2
-    assert sol.maxProduct([-2,3,-4]) == 24
-    assert sol.maxProduct([2,-5,-2,-4,3]) == 24
+    assert sol.max_product([2,3,-2,4]) == 6
+    assert sol.max_product([-2,0,-1]) == 0
+    assert sol.max_product([-2]) == -2
+    assert sol.max_product([0,2]) == 2
+    assert sol.max_product([-2,3,-4]) == 24
+    assert sol.max_product([2,-5,-2,-4,3]) == 24
 
     print("✓ All tests passed")
 

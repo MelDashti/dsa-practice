@@ -22,12 +22,12 @@ Example 1:
     [null, 4, 5, 5, 8, 8]
 
     Explanation:
-    KthLargest kthLargest = new KthLargest(3, [4, 5, 8, 2]);
-    kthLargest.add(3);   // return 4
-    kthLargest.add(5);   // return 5
-    kthLargest.add(10);  // return 5
-    kthLargest.add(9);   // return 8
-    kthLargest.add(4);   // return 8
+    KthLargest kth_largest = new KthLargest(3, [4, 5, 8, 2]);
+    kth_largest.add(3);   // return 4
+    kth_largest.add(5);   // return 5
+    kth_largest.add(10);  // return 5
+    kth_largest.add(9);   // return 8
+    kth_largest.add(4);   // return 8
 
 Constraints:
 - 1 <= k <= 10^4
@@ -70,12 +70,12 @@ class KthLargest:
 # Tests
 def test():
     # Test 1
-    kthLargest = KthLargest(3, [4, 5, 8, 2])
-    assert kthLargest.add(3) == 4
-    assert kthLargest.add(5) == 5
-    assert kthLargest.add(10) == 5
-    assert kthLargest.add(9) == 8
-    assert kthLargest.add(4) == 8
+    kth_largest = KthLargest(3, [4, 5, 8, 2])
+    assert kth_largest.add(3) == 4
+    assert kth_largest.add(5) == 5
+    assert kth_largest.add(10) == 5
+    assert kth_largest.add(9) == 8
+    assert kth_largest.add(4) == 8
 
     # Test 2
     kth2 = KthLargest(1, [])

@@ -42,7 +42,7 @@ from typing import List
 
 
 class Solution:
-    def countComponents(self, n: int, edges: List[List[int]]) -> int:
+    def count_components(self, n: int, edges: List[List[int]]) -> int:
         parent = list(range(n))
         rank = [1] * n
 
@@ -84,19 +84,19 @@ def test():
     sol = Solution()
 
     # Test 1: Two components
-    assert sol.countComponents(5, [[0,1],[1,2],[3,4]]) == 2
+    assert sol.count_components(5, [[0,1],[1,2],[3,4]]) == 2
 
     # Test 2: One component
-    assert sol.countComponents(5, [[0,1],[1,2],[2,3],[3,4]]) == 1
+    assert sol.count_components(5, [[0,1],[1,2],[2,3],[3,4]]) == 1
 
     # Test 3: All disconnected
-    assert sol.countComponents(4, []) == 4
+    assert sol.count_components(4, []) == 4
 
     # Test 4: Three components
-    assert sol.countComponents(6, [[0,1],[2,3]]) == 4
+    assert sol.count_components(6, [[0,1],[2,3]]) == 4
 
     # Test 5: Single node
-    assert sol.countComponents(1, []) == 1
+    assert sol.count_components(1, []) == 1
 
     print("✓ All tests passed")
 

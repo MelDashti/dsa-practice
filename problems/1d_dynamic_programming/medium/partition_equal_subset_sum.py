@@ -38,7 +38,7 @@ from typing import List
 
 
 class Solution:
-    def canPartition(self, nums: List[int]) -> bool:
+    def can_partition(self, nums: List[int]) -> bool:
         total_sum = sum(nums)
 
         # If total sum is odd, cannot partition into equal subsets
@@ -64,13 +64,13 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.canPartition([1,5,11,5]) == True
-    assert sol.canPartition([1,2,3,5]) == False
-    assert sol.canPartition([1,2,3,4]) == True
-    assert sol.canPartition([1,1]) == True
-    assert sol.canPartition([1,2,5]) == False
-    assert sol.canPartition([100]) == False
-    assert sol.canPartition([1,1,1,1]) == True
+    assert sol.can_partition([1,5,11,5]) == True
+    assert sol.can_partition([1,2,3,5]) == False
+    assert sol.can_partition([1,2,3,4]) == True
+    assert sol.can_partition([1,1]) == True
+    assert sol.can_partition([1,2,5]) == False
+    assert sol.can_partition([100]) == False
+    assert sol.can_partition([1,1,1,1]) == True
 
     print("✓ All tests passed")
 

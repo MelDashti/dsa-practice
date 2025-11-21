@@ -43,7 +43,7 @@ import heapq
 
 
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def top_k_frequent(self, nums: List[int], k: int) -> List[int]:
         # Count frequencies
         count = Counter(nums)
 
@@ -72,12 +72,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    result1 = sol.topKFrequent([1,1,1,2,2,3], 2)
+    result1 = sol.top_k_frequent([1,1,1,2,2,3], 2)
     assert sorted(result1) == [1,2]
 
-    assert sol.topKFrequent([1], 1) == [1]
+    assert sol.top_k_frequent([1], 1) == [1]
 
-    result2 = sol.topKFrequent([4,1,-1,2,-1,2,3], 2)
+    result2 = sol.top_k_frequent([4,1,-1,2,-1,2,3], 2)
     assert sorted(result2) == [-1,2]
 
     print("✓ All tests passed")

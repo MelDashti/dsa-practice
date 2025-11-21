@@ -43,7 +43,7 @@ Space: O(1) - constant space
 
 
 class Solution:
-    def reverseBits(self, n: int) -> int:
+    def reverse_bits(self, n: int) -> int:
         """
         Reverse bits by iterating through all 32 bits.
 
@@ -78,15 +78,15 @@ def test():
     sol = Solution()
 
     # Test 1: 43261596 -> 964176192
-    assert sol.reverseBits(43261596) == 964176192
+    assert sol.reverse_bits(43261596) == 964176192
 
     # Test 2: 4294967293 -> 3221225471
-    assert sol.reverseBits(4294967293) == 3221225471
+    assert sol.reverse_bits(4294967293) == 3221225471
 
     # Simple test cases
-    assert sol.reverseBits(0) == 0
-    assert sol.reverseBits(1) == 2147483648  # 1 << 31
-    assert sol.reverseBits(2) == 1073741824  # 2 << 30
+    assert sol.reverse_bits(0) == 0
+    assert sol.reverse_bits(1) == 2147483648  # 1 << 31
+    assert sol.reverse_bits(2) == 1073741824  # 2 << 30
 
     # Test alternative method
     assert sol.reverseBits_builtin(43261596) == 964176192

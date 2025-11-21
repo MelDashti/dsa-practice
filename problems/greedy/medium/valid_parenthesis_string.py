@@ -49,7 +49,7 @@ from typing import List
 
 
 class Solution:
-    def checkValidString(self, s: str) -> bool:
+    def check_valid_string(self, s: str) -> bool:
         """
         Check if string with wildcards is valid parenthesis string.
 
@@ -93,15 +93,15 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.checkValidString("()") == True
-    assert sol.checkValidString("(*)") == True
-    assert sol.checkValidString("(*))")== True
-    assert sol.checkValidString("(") == False
-    assert sol.checkValidString("*)") == True
-    assert sol.checkValidString("(*)") == True
-    assert sol.checkValidString("(((") == False
-    assert sol.checkValidString("()()") == True
-    assert sol.checkValidString("(*())") == True
+    assert sol.check_valid_string("()") == True
+    assert sol.check_valid_string("(*)") == True
+    assert sol.check_valid_string("(*))")== True
+    assert sol.check_valid_string("(") == False
+    assert sol.check_valid_string("*)") == True
+    assert sol.check_valid_string("(*)") == True
+    assert sol.check_valid_string("(((") == False
+    assert sol.check_valid_string("()()") == True
+    assert sol.check_valid_string("(*())") == True
 
     print("✓ All tests passed")
 

@@ -54,7 +54,7 @@ class Node:
 
 
 class Solution:
-    def copyRandomList(self, head: Optional[Node]) -> Optional[Node]:
+    def copy_random_list(self, head: Optional[Node]) -> Optional[Node]:
         if not head:
             return None
 
@@ -147,17 +147,17 @@ def test():
 
     # Test 1
     head1 = create_list_with_random([(7, None), (13, 0), (11, 4), (10, 2), (1, 0)])
-    result1 = sol.copyRandomList(head1)
+    result1 = sol.copy_random_list(head1)
     assert verify_copy(head1, result1)
 
     # Test 2
     head2 = create_list_with_random([(1, 1), (2, 1)])
-    result2 = sol.copyRandomList(head2)
+    result2 = sol.copy_random_list(head2)
     assert verify_copy(head2, result2)
 
     # Test 3
     head3 = create_list_with_random([(3, None), (3, 0), (3, None)])
-    result3 = sol.copyRandomList(head3)
+    result3 = sol.copy_random_list(head3)
     assert verify_copy(head3, result3)
 
     print("✓ All tests passed")

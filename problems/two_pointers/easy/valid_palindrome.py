@@ -41,7 +41,7 @@ Space: O(1) - constant space
 
 
 class Solution:
-    def isPalindrome(self, s: str) -> bool:
+    def is_palindrome(self, s: str) -> bool:
         left, right = 0, len(s) - 1
 
         while left < right:
@@ -67,10 +67,10 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.isPalindrome("A man, a plan, a canal: Panama") == True
-    assert sol.isPalindrome("race a car") == False
-    assert sol.isPalindrome(" ") == True
-    assert sol.isPalindrome("ab_a") == True
+    assert sol.is_palindrome("A man, a plan, a canal: Panama") == True
+    assert sol.is_palindrome("race a car") == False
+    assert sol.is_palindrome(" ") == True
+    assert sol.is_palindrome("ab_a") == True
 
     print("✓ All tests passed")
 

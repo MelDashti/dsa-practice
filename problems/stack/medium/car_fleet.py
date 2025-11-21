@@ -71,7 +71,7 @@ from typing import List
 
 
 class Solution:
-    def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
+    def car_fleet(self, target: int, position: List[int], speed: List[int]) -> int:
         # Pair position with speed and sort by position (descending)
         cars = sorted(zip(position, speed), reverse=True)
 
@@ -93,11 +93,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.carFleet(12, [10,8,0,5,3], [2,4,1,1,3]) == 3
-    assert sol.carFleet(10, [3], [3]) == 1
-    assert sol.carFleet(100, [0,2,4], [4,2,1]) == 1
-    assert sol.carFleet(10, [6,8], [3,2]) == 2
-    assert sol.carFleet(10, [0,4,2], [2,1,3]) == 1
+    assert sol.car_fleet(12, [10,8,0,5,3], [2,4,1,1,3]) == 3
+    assert sol.car_fleet(10, [3], [3]) == 1
+    assert sol.car_fleet(100, [0,2,4], [4,2,1]) == 1
+    assert sol.car_fleet(10, [6,8], [3,2]) == 2
+    assert sol.car_fleet(10, [0,4,2], [2,1,3]) == 1
 
     print("✓ All tests passed")
 

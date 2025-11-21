@@ -42,7 +42,7 @@ Space: O(n) - stack storage in worst case
 
 
 class Solution:
-    def isValid(self, s: str) -> bool:
+    def is_valid(self, s: str) -> bool:
         stack = []
         mapping = {')': '(', '}': '{', ']': '['}
 
@@ -63,14 +63,14 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.isValid("()") == True
-    assert sol.isValid("()[]{}") == True
-    assert sol.isValid("(]") == False
-    assert sol.isValid("([)]") == False
-    assert sol.isValid("{[]}") == True
-    assert sol.isValid("") == True
-    assert sol.isValid("(") == False
-    assert sol.isValid(")") == False
+    assert sol.is_valid("()") == True
+    assert sol.is_valid("()[]{}") == True
+    assert sol.is_valid("(]") == False
+    assert sol.is_valid("([)]") == False
+    assert sol.is_valid("{[]}") == True
+    assert sol.is_valid("") == True
+    assert sol.is_valid("(") == False
+    assert sol.is_valid(")") == False
 
     print("✓ All tests passed")
 

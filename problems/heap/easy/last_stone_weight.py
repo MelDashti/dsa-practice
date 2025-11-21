@@ -51,7 +51,7 @@ import heapq
 
 
 class Solution:
-    def lastStoneWeight(self, stones: list[int]) -> int:
+    def last_stone_weight(self, stones: list[int]) -> int:
         # Convert to max heap by negating values
         max_heap = [-stone for stone in stones]
         heapq.heapify(max_heap)
@@ -74,19 +74,19 @@ def test():
     sol = Solution()
 
     # Test 1
-    assert sol.lastStoneWeight([2, 7, 4, 1, 8, 1]) == 1
+    assert sol.last_stone_weight([2, 7, 4, 1, 8, 1]) == 1
 
     # Test 2
-    assert sol.lastStoneWeight([1]) == 1
+    assert sol.last_stone_weight([1]) == 1
 
     # Test 3
-    assert sol.lastStoneWeight([2, 2]) == 0
+    assert sol.last_stone_weight([2, 2]) == 0
 
     # Test 4
-    assert sol.lastStoneWeight([1, 3]) == 2
+    assert sol.last_stone_weight([1, 3]) == 2
 
     # Test 5
-    assert sol.lastStoneWeight([3, 7, 2]) == 2
+    assert sol.last_stone_weight([3, 7, 2]) == 2
 
     print("✓ All tests passed")
 

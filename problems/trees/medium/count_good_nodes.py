@@ -52,7 +52,7 @@ class TreeNode:
 
 
 class Solution:
-    def goodNodes(self, root: TreeNode) -> int:
+    def good_nodes(self, root: TreeNode) -> int:
         def dfs(node, max_val):
             if not node:
                 return 0
@@ -83,25 +83,25 @@ def test():
     root.left.left = TreeNode(3)
     root.right.left = TreeNode(1)
     root.right.right = TreeNode(5)
-    assert sol.goodNodes(root) == 4
+    assert sol.good_nodes(root) == 4
 
     # Test 2: Example 2
     root2 = TreeNode(3)
     root2.left = TreeNode(3)
     root2.left.left = TreeNode(4)
     root2.left.right = TreeNode(2)
-    assert sol.goodNodes(root2) == 3
+    assert sol.good_nodes(root2) == 3
 
     # Test 3: Single node
     root3 = TreeNode(1)
-    assert sol.goodNodes(root3) == 1
+    assert sol.good_nodes(root3) == 1
 
     # Test 4: All nodes are good
     root4 = TreeNode(1)
     root4.left = TreeNode(2)
     root4.right = TreeNode(3)
     root4.left.left = TreeNode(4)
-    assert sol.goodNodes(root4) == 4
+    assert sol.good_nodes(root4) == 4
 
     print("✓ All tests passed")
 

@@ -55,7 +55,7 @@ import heapq
 
 
 class Solution:
-    def swimInWater(self, grid: List[List[int]]) -> int:
+    def swim_in_water(self, grid: List[List[int]]) -> int:
         n = len(grid)
         visited = set()
         min_heap = [(grid[0][0], 0, 0)]  # (max_elevation, row, col)
@@ -91,7 +91,7 @@ def test():
 
     # Test 1: Small 2x2 grid
     grid1 = [[0, 2], [1, 3]]
-    assert sol.swimInWater(grid1) == 3
+    assert sol.swim_in_water(grid1) == 3
 
     # Test 2: Larger grid
     grid2 = [
@@ -101,23 +101,23 @@ def test():
         [11, 17, 18, 19, 20],
         [10, 9, 8, 7, 6]
     ]
-    assert sol.swimInWater(grid2) == 16
+    assert sol.swim_in_water(grid2) == 16
 
     # Test 3: Single cell
     grid3 = [[0]]
-    assert sol.swimInWater(grid3) == 0
+    assert sol.swim_in_water(grid3) == 0
 
     # Test 4: 2x2 with different values
     grid4 = [[0, 1], [2, 3]]
-    assert sol.swimInWater(grid4) == 3
+    assert sol.swim_in_water(grid4) == 3
 
     # Test 5: Path with low elevations
     grid5 = [[0, 3], [1, 2]]
-    assert sol.swimInWater(grid5) == 2
+    assert sol.swim_in_water(grid5) == 2
 
     # Test 6: 3x3 grid
     grid6 = [[3, 4, 5], [2, 7, 6], [1, 0, 8]]
-    assert sol.swimInWater(grid6) == 8
+    assert sol.swim_in_water(grid6) == 8
 
     print("✓ All tests passed")
 

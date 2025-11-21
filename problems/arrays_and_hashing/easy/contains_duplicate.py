@@ -37,7 +37,7 @@ from typing import List
 
 
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def contains_duplicate(self, nums: List[int]) -> bool:
         seen = set()
 
         for num in nums:
@@ -52,9 +52,9 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.containsDuplicate([1,2,3,1]) == True
-    assert sol.containsDuplicate([1,2,3,4]) == False
-    assert sol.containsDuplicate([1,1,1,3,3,4,3,2,4,2]) == True
+    assert sol.contains_duplicate([1,2,3,1]) == True
+    assert sol.contains_duplicate([1,2,3,4]) == False
+    assert sol.contains_duplicate([1,1,1,3,3,4,3,2,4,2]) == True
 
     print("✓ All tests passed")
 

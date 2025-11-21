@@ -47,7 +47,7 @@ from typing import List
 
 
 class Solution:
-    def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
+    def longest_increasing_path(self, matrix: List[List[int]]) -> int:
         if not matrix or not matrix[0]:
             return 0
 
@@ -87,11 +87,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.longestIncreasingPath([[9,9,4],[6,6,8],[2,1,1]]) == 4
-    assert sol.longestIncreasingPath([[3,4,5],[3,2,6],[2,2,1]]) == 4
-    assert sol.longestIncreasingPath([[1]]) == 1
-    assert sol.longestIncreasingPath([[1,2]]) == 2
-    assert sol.longestIncreasingPath([[7,8,9],[9,7,6],[7,2,3]]) == 6
+    assert sol.longest_increasing_path([[9,9,4],[6,6,8],[2,1,1]]) == 4
+    assert sol.longest_increasing_path([[3,4,5],[3,2,6],[2,2,1]]) == 4
+    assert sol.longest_increasing_path([[1]]) == 1
+    assert sol.longest_increasing_path([[1,2]]) == 2
+    assert sol.longest_increasing_path([[7,8,9],[9,7,6],[7,2,3]]) == 6
 
     print("✓ All tests passed")
 

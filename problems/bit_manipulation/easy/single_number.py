@@ -39,7 +39,7 @@ from typing import List
 
 
 class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
+    def single_number(self, nums: List[int]) -> int:
         """
         Find the single number that appears once using XOR.
 
@@ -58,11 +58,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.singleNumber([2, 2, 1]) == 1
-    assert sol.singleNumber([4, 1, 2, 1, 2]) == 4
-    assert sol.singleNumber([1]) == 1
-    assert sol.singleNumber([1, 2, 1, 3, 2]) == 3
-    assert sol.singleNumber([-1, -1, 5]) == 5
+    assert sol.single_number([2, 2, 1]) == 1
+    assert sol.single_number([4, 1, 2, 1, 2]) == 4
+    assert sol.single_number([1]) == 1
+    assert sol.single_number([1, 2, 1, 3, 2]) == 3
+    assert sol.single_number([-1, -1, 5]) == 5
 
     print("✓ All tests passed")
 

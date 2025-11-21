@@ -36,7 +36,7 @@ Space: O(1) - only store indices
 
 
 class Solution:
-    def longestPalindrome(self, s: str) -> str:
+    def longest_palindrome(self, s: str) -> str:
         if not s:
             return ""
 
@@ -72,14 +72,14 @@ class Solution:
 def test():
     sol = Solution()
 
-    result1 = sol.longestPalindrome("babad")
+    result1 = sol.longest_palindrome("babad")
     assert result1 in ["bab", "aba"]
 
-    assert sol.longestPalindrome("cbbd") == "bb"
-    assert sol.longestPalindrome("a") == "a"
-    assert sol.longestPalindrome("ac") == "a" or sol.longestPalindrome("ac") == "c"
-    assert sol.longestPalindrome("racecar") == "racecar"
-    assert sol.longestPalindrome("noon") == "noon"
+    assert sol.longest_palindrome("cbbd") == "bb"
+    assert sol.longest_palindrome("a") == "a"
+    assert sol.longest_palindrome("ac") == "a" or sol.longest_palindrome("ac") == "c"
+    assert sol.longest_palindrome("racecar") == "racecar"
+    assert sol.longest_palindrome("noon") == "noon"
 
     print("✓ All tests passed")
 

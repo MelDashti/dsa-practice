@@ -52,7 +52,7 @@ Space: O(m * n) - DP table
 
 
 class Solution:
-    def minDistance(self, word1: str, word2: str) -> int:
+    def min_distance(self, word1: str, word2: str) -> int:
         m, n = len(word1), len(word2)
 
         # dp[i][j] = min operations to convert word1[0:i] to word2[0:j]
@@ -87,12 +87,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.minDistance("horse", "ros") == 3
-    assert sol.minDistance("intention", "execution") == 5
-    assert sol.minDistance("", "") == 0
-    assert sol.minDistance("a", "") == 1
-    assert sol.minDistance("", "a") == 1
-    assert sol.minDistance("abc", "abc") == 0
+    assert sol.min_distance("horse", "ros") == 3
+    assert sol.min_distance("intention", "execution") == 5
+    assert sol.min_distance("", "") == 0
+    assert sol.min_distance("a", "") == 1
+    assert sol.min_distance("", "a") == 1
+    assert sol.min_distance("abc", "abc") == 0
 
     print("✓ All tests passed")
 

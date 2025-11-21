@@ -46,7 +46,7 @@ from typing import List
 
 
 class Solution:
-    def coinChange(self, coins: List[int], amount: int) -> int:
+    def coin_change(self, coins: List[int], amount: int) -> int:
         # Initialize dp array with amount + 1 (impossible value)
         dp = [amount + 1] * (amount + 1)
         dp[0] = 0  # Base case: 0 coins for 0 amount
@@ -67,13 +67,13 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.coinChange([1,2,5], 11) == 3
-    assert sol.coinChange([2], 3) == -1
-    assert sol.coinChange([1], 0) == 0
-    assert sol.coinChange([1], 1) == 1
-    assert sol.coinChange([1], 2) == 2
-    assert sol.coinChange([1,3,4,5], 7) == 2
-    assert sol.coinChange([2,5,10,1], 27) == 4
+    assert sol.coin_change([1,2,5], 11) == 3
+    assert sol.coin_change([2], 3) == -1
+    assert sol.coin_change([1], 0) == 0
+    assert sol.coin_change([1], 1) == 1
+    assert sol.coin_change([1], 2) == 2
+    assert sol.coin_change([1,3,4,5], 7) == 2
+    assert sol.coin_change([2,5,10,1], 27) == 4
 
     print("✓ All tests passed")
 

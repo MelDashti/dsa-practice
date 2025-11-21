@@ -50,7 +50,7 @@ from typing import List
 
 
 class Solution:
-    def minIntervalForEachQuery(self, intervals: List[List[int]], queries: List[int]) -> List[int]:
+    def min_interval_for_each_query(self, intervals: List[List[int]], queries: List[int]) -> List[int]:
         # Sort intervals by start time
         intervals.sort()
 
@@ -87,10 +87,10 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.minIntervalForEachQuery([[1,4],[2,8],[1,6]], [2,4,6]) == [4,4,6]
-    assert sol.minIntervalForEachQuery([[2,3],[2,5],[1,8],[5,8]], [6,1,1,2]) == [4,8,8,2]
-    assert sol.minIntervalForEachQuery([[1,1]], [1]) == [1]
-    assert sol.minIntervalForEachQuery([[1,2],[1,3],[3,4]], [1,2,3]) == [2,2,2]
+    assert sol.min_interval_for_each_query([[1,4],[2,8],[1,6]], [2,4,6]) == [4,4,6]
+    assert sol.min_interval_for_each_query([[2,3],[2,5],[1,8],[5,8]], [6,1,1,2]) == [4,8,8,2]
+    assert sol.min_interval_for_each_query([[1,1]], [1]) == [1]
+    assert sol.min_interval_for_each_query([[1,2],[1,3],[3,4]], [1,2,3]) == [2,2,2]
 
     print("✓ All tests passed")
 

@@ -51,7 +51,7 @@ import heapq
 
 
 class Solution:
-    def minCostConnectPoints(self, points: List[List[int]]) -> int:
+    def min_cost_connect_points(self, points: List[List[int]]) -> int:
         n = len(points)
         if n <= 1:
             return 0
@@ -85,27 +85,27 @@ def test():
 
     # Test 1: Example from problem
     points1 = [[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]]
-    assert sol.minCostConnectPoints(points1) == 20
+    assert sol.min_cost_connect_points(points1) == 20
 
     # Test 2: Three points
     points2 = [[3, 12], [-2, 5], [-4, 1]]
-    assert sol.minCostConnectPoints(points2) == 18
+    assert sol.min_cost_connect_points(points2) == 18
 
     # Test 3: Four points forming a square
     points3 = [[0, 0], [1, 1], [1, 0], [-1, 1]]
-    assert sol.minCostConnectPoints(points3) == 4
+    assert sol.min_cost_connect_points(points3) == 4
 
     # Test 4: Two points
     points4 = [[0, 0], [1, 1]]
-    assert sol.minCostConnectPoints(points4) == 2
+    assert sol.min_cost_connect_points(points4) == 2
 
     # Test 5: Single point
     points5 = [[0, 0]]
-    assert sol.minCostConnectPoints(points5) == 0
+    assert sol.min_cost_connect_points(points5) == 0
 
     # Test 6: Collinear points
     points6 = [[0, 0], [1, 0], [2, 0]]
-    assert sol.minCostConnectPoints(points6) == 2
+    assert sol.min_cost_connect_points(points6) == 2
 
     print("✓ All tests passed")
 

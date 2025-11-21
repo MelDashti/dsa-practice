@@ -52,7 +52,7 @@ Space: O(n) - 1D DP array
 
 
 class Solution:
-    def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
+    def is_interleave(self, s1: str, s2: str, s3: str) -> bool:
         m, n, l = len(s1), len(s2), len(s3)
 
         # Quick check: lengths must match
@@ -89,12 +89,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.isInterleave("aabcc", "dbbca", "aadbbcbcac") == True
-    assert sol.isInterleave("aabcc", "dbbca", "aadbbbaccc") == False
-    assert sol.isInterleave("", "", "") == True
-    assert sol.isInterleave("a", "", "a") == True
-    assert sol.isInterleave("", "b", "b") == True
-    assert sol.isInterleave("abc", "def", "adbecf") == True
+    assert sol.is_interleave("aabcc", "dbbca", "aadbbcbcac") == True
+    assert sol.is_interleave("aabcc", "dbbca", "aadbbbaccc") == False
+    assert sol.is_interleave("", "", "") == True
+    assert sol.is_interleave("a", "", "a") == True
+    assert sol.is_interleave("", "b", "b") == True
+    assert sol.is_interleave("abc", "def", "adbecf") == True
 
     print("✓ All tests passed")
 

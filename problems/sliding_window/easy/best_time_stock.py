@@ -39,7 +39,7 @@ from typing import List
 
 
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+    def max_profit(self, prices: List[int]) -> int:
         min_price = float('inf')
         max_profit = 0
 
@@ -60,10 +60,10 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.maxProfit([7,1,5,3,6,4]) == 5
-    assert sol.maxProfit([7,6,4,3,1]) == 0
-    assert sol.maxProfit([1,2]) == 1
-    assert sol.maxProfit([2,4,1]) == 2
+    assert sol.max_profit([7,1,5,3,6,4]) == 5
+    assert sol.max_profit([7,6,4,3,1]) == 0
+    assert sol.max_profit([1,2]) == 1
+    assert sol.max_profit([2,4,1]) == 2
 
     print("✓ All tests passed")
 

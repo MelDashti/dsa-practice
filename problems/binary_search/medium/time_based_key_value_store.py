@@ -25,13 +25,13 @@ Example 1:
     [null, null, "bar", "bar", null, "bar2", "bar2"]
 
     Explanation:
-    TimeMap timeMap = new TimeMap();
-    timeMap.set("foo", "bar", 1);  // store key "foo" and value "bar" with timestamp = 1
-    timeMap.get("foo", 1);         // return "bar"
-    timeMap.get("foo", 3);         // return "bar", no value at 3, return value at 1
-    timeMap.set("foo", "bar2", 4); // store key "foo" and value "bar2" with timestamp = 4
-    timeMap.get("foo", 4);         // return "bar2"
-    timeMap.get("foo", 5);         // return "bar2"
+    TimeMap time_map = new TimeMap();
+    time_map.set("foo", "bar", 1);  // store key "foo" and value "bar" with timestamp = 1
+    time_map.get("foo", 1);         // return "bar"
+    time_map.get("foo", 3);         // return "bar", no value at 3, return value at 1
+    time_map.set("foo", "bar2", 4); // store key "foo" and value "bar2" with timestamp = 4
+    time_map.get("foo", 4);         // return "bar2"
+    time_map.get("foo", 5);         // return "bar2"
 
 Constraints:
 - 1 <= key.length, value.length <= 100
@@ -87,25 +87,25 @@ class TimeMap:
 
 # Tests
 def test():
-    timeMap = TimeMap()
+    time_map = TimeMap()
 
-    timeMap.set("foo", "bar", 1)
-    assert timeMap.get("foo", 1) == "bar"
-    assert timeMap.get("foo", 3) == "bar"
+    time_map.set("foo", "bar", 1)
+    assert time_map.get("foo", 1) == "bar"
+    assert time_map.get("foo", 3) == "bar"
 
-    timeMap.set("foo", "bar2", 4)
-    assert timeMap.get("foo", 4) == "bar2"
-    assert timeMap.get("foo", 5) == "bar2"
+    time_map.set("foo", "bar2", 4)
+    assert time_map.get("foo", 4) == "bar2"
+    assert time_map.get("foo", 5) == "bar2"
 
     # Additional tests
-    timeMap2 = TimeMap()
-    timeMap2.set("love", "high", 10)
-    timeMap2.set("love", "low", 20)
-    assert timeMap2.get("love", 5) == ""
-    assert timeMap2.get("love", 10) == "high"
-    assert timeMap2.get("love", 15) == "high"
-    assert timeMap2.get("love", 20) == "low"
-    assert timeMap2.get("love", 25) == "low"
+    time_map2 = TimeMap()
+    time_map2.set("love", "high", 10)
+    time_map2.set("love", "low", 20)
+    assert time_map2.get("love", 5) == ""
+    assert time_map2.get("love", 10) == "high"
+    assert time_map2.get("love", 15) == "high"
+    assert time_map2.get("love", 20) == "low"
+    assert time_map2.get("love", 25) == "low"
 
     print("✓ All tests passed")
 

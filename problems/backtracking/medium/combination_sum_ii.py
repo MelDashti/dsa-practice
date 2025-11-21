@@ -41,7 +41,7 @@ from typing import List
 
 
 class Solution:
-    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+    def combination_sum2(self, candidates: List[int], target: int) -> List[List[int]]:
         result = []
         current = []
         candidates.sort()  # Sort to handle duplicates
@@ -80,17 +80,17 @@ def test():
     sol = Solution()
 
     # Test case 1
-    result1 = sol.combinationSum2([10,1,2,7,6,1,5], 8)
+    result1 = sol.combination_sum2([10,1,2,7,6,1,5], 8)
     expected1 = [[1,1,6],[1,2,5],[1,7],[2,6]]
     assert sorted([sorted(x) for x in result1]) == sorted([sorted(x) for x in expected1])
 
     # Test case 2
-    result2 = sol.combinationSum2([2,5,2,1,2], 5)
+    result2 = sol.combination_sum2([2,5,2,1,2], 5)
     expected2 = [[1,2,2],[5]]
     assert sorted([sorted(x) for x in result2]) == sorted([sorted(x) for x in expected2])
 
     # Test case 3
-    result3 = sol.combinationSum2([1], 1)
+    result3 = sol.combination_sum2([1], 1)
     expected3 = [[1]]
     assert result3 == expected3
 

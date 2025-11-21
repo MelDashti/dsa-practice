@@ -38,7 +38,7 @@ from typing import List
 
 
 class Solution:
-    def generateParenthesis(self, n: int) -> List[str]:
+    def generate_parenthesis(self, n: int) -> List[str]:
         result = []
 
         def backtrack(current: str, open_count: int, close_count: int):
@@ -63,20 +63,20 @@ class Solution:
 def test():
     sol = Solution()
 
-    result1 = sol.generateParenthesis(3)
+    result1 = sol.generate_parenthesis(3)
     expected1 = ["((()))","(()())","(())()","()(())","()()()"]
     assert sorted(result1) == sorted(expected1)
 
-    result2 = sol.generateParenthesis(1)
+    result2 = sol.generate_parenthesis(1)
     expected2 = ["()"]
     assert sorted(result2) == sorted(expected2)
 
-    result3 = sol.generateParenthesis(2)
+    result3 = sol.generate_parenthesis(2)
     expected3 = ["(())","()()"]
     assert sorted(result3) == sorted(expected3)
 
     # Test n=4
-    result4 = sol.generateParenthesis(4)
+    result4 = sol.generate_parenthesis(4)
     assert len(result4) == 14  # Catalan number for n=4
 
     print("✓ All tests passed")

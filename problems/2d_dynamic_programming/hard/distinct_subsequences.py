@@ -50,7 +50,7 @@ Space: O(n) - 1D DP array
 
 
 class Solution:
-    def numDistinct(self, s: str, t: str) -> int:
+    def num_distinct(self, s: str, t: str) -> int:
         m, n = len(s), len(t)
 
         # dp[i][j] = number of ways to form t[0:j] from s[0:i]
@@ -77,12 +77,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.numDistinct("rabbbit", "rabbit") == 3
-    assert sol.numDistinct("babgbag", "bag") == 5
-    assert sol.numDistinct("abc", "abc") == 1
-    assert sol.numDistinct("abc", "def") == 0
-    assert sol.numDistinct("aaa", "a") == 3
-    assert sol.numDistinct("", "") == 1
+    assert sol.num_distinct("rabbbit", "rabbit") == 3
+    assert sol.num_distinct("babgbag", "bag") == 5
+    assert sol.num_distinct("abc", "abc") == 1
+    assert sol.num_distinct("abc", "def") == 0
+    assert sol.num_distinct("aaa", "a") == 3
+    assert sol.num_distinct("", "") == 1
 
     print("✓ All tests passed")
 

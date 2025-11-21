@@ -46,7 +46,7 @@ from typing import List
 
 
 class Solution:
-    def maxCoins(self, nums: List[int]) -> int:
+    def max_coins(self, nums: List[int]) -> int:
         # Add virtual balloons with value 1 at both ends
         nums = [1] + nums + [1]
         n = len(nums)
@@ -76,11 +76,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.maxCoins([3,1,5,8]) == 167
-    assert sol.maxCoins([1,5]) == 10
-    assert sol.maxCoins([1]) == 1
-    assert sol.maxCoins([3,1,5]) == 35
-    assert sol.maxCoins([9,76,64,21,97,60,5]) == 1088290
+    assert sol.max_coins([3,1,5,8]) == 167
+    assert sol.max_coins([1,5]) == 10
+    assert sol.max_coins([1]) == 1
+    assert sol.max_coins([3,1,5]) == 35
+    assert sol.max_coins([9,76,64,21,97,60,5]) == 1088290
 
     print("✓ All tests passed")
 

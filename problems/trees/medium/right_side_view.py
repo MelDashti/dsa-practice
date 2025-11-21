@@ -45,7 +45,7 @@ class TreeNode:
 
 
 class Solution:
-    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
+    def right_side_view(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
             return []
 
@@ -80,21 +80,21 @@ def test():
     root.right = TreeNode(3)
     root.left.right = TreeNode(5)
     root.right.right = TreeNode(4)
-    assert sol.rightSideView(root) == [1, 3, 4]
+    assert sol.right_side_view(root) == [1, 3, 4]
 
     # Test 2: Right-skewed tree
     root2 = TreeNode(1)
     root2.right = TreeNode(3)
-    assert sol.rightSideView(root2) == [1, 3]
+    assert sol.right_side_view(root2) == [1, 3]
 
     # Test 3: Empty tree
-    assert sol.rightSideView(None) == []
+    assert sol.right_side_view(None) == []
 
     # Test 4: Left-skewed tree
     root3 = TreeNode(1)
     root3.left = TreeNode(2)
     root3.left.left = TreeNode(3)
-    assert sol.rightSideView(root3) == [1, 2, 3]
+    assert sol.right_side_view(root3) == [1, 2, 3]
 
     print("✓ All tests passed")
 

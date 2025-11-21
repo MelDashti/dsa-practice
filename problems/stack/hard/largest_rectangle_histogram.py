@@ -47,7 +47,7 @@ from typing import List
 
 
 class Solution:
-    def largestRectangleArea(self, heights: List[int]) -> int:
+    def largest_rectangle_area(self, heights: List[int]) -> int:
         max_area = 0
         stack = []  # stores (index, height) pairs
 
@@ -76,13 +76,13 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.largestRectangleArea([2,1,5,6,2,3]) == 10
-    assert sol.largestRectangleArea([2,4]) == 4
-    assert sol.largestRectangleArea([1]) == 1
-    assert sol.largestRectangleArea([2,1,2]) == 3
-    assert sol.largestRectangleArea([3,6,5,7,4,8,1,0]) == 20
-    assert sol.largestRectangleArea([1,1,1,1,1]) == 5
-    assert sol.largestRectangleArea([4,2,0,3,2,5]) == 6
+    assert sol.largest_rectangle_area([2,1,5,6,2,3]) == 10
+    assert sol.largest_rectangle_area([2,4]) == 4
+    assert sol.largest_rectangle_area([1]) == 1
+    assert sol.largest_rectangle_area([2,1,2]) == 3
+    assert sol.largest_rectangle_area([3,6,5,7,4,8,1,0]) == 20
+    assert sol.largest_rectangle_area([1,1,1,1,1]) == 5
+    assert sol.largest_rectangle_area([4,2,0,3,2,5]) == 6
 
     print("✓ All tests passed")
 

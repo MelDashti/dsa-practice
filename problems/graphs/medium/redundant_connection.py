@@ -46,7 +46,7 @@ from typing import List
 
 
 class Solution:
-    def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
+    def find_redundant_connection(self, edges: List[List[int]]) -> List[int]:
         n = len(edges)
         parent = list(range(n + 1))  # 1-indexed
         rank = [1] * (n + 1)
@@ -87,16 +87,16 @@ def test():
     sol = Solution()
 
     # Test 1: Simple triangle
-    assert sol.findRedundantConnection([[1,2],[1,3],[2,3]]) == [2,3]
+    assert sol.find_redundant_connection([[1,2],[1,3],[2,3]]) == [2,3]
 
     # Test 2: Multiple cycles possible
-    assert sol.findRedundantConnection([[1,2],[2,3],[3,4],[1,4],[1,5]]) == [1,4]
+    assert sol.find_redundant_connection([[1,2],[2,3],[3,4],[1,4],[1,5]]) == [1,4]
 
     # Test 3: Linear with one extra edge
-    assert sol.findRedundantConnection([[1,2],[2,3],[3,1]]) == [3,1]
+    assert sol.find_redundant_connection([[1,2],[2,3],[3,1]]) == [3,1]
 
     # Test 4: Four nodes
-    assert sol.findRedundantConnection([[1,2],[2,3],[3,4],[4,1]]) == [4,1]
+    assert sol.find_redundant_connection([[1,2],[2,3],[3,4],[4,1]]) == [4,1]
 
     print("✓ All tests passed")
 

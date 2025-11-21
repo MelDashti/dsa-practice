@@ -44,7 +44,7 @@ from collections import defaultdict
 
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def group_anagrams(self, strs: List[str]) -> List[List[str]]:
         anagram_map = defaultdict(list)
 
         for s in strs:
@@ -73,14 +73,14 @@ class Solution:
 def test():
     sol = Solution()
 
-    result1 = sol.groupAnagrams(["eat","tea","tan","ate","nat","bat"])
+    result1 = sol.group_anagrams(["eat","tea","tan","ate","nat","bat"])
     # Sort for comparison
     result1_sorted = [sorted(group) for group in result1]
     expected1_sorted = [sorted(group) for group in [["bat"],["nat","tan"],["ate","eat","tea"]]]
     assert sorted(result1_sorted) == sorted(expected1_sorted)
 
-    assert sol.groupAnagrams([""]) == [[""]]
-    assert sol.groupAnagrams(["a"]) == [["a"]]
+    assert sol.group_anagrams([""]) == [[""]]
+    assert sol.group_anagrams(["a"]) == [["a"]]
 
     print("✓ All tests passed")
 

@@ -51,7 +51,7 @@ from typing import List
 
 
 class Solution:
-    def findTargetSumWays(self, nums: List[int], target: int) -> int:
+    def find_target_sum_ways(self, nums: List[int], target: int) -> int:
         total = sum(nums)
 
         # Check if solution is possible
@@ -78,11 +78,11 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.findTargetSumWays([1,1,1,1,1], 3) == 5
-    assert sol.findTargetSumWays([1], 1) == 1
-    assert sol.findTargetSumWays([1], 2) == 0
-    assert sol.findTargetSumWays([1,0], 1) == 2
-    assert sol.findTargetSumWays([100], -200) == 0
+    assert sol.find_target_sum_ways([1,1,1,1,1], 3) == 5
+    assert sol.find_target_sum_ways([1], 1) == 1
+    assert sol.find_target_sum_ways([1], 2) == 0
+    assert sol.find_target_sum_ways([1,0], 1) == 2
+    assert sol.find_target_sum_ways([100], -200) == 0
 
     print("✓ All tests passed")
 

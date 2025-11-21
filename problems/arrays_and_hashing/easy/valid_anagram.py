@@ -33,7 +33,7 @@ from collections import Counter
 
 
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
+    def is_anagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
 
@@ -48,9 +48,9 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.isAnagram("anagram", "nagaram") == True
-    assert sol.isAnagram("rat", "car") == False
-    assert sol.isAnagram("listen", "silent") == True
+    assert sol.is_anagram("anagram", "nagaram") == True
+    assert sol.is_anagram("rat", "car") == False
+    assert sol.is_anagram("listen", "silent") == True
 
     print("✓ All tests passed")
 

@@ -38,7 +38,7 @@ from collections import Counter
 
 
 class Solution:
-    def minWindow(self, s: str, t: str) -> str:
+    def min_window(self, s: str, t: str) -> str:
         if not s or not t: 
             return ""
         
@@ -86,9 +86,9 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.minWindow("ADOBECODEBANC", "ABC") == "BANC"
-    assert sol.minWindow("a", "a") == "a"
-    assert sol.minWindow("a", "aa") == ""
+    assert sol.min_window("ADOBECODEBANC", "ABC") == "BANC"
+    assert sol.min_window("a", "a") == "a"
+    assert sol.min_window("a", "aa") == ""
 
     print("✓ All tests passed")
 

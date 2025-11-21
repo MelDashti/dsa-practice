@@ -48,7 +48,7 @@ class TreeNode:
 
 
 class Solution:
-    def maxPathSum(self, root: Optional[TreeNode]) -> int:
+    def max_path_sum(self, root: Optional[TreeNode]) -> int:
         self.max_sum = float('-inf')
 
         def max_gain(node):
@@ -82,7 +82,7 @@ def test():
     root = TreeNode(1)
     root.left = TreeNode(2)
     root.right = TreeNode(3)
-    assert sol.maxPathSum(root) == 6
+    assert sol.max_path_sum(root) == 6
 
     # Test 2: Tree with negative values
     root2 = TreeNode(-10)
@@ -90,15 +90,15 @@ def test():
     root2.right = TreeNode(20)
     root2.right.left = TreeNode(15)
     root2.right.right = TreeNode(7)
-    assert sol.maxPathSum(root2) == 42
+    assert sol.max_path_sum(root2) == 42
 
     # Test 3: Single node
     root3 = TreeNode(1)
-    assert sol.maxPathSum(root3) == 1
+    assert sol.max_path_sum(root3) == 1
 
     # Test 4: All negative
     root4 = TreeNode(-3)
-    assert sol.maxPathSum(root4) == -3
+    assert sol.max_path_sum(root4) == -3
 
     # Test 5: Path doesn't include root
     root5 = TreeNode(-10)
@@ -106,7 +106,7 @@ def test():
     root5.right = TreeNode(3)
     root5.left.left = TreeNode(4)
     root5.left.right = TreeNode(5)
-    assert sol.maxPathSum(root5) == 11  # 4 + 2 + 5
+    assert sol.max_path_sum(root5) == 11  # 4 + 2 + 5
 
     print("✓ All tests passed")
 

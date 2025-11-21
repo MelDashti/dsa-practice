@@ -47,7 +47,7 @@ from collections import deque
 
 
 class Solution:
-    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+    def max_sliding_window(self, nums: List[int], k: int) -> List[int]:
         result = []
         dq = deque()  # stores indices
 
@@ -74,9 +74,9 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.maxSlidingWindow([1,3,-1,-3,5,3,6,7], 3) == [3,3,5,5,6,7]
-    assert sol.maxSlidingWindow([1], 1) == [1]
-    assert sol.maxSlidingWindow([1,3,1,2,0,5], 3) == [3,3,2,5]
+    assert sol.max_sliding_window([1,3,-1,-3,5,3,6,7], 3) == [3,3,5,5,6,7]
+    assert sol.max_sliding_window([1], 1) == [1]
+    assert sol.max_sliding_window([1,3,1,2,0,5], 3) == [3,3,2,5]
 
     print("✓ All tests passed")
 

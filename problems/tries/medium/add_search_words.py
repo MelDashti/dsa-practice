@@ -8,16 +8,16 @@ with wildcard support ('.' matches any single character).
 
 Requirements:
 - WordDictionary(): Initialize an empty dictionary
-- addWord(word): Add a word to the dictionary
+- add_word(word): Add a word to the dictionary
 - search(word): Search for word with wildcard support
   - '.' can match any single character
   - Regular characters match themselves
 
 Example:
     wd = WordDictionary()
-    wd.addWord("bad")
-    wd.addWord("dad")
-    wd.addWord("mad")
+    wd.add_word("bad")
+    wd.add_word("dad")
+    wd.add_word("mad")
     wd.search("pad")         # returns False
     wd.search("bad")         # returns True
     wd.search(".ad")         # returns True (matches bad, dad, mad)
@@ -45,7 +45,7 @@ class WordDictionary:
         """Initialize an empty word dictionary."""
         self.root = TrieNode()
 
-    def addWord(self, word: str) -> None:
+    def add_word(self, word: str) -> None:
         """
         Add a word to the dictionary.
 
@@ -96,9 +96,9 @@ def test():
     wd = WordDictionary()
 
     # Test basic addWord and search
-    wd.addWord("bad")
-    wd.addWord("dad")
-    wd.addWord("mad")
+    wd.add_word("bad")
+    wd.add_word("dad")
+    wd.add_word("mad")
     assert wd.search("bad") == True
     assert wd.search("dad") == True
     assert wd.search("mad") == True
@@ -120,12 +120,12 @@ def test():
     assert wd.search("...d") == False
 
     # Test single character
-    wd.addWord("a")
+    wd.add_word("a")
     assert wd.search("a") == True
     assert wd.search(".") == True
 
     # Test longer words
-    wd.addWord("hello")
+    wd.add_word("hello")
     assert wd.search("hello") == True
     assert wd.search("h....") == True
     assert wd.search("hell.") == True

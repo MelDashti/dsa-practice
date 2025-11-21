@@ -34,7 +34,7 @@ from typing import List
 
 
 class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
+    def max_sub_array(self, nums: List[int]) -> int:
         """
         Find maximum subarray sum using Kadane's algorithm.
 
@@ -59,12 +59,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]) == 6
-    assert sol.maxSubArray([5, 4, -1, 7, 8]) == 23
-    assert sol.maxSubArray([-1]) == -1
-    assert sol.maxSubArray([-2, 1]) == 1
-    assert sol.maxSubArray([0, -2, 3, -1, 1, 2]) == 5
-    assert sol.maxSubArray([-13, -3, -20]) == -3
+    assert sol.max_sub_array([-2, 1, -3, 4, -1, 2, 1, -5, 4]) == 6
+    assert sol.max_sub_array([5, 4, -1, 7, 8]) == 23
+    assert sol.max_sub_array([-1]) == -1
+    assert sol.max_sub_array([-2, 1]) == 1
+    assert sol.max_sub_array([0, -2, 3, -1, 1, 2]) == 5
+    assert sol.max_sub_array([-13, -3, -20]) == -3
 
     print("✓ All tests passed")
 

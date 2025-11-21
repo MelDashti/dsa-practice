@@ -41,7 +41,7 @@ Space: O(1) - constant space
 
 
 class Solution:
-    def hammingWeight(self, n: int) -> int:
+    def hamming_weight(self, n: int) -> int:
         """
         Count the number of 1 bits using Brian Kernighan's algorithm.
 
@@ -70,13 +70,13 @@ def test():
     sol = Solution()
 
     # Test with both methods
-    assert sol.hammingWeight(11) == 3  # "1011" has 3 ones
-    assert sol.hammingWeight(128) == 1  # "10000000" has 1 one
-    assert sol.hammingWeight(2147483645) == 30
-    assert sol.hammingWeight(0) == 0
-    assert sol.hammingWeight(1) == 1
-    assert sol.hammingWeight(3) == 2  # "11"
-    assert sol.hammingWeight(7) == 3  # "111"
+    assert sol.hamming_weight(11) == 3  # "1011" has 3 ones
+    assert sol.hamming_weight(128) == 1  # "10000000" has 1 one
+    assert sol.hamming_weight(2147483645) == 30
+    assert sol.hamming_weight(0) == 0
+    assert sol.hamming_weight(1) == 1
+    assert sol.hamming_weight(3) == 2  # "11"
+    assert sol.hamming_weight(7) == 3  # "111"
 
     assert sol.hammingWeight_shift(11) == 3
     assert sol.hammingWeight_shift(128) == 1

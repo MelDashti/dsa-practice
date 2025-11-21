@@ -44,7 +44,7 @@ class ListNode:
 
 
 class Solution:
-    def reorderList(self, head: Optional[ListNode]) -> None:
+    def reorder_list(self, head: Optional[ListNode]) -> None:
         """
         Do not return anything, modify head in-place instead.
         """
@@ -104,17 +104,17 @@ def test():
 
     # Test 1
     head1 = create_list([1,2,3,4])
-    sol.reorderList(head1)
+    sol.reorder_list(head1)
     assert list_to_array(head1) == [1,4,2,3]
 
     # Test 2
     head2 = create_list([1,2,3,4,5])
-    sol.reorderList(head2)
+    sol.reorder_list(head2)
     assert list_to_array(head2) == [1,5,2,4,3]
 
     # Test 3
     head3 = create_list([1,2])
-    sol.reorderList(head3)
+    sol.reorder_list(head3)
     assert list_to_array(head3) == [1,2]
 
     print("✓ All tests passed")

@@ -55,7 +55,7 @@ from typing import List
 
 
 class Solution:
-    def missingNumber(self, nums: List[int]) -> int:
+    def missing_number(self, nums: List[int]) -> int:
         """
         Find missing number using XOR.
 
@@ -97,12 +97,12 @@ class Solution:
 def test():
     sol = Solution()
 
-    assert sol.missingNumber([3, 0, 1]) == 2
-    assert sol.missingNumber([0, 1]) == 2
-    assert sol.missingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1]) == 8
-    assert sol.missingNumber([0]) == 1
-    assert sol.missingNumber([1]) == 0
-    assert sol.missingNumber([0, 2]) == 1
+    assert sol.missing_number([3, 0, 1]) == 2
+    assert sol.missing_number([0, 1]) == 2
+    assert sol.missing_number([9, 6, 4, 2, 3, 5, 7, 0, 1]) == 8
+    assert sol.missing_number([0]) == 1
+    assert sol.missing_number([1]) == 0
+    assert sol.missing_number([0, 2]) == 1
 
     # Test alternative implementations
     assert sol.missingNumber_math([3, 0, 1]) == 2
