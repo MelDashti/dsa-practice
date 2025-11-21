@@ -3,7 +3,7 @@ PROBLEM: Encode and Decode Strings (LeetCode 271)
 Difficulty: Medium
 Pattern: Arrays & Hashing, String
 Companies: Google, Facebook, Amazon
-
+status: Completed
 Design an algorithm to encode a list of strings to a string. The encoded string
 is then sent over the network and is decoded back to the original list of strings.
 
@@ -14,6 +14,9 @@ Example 1:
     Output: ["lint","code","love","you"]
     Explanation:
     One possible encode method is: "lint:;code:;love:;you"
+    but keep in mind this method breaks if one of the strings contains ":;". For example, 
+    ["abc", "x:;y", "zzz"] will be encoded to "abc:;x:;y:;zzz", when decoded, it will be
+    incorrectly decoded to ["abc", "x", "y", "zzz"].
 
 Example 2:
     Input: ["we", "say", ":", "yes"]

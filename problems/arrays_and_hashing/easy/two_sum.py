@@ -3,7 +3,7 @@ PROBLEM: Two Sum (LeetCode 1)
 Difficulty: Easy
 Pattern: Arrays & Hashing
 Companies: Amazon, Apple, Google, Facebook, Microsoft
-
+status: complete
 Given an array of integers nums and an integer target, return indices of the
 two numbers such that they add up to target.
 

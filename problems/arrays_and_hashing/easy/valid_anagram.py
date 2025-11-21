@@ -2,7 +2,7 @@
 PROBLEM: Valid Anagram (LeetCode 242)
 Difficulty: Easy
 Pattern: Arrays & Hashing
-
+status: Complete
 Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 An anagram is a word formed by rearranging the letters of another word, using all
 the original letters exactly once.
